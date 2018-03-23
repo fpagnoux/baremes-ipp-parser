@@ -1,5 +1,6 @@
 from openfisca_core.parameters import ParameterNode
 import openpyxl
+import dpath
 
 wb = openpyxl.load_workbook('/Users/florianpagnoux/dev/openfisca/baremes-ipp/baremes-ipp-prestations-sociales-social-benefits.xlsx')
 
@@ -31,16 +32,6 @@ class SheetParser(object):
     self.references = None
     self.first_data_row = None
     self.last_data_row = None
-
-  # def read_value(self, cell):
-  #   """
-  #   Read the value of a cell, including if the cell has been merged horizontally
-  #   """
-  #   if cell.internal_value is not None:
-  #     return cell.internal_value
-  #   for cell_range in sheet.merged_cells.ranges:
-  #     if cell_range.min_row <= cell.row <= cell_range.max_row and cell_range.min_col <= cell.col_idx <= cell_range.max_col:
-  #       return self.sheet.cell(cell_range.min_row, cell_range.min_col).internal_value
 
   def unmerge_cells(self):
     merged_ranges = self.sheet.merged_cells.ranges
@@ -100,7 +91,7 @@ class SheetParser(object):
 
   def parse_column(self, column):
     data = {}
-    code = column[0].internal_value
+    path = column[0].internal_value
     data = { 'description': self.build_description(column), 'values': {} }
     for date, reference, cell in zip(self.dates, self.references, column[self.first_data_row - 1:self.last_data_row]):
       item = {'value': cell.internal_value}
@@ -110,7 +101,7 @@ class SheetParser(object):
 
     clean_none_values(data)
 
-    return code, data
+    return path, data
 
   def parse(self):
     self.unmerge_cells()
@@ -118,11 +109,13 @@ class SheetParser(object):
     self.parse_dates()
     self.parse_references()
 
-    parsed_columns = [self.parse_column(self.sheet[column_name]) for column_name in self.data_columns]
+    sheet_data = {}
+    for column_name in self.data_columns:
+      path, column_data = self.parse_column(self.sheet[column_name])
+      dpath.util.new(sheet_data, path, column_data)
 
-    return ParameterNode('', data = {
-      code: data for code, data in parsed_columns
-    })
+    from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
+    return ParameterNode('', data = sheet_data)
 
 
 parser = SheetParser(sheet)
