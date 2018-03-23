@@ -32,6 +32,25 @@ class SheetParser(object):
     self.first_data_row = None
     self.last_data_row = None
 
+  # def read_value(self, cell):
+  #   """
+  #   Read the value of a cell, including if the cell has been merged horizontally
+  #   """
+  #   if cell.internal_value is not None:
+  #     return cell.internal_value
+  #   for cell_range in sheet.merged_cells.ranges:
+  #     if cell_range.min_row <= cell.row <= cell_range.max_row and cell_range.min_col <= cell.col_idx <= cell_range.max_col:
+  #       return self.sheet.cell(cell_range.min_row, cell_range.min_col).internal_value
+
+  def unmerge_cells(self):
+    merged_ranges = self.sheet.merged_cells.ranges
+    for cell_range in merged_ranges:
+      sheet.unmerge_cells(cell_range.coord)
+      main_cell = self.sheet.cell(cell_range.min_row, cell_range.min_col)
+      for column in range(cell_range.min_col + 1, cell_range.max_col + 1):
+        cell = self.sheet.cell(cell_range.min_row, column)
+        cell.set_explicit_value(main_cell.internal_value)
+
   def parse_headers(self):
     for cell in self.sheet['1']:
       key = cell.internal_value
@@ -71,10 +90,18 @@ class SheetParser(object):
       references.append(cell.internal_value)
     self.references = references
 
+  def build_description(self, column):
+    description_cells = column[1:self.first_data_row -1]
+    return "; ".join([
+      cell.internal_value
+      for cell in description_cells
+      if cell.internal_value is not None
+      ])
+
   def parse_column(self, column):
     data = {}
     code = column[0].internal_value
-    data = { 'description': column[1].internal_value, 'values': {} }
+    data = { 'description': self.build_description(column), 'values': {} }
     for date, reference, cell in zip(self.dates, self.references, column[self.first_data_row - 1:self.last_data_row]):
       item = {'value': cell.internal_value}
       if reference is not None:
@@ -86,6 +113,7 @@ class SheetParser(object):
     return code, data
 
   def parse(self):
+    self.unmerge_cells()
     self.parse_headers()
     self.parse_dates()
     self.parse_references()
