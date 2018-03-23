@@ -15,6 +15,7 @@ MAP = {
 def main():
   argparser = argparse.ArgumentParser()
   argparser.add_argument('xlsx_file', help = 'XLSX file to convert to YAML parameters')
+  argparser.add_argument('output_file', help = 'XLSX file to convert to YAML parameters')
   args = argparser.parse_args()
   file_name = args.xlsx_file
 
@@ -26,7 +27,7 @@ def main():
   		if cell.internal_value in MAP.keys():
   			up_cell.set_explicit_value(MAP[cell.internal_value])
 
-  wb.save('output.xlsx')
+  wb.save(args.output_file)
 
 
 if __name__ == "__main__":
