@@ -1,10 +1,9 @@
+# -*- coding: utf-8 -*-
+
 from openfisca_core.parameters import ParameterNode
-import openpyxl
 import dpath
+import yaml
 
-wb = openpyxl.load_workbook('/Users/florianpagnoux/dev/openfisca/baremes-ipp/baremes-ipp-prestations-sociales-social-benefits.xlsx')
-
-sheet = wb['AF_CM']
 
 def clean_none_values(param_data):
   values = param_data['values']
@@ -32,11 +31,12 @@ class SheetParser(object):
     self.references = None
     self.first_data_row = None
     self.last_data_row = None
+    self.parsed_data = None
 
   def unmerge_cells(self):
     merged_ranges = self.sheet.merged_cells.ranges
     for cell_range in merged_ranges:
-      sheet.unmerge_cells(cell_range.coord)
+      self.sheet.unmerge_cells(cell_range.coord)
       main_cell = self.sheet.cell(cell_range.min_row, cell_range.min_col)
       for column in range(cell_range.min_col + 1, cell_range.max_col + 1):
         cell = self.sheet.cell(cell_range.min_row, column)
@@ -77,8 +77,12 @@ class SheetParser(object):
 
   def parse_references(self):
     references = []
-    for cell in self.sheet[self.reference_column][self.first_data_row - 1:self.last_data_row]:
-      references.append(cell.internal_value)
+    try:
+      for cell in self.sheet[self.reference_column][self.first_data_row - 1:self.last_data_row]:
+        references.append(cell.internal_value)
+    except:
+      from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
+      print 'dyh'
     self.references = references
 
   def build_description(self, column):
@@ -94,7 +98,10 @@ class SheetParser(object):
     path = column[0].internal_value
     data = { 'description': self.build_description(column), 'values': {} }
     for date, reference, cell in zip(self.dates, self.references, column[self.first_data_row - 1:self.last_data_row]):
-      item = {'value': cell.internal_value}
+      value = cell.internal_value
+      if isinstance(value, long):
+        value = float(value)
+      item = {'value': value}
       if reference is not None:
         item['reference'] = reference
       data['values'][date] = item
@@ -113,10 +120,13 @@ class SheetParser(object):
     for column_name in self.data_columns:
       path, column_data = self.parse_column(self.sheet[column_name])
       dpath.util.new(sheet_data, path, column_data)
+    self.parsed_data = sheet_data
 
-    from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
-    return ParameterNode('', data = sheet_data)
+    return sheet_data
 
 
-parser = SheetParser(sheet)
-x = parser.parse()
+  def save_as_yaml(self, file_name):
+    with open(file_name, 'w') as outfile:
+      yaml.safe_dump(self.parsed_data, outfile, default_flow_style = False, allow_unicode = True)
+
+
