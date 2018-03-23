@@ -9,6 +9,7 @@ MAP = {
 	u"Références législatives": "reference",
 	u"Parution au JO": "date_parution_jo",
 	u"Notes": "notes",
+	u"Date d'effet": "date",
 }
 
 def main():
@@ -22,7 +23,7 @@ def main():
   	sheet = wb[sheet_name]
   	for cell in sheet[2]:
   		up_cell = cell.offset(-1,0)
-  		if cell.internal_value in MAP.keys() and up_cell.internal_value is None:
+  		if cell.internal_value in MAP.keys():
   			up_cell.set_explicit_value(MAP[cell.internal_value])
 
   wb.save('output.xlsx')

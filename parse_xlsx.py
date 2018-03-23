@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from openfisca_core.parameters import load_parameter_file
-from sheets import SheetParser
+from sheets import SheetParser, HeaderError
 import openpyxl
 import argparse
 import os
@@ -11,12 +11,17 @@ SHEETS_TO_IGNORE = ['Sommaire (FR)', 'Outline (EN)']
 
 
 def parse(wb, directory):
+
   for title in wb.sheetnames:
     if title in SHEETS_TO_IGNORE:
       continue
     parser = SheetParser(wb[title])
-    parser.parse()
-    parser.save_as_yaml('{}/{}.yaml'.format(directory, title))
+    try:
+      parser.parse()
+    except HeaderError as e:
+      print(u'Error parsing sheet {}: "{}". It probably does not have a proper header. Ignoring the sheet.'
+        .format(title, e.message).encode('utf-8'))
+    parser.save_as_yaml(u'{}/{}.yaml'.format(directory, title).encode('utf-8'))
 
 def main():
   argparser = argparse.ArgumentParser()
