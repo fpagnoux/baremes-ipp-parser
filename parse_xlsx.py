@@ -7,15 +7,6 @@ import openpyxl
 import argparse
 import os
 
-# wb = openpyxl.load_workbook('/Users/florianpagnoux/dev/openfisca/baremes-ipp/baremes-ipp-prestations-sociales-social-benefits.xlsx')
-
-# sheet = wb['AF_CM']
-
-# parser = SheetParser(sheet)
-# parser.parse()
-# parser.save_as_yaml('/Users/florianpagnoux/dev/openfisca/baremes-ipp/AF_CM.yaml')
-# param = load_parameter_file('/Users/florianpagnoux/dev/openfisca/baremes-ipp/AF_CM.yaml')
-
 SHEETS_TO_IGNORE = ['Sommaire (FR)', 'Outline (EN)']
 
 
