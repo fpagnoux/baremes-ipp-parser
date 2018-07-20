@@ -56,7 +56,7 @@ class SheetParser(object):
         self.reference_column = cell.column
       elif key == 'date_parution_jo' or key == 'notes':
         pass # Ignore those columns for the moment
-      else:
+      elif key or any(cell.internal_value for cell in self.sheet[cell.column]):
         self.data_columns.append(cell.column)
 
     if self.date_column is None:
@@ -91,7 +91,7 @@ class SheetParser(object):
       return
     references = []
     for cell in self.sheet[self.reference_column][self.first_data_row - 1:self.last_data_row]:
-      references.append(cell.internal_value.strip() if cell.internal_value else '')
+      references.append(cell.internal_value.strip() if cell.internal_value else None)
     self.references = references
 
   def build_description(self, column):
