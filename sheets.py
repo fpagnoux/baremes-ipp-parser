@@ -60,7 +60,7 @@ class SheetParser(object):
         self.data_columns.append(cell.column)
 
     if self.date_column is None:
-      raise HeaderError(u"Could not find a date column")
+      raise HeaderError("Could not find a date column.")
 
   def parse_dates(self):
     dates = []
@@ -91,7 +91,7 @@ class SheetParser(object):
       return
     references = []
     for cell in self.sheet[self.reference_column][self.first_data_row - 1:self.last_data_row]:
-      references.append(cell.internal_value.strip())
+      references.append(cell.internal_value.strip() if cell.internal_value else '')
     self.references = references
 
   def build_description(self, column):
