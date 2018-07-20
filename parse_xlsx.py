@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
 from sheets import SheetParser, HeaderError
 import openpyxl
 import argparse
@@ -18,7 +19,7 @@ def parse(wb, directory):
     try:
       parser.parse()
     except HeaderError as e:
-      print('Error parsing sheet {}: "{}". It probably does not have a proper header. Ignoring the sheet.'
+      print('Error parsing sheet "{}": "{}". It probably does not have a proper header. Ignoring the sheet.'
         .format(title, e.args[0]))
     parser.save_as_yaml(u'{}/{}.yaml'.format(directory, title).encode('utf-8'))
 

@@ -116,11 +116,10 @@ class SheetParser(object):
 
   def parse_column(self, column):
     path = ''
-    try:
-      descriptions_cells = column[1:self.first_data_row - 1]
-    except:
-      from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
+    descriptions_cells = column[1:self.first_data_row - 1]
     for cell in descriptions_cells:
+      if cell.internal_value is None:
+        break
       description = cell.internal_value.strip()
       key = slugify(description, separator = '_', stopwords=['d', 'de', 'la', 'du', 'le', 'et'])
       path = '/'.join([path, key]) if path else key
