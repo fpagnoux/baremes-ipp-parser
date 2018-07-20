@@ -94,14 +94,6 @@ class SheetParser(object):
       references.append(cell.internal_value.strip())
     self.references = references
 
-  def build_path(self, column):
-    description_cells = column[1:self.first_data_row -1]
-    return "/".join([
-      slugify(cell.internal_value.strip(), separator = '_', stopwords=['d\'', 'de', 'la', 'du'])
-      for cell in description_cells
-      if cell.internal_value is not None
-      ])
-
   def build_description(self, column):
     description_cells = column[1:self.first_data_row -1]
     return "; ".join([
@@ -130,7 +122,7 @@ class SheetParser(object):
       from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
     for cell in descriptions_cells:
       description = cell.internal_value.strip()
-      key = slugify(description, separator = '_', stopwords=['d\'', 'de', 'la', 'du'])
+      key = slugify(description, separator = '_', stopwords=['d', 'de', 'la', 'du', 'le', 'et'])
       path = '/'.join([path, key]) if path else key
       dpath.util.new(self.sheet_data, '/'.join([path, 'description']), description)
 
