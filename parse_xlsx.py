@@ -18,10 +18,10 @@ def parse(wb, directory):
     parser = SheetParser(wb[title])
     try:
       parser.parse()
+      parser.save_as_yaml(u'{}/{}.yaml'.format(directory, title).encode('utf-8'))
     except HeaderError as e:
       print('Error parsing sheet "{}": "{}". It probably does not have a proper header. Ignoring the sheet.'
         .format(title, e.args[0]))
-    parser.save_as_yaml(u'{}/{}.yaml'.format(directory, title).encode('utf-8'))
 
 def main():
   argparser = argparse.ArgumentParser()
