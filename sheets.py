@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from openfisca_core.parameters import ParameterNode
+from builtins import range
+from builtins import object
 import dpath
 import yaml
 import datetime
+from slugify import slugify
+from pprint import pprint
 
-
-def clean_none_values(param_data):
-  values = param_data['values']
+def clean_none_values(values):
   sorted_dates = sorted(values.keys())
   first_value_found = False
   first_none_found = False
@@ -35,10 +36,10 @@ class SheetParser(object):
     self.references = None
     self.first_data_row = None
     self.last_data_row = None
-    self.parsed_data = None
+    self.sheet_data = {}
 
   def unmerge_cells(self):
-    merged_ranges = self.sheet.merged_cells.ranges
+    merged_ranges = self.sheet.merged_cells.ranges.copy()
     for cell_range in merged_ranges:
       self.sheet.unmerge_cells(cell_range.coord)
       main_cell = self.sheet.cell(cell_range.min_row, cell_range.min_col)
@@ -90,37 +91,63 @@ class SheetParser(object):
       return
     references = []
     for cell in self.sheet[self.reference_column][self.first_data_row - 1:self.last_data_row]:
-      references.append(cell.internal_value)
+      references.append(cell.internal_value.strip())
     self.references = references
 
-  def build_description(self, column):
+  def build_path(self, column):
     description_cells = column[1:self.first_data_row -1]
-    return "; ".join([
-      cell.internal_value
+    return "/".join([
+      slugify(cell.internal_value.strip(), separator = '_', stopwords=['d\'', 'de', 'la', 'du'])
       for cell in description_cells
       if cell.internal_value is not None
       ])
 
+  def build_description(self, column):
+    description_cells = column[1:self.first_data_row -1]
+    return "; ".join([
+      cell.internal_value.strip()
+      for cell in description_cells
+      if cell.internal_value is not None
+      ])
+
+  def parse_cell(self, cell):
+    value = cell.internal_value
+    if isinstance(value, int):
+      return float(value)
+    if isinstance(value, str):
+      try:
+        return float(value)
+      except ValueError:
+        print("Warning, unable to interpret cell {} in sheet {}.".format(cell.coordinate, self.sheet.title))
+        return value
+    return value
+
   def parse_column(self, column):
-    data = {}
-    path = column[0].internal_value
-    if path is None:
-      return None, None
-    data = { 'description': self.build_description(column), 'values': {} }
+    path = ''
+    try:
+      descriptions_cells = column[1:self.first_data_row - 1]
+    except:
+      from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
+    for cell in descriptions_cells:
+      description = cell.internal_value.strip()
+      key = slugify(description, separator = '_', stopwords=['d\'', 'de', 'la', 'du'])
+      path = '/'.join([path, key]) if path else key
+      dpath.util.new(self.sheet_data, '/'.join([path, 'description']), description)
+
+    values = {}
 
     for index, cell in enumerate(column[self.first_data_row - 1:self.last_data_row]):
       date = self.dates[index]
-      value = cell.internal_value
-      if isinstance(value, long):
-        value = float(value)
+      value = self.parse_cell(cell)
       item = {'value': value}
       if self.references is not None and self.references[index] is not None:
         item['reference'] = self.references[index]
-      data['values'][date] = item
+      values[date] = item
 
-    clean_none_values(data)
+    clean_none_values(values)
 
-    return path, data
+    dpath.util.new(self.sheet_data, '/'.join([path, 'values']), values)
+
 
   def parse(self):
     self.unmerge_cells()
@@ -128,20 +155,12 @@ class SheetParser(object):
     self.parse_dates()
     self.parse_references()
 
-    sheet_data = {}
     for column_name in self.data_columns:
-      path, column_data = self.parse_column(self.sheet[column_name])
-      if path is None:
-        # Ignore columns with no title
-        continue
-      dpath.util.new(sheet_data, path, column_data)
-    self.parsed_data = sheet_data
+      self.parse_column(self.sheet[column_name])
 
-    return sheet_data
+    return self.sheet_data
 
 
   def save_as_yaml(self, file_name):
     with open(file_name, 'w') as outfile:
-      yaml.safe_dump(self.parsed_data, outfile, default_flow_style = False, allow_unicode = True)
-
-
+      yaml.safe_dump(self.sheet_data, outfile, default_flow_style = False, allow_unicode = True)

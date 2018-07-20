@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from openfisca_core.parameters import load_parameter_file
 from sheets import SheetParser, HeaderError
 import openpyxl
 import argparse
@@ -27,8 +26,9 @@ def main():
   argparser = argparse.ArgumentParser()
   argparser.add_argument('xlsx_file', help = 'XLSX file to convert to YAML parameters')
   args = argparser.parse_args()
+
   file_name = args.xlsx_file
-  wb = openpyxl.load_workbook(file_name)
+  wb = openpyxl.load_workbook(file_name, data_only = True)
   directory = 'parameters'
   if not os.path.isdir(directory):
     os.mkdir(directory)
