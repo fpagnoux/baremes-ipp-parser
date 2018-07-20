@@ -6,10 +6,11 @@ import argparse
 import os
 
 MAP = {
-	u"Références législatives": "reference",
-	u"Parution au JO": "date_parution_jo",
-	u"Notes": "notes",
-	u"Date d'effet": "date",
+  "Références législatives": "reference",
+  "Parution au JO": "date_parution_jo",
+  "Notes": "notes",
+  "Note": "notes",
+  "Date d'effet": "date",
 }
 
 def main():
@@ -21,11 +22,11 @@ def main():
 
   wb = openpyxl.load_workbook(file_name)
   for sheet_name in wb.sheetnames:
-  	sheet = wb[sheet_name]
-  	for cell in sheet[2]:
-  		up_cell = cell.offset(-1,0)
-  		if cell.internal_value in MAP.keys():
-  			up_cell.set_explicit_value(MAP[cell.internal_value])
+    sheet = wb[sheet_name]
+    for cell in sheet[2]:
+      up_cell = cell.offset(-1,0)
+      if cell.internal_value in list(MAP.keys()):
+        up_cell.set_explicit_value(MAP[cell.internal_value])
 
   wb.save(args.output_file)
 
