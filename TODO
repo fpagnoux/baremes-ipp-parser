@@ -1,0 +1,20 @@
+- Description des feuilles principales
+- Unit
+- Rebase de la branche sur core
+
+
+
+-------------------------------------
+
+Cas particuliers:
+
+
+- Feuille avec plusieurs références:
+  - CNRACL
+  - IRCANTEC
+
+- Pas de date:
+  - AUBRYI
+
+- Champs non-numérique
+  - FILLON

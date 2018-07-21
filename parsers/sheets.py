@@ -3,10 +3,11 @@
 from builtins import range
 from builtins import object
 import dpath
-import yaml
 import datetime
-from slugify import slugify
 from pprint import pprint
+
+from .commons import slugify
+
 
 def clean_none_values(values):
   sorted_dates = sorted(values.keys())
@@ -121,7 +122,7 @@ class SheetParser(object):
       if cell.internal_value is None:
         continue
       description = cell.internal_value.strip()
-      key = slugify(description, separator = '_', stopwords=['d', 'de', 'la', 'du', 'le', 'et'])
+      key = slugify(description, stopwords = True)
       path = '/'.join([path, key]) if path else key
       dpath.util.new(self.sheet_data, '/'.join([path, 'description']), description)
 
@@ -153,8 +154,3 @@ class SheetParser(object):
       self.parse_column(self.sheet[column_name])
 
     return self.sheet_data
-
-
-  def save_as_yaml(self, file_name):
-    with open(file_name, 'w') as outfile:
-      yaml.safe_dump(self.sheet_data, outfile, default_flow_style = False, allow_unicode = True)
