@@ -119,12 +119,15 @@ class SheetParser(object):
     descriptions_cells = column[1:self.first_data_row - 1]
     for cell in descriptions_cells:
       if cell.internal_value is None:
-        break
+        continue
       description = cell.internal_value.strip()
       key = slugify(description, separator = '_', stopwords=['d', 'de', 'la', 'du', 'le', 'et'])
       path = '/'.join([path, key]) if path else key
       dpath.util.new(self.sheet_data, '/'.join([path, 'description']), description)
 
+    if not path:
+      # If there is no path, there is no description, and the column doesn't contain data
+      return
     values = {}
 
     for index, cell in enumerate(column[self.first_data_row - 1:self.last_data_row]):
