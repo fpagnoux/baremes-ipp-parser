@@ -6,7 +6,7 @@ from .sheets import SheetParser, SheetParsingError
 from .summary import SummaryParser
 from .commons import export_yaml, slugify
 
-SHEETS_TO_IGNORE = ['Sommaire (FR)', 'Outline (EN)', 'CNRACL', 'IRCANTEC', 'FILLON']
+SHEETS_TO_IGNORE = ['Sommaire (FR)', 'Outline (EN)', 'Abréviations', 'CNRACL', 'IRCANTEC', 'FILLON']
 
 
 def create_directories(sections, directory):
@@ -24,6 +24,7 @@ def parse_workbook(wb, directory):
   for title in wb.sheetnames:
     if title in SHEETS_TO_IGNORE:
       continue
+    # print('Parsing sheet "{}"'.format(title))
     parser = SheetParser(wb[title])
     key = slugify(title)
     try:
@@ -38,7 +39,7 @@ def parse_workbook(wb, directory):
       path = os.path.join(directory, sheets_metadata['path'], "{}.yaml".format(key))
       export_yaml(data, path)
     except SheetParsingError as e:
-      print('Error parsing sheet "{}": "{}". It probably does not have a proper header. Ignoring the sheet.'
+      print('Error parsing sheet "{}": "{}". Ignoring it.'
         .format(title, e.args[0]))
 
 def parse_data_sheet(wb, directory):
