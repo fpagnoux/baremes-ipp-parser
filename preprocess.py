@@ -16,11 +16,13 @@ MAP = {
 def main():
   argparser = argparse.ArgumentParser()
   argparser.add_argument('xlsx_file', help = 'XLSX file to convert to YAML parameters')
-  argparser.add_argument('output_file', help = 'XLSX file to convert to YAML parameters')
-  args = argparser.parse_args()
-  file_name = args.xlsx_file
+  argparser.add_argument('-o', '--output-file', default = None, help = "Output file")
 
-  wb = openpyxl.load_workbook(file_name)
+  args = argparser.parse_args()
+  input_file = args.xlsx_file
+  output_file = args.output_file if args.output_file else input_file
+  wb = openpyxl.load_workbook(input_file)
+
   for sheet_name in wb.sheetnames:
     sheet = wb[sheet_name]
     for cell in sheet[2]:
@@ -28,7 +30,7 @@ def main():
       if cell.internal_value in list(MAP.keys()):
         up_cell.set_explicit_value(MAP[cell.internal_value])
 
-  wb.save(args.output_file)
+  wb.save(output_file)
 
 
 if __name__ == "__main__":
