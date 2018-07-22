@@ -59,6 +59,9 @@ class SheetParser(object):
         pass # Ignore those columns for the moment
       elif key or any(cell.internal_value for cell in self.sheet[cell.column]):
         self.data_columns.append(cell.column)
+      else:
+        # Empty column encountered, we ignore the rest of the sheet
+        break
 
     if self.date_column is None:
       raise HeaderError("Could not find a date column.")
