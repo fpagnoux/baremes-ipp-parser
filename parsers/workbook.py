@@ -2,7 +2,7 @@
 
 import os
 
-from .sheets import SheetParser, HeaderError
+from .sheets import SheetParser, SheetParsingError
 from .summary import SummaryParser
 from .commons import export_yaml, slugify
 
@@ -37,7 +37,7 @@ def parse_workbook(wb, directory):
       data.update({'description': sheets_metadata['description']})
       path = os.path.join(directory, sheets_metadata['path'], "{}.yaml".format(key))
       export_yaml(data, path)
-    except HeaderError as e:
+    except SheetParsingError as e:
       print('Error parsing sheet "{}": "{}". It probably does not have a proper header. Ignoring the sheet.'
         .format(title, e.args[0]))
 

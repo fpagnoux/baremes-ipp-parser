@@ -22,7 +22,7 @@ def clean_none_values(values):
     elif value is not None and not first_value_found:
       first_value_found = True
 
-class HeaderError(Exception):
+class SheetParsingError(Exception):
   pass
 
 
@@ -64,7 +64,7 @@ class SheetParser(object):
         break
 
     if self.date_column is None:
-      raise HeaderError("Could not find a date column.")
+      raise SheetParsingError("Could not find a date column.")
 
   def parse_dates(self):
     dates = []
@@ -72,7 +72,7 @@ class SheetParser(object):
 
     for cell in self.sheet[self.date_column][2:]:
 
-      if cell.internal_value is None or not isinstance(cell.internal_value, datetime.date):
+      if cell.internal_value is None or not isinstance(cell.internal_value, (datetime.date, int)):
         if not visited_a_date: # We are still in the header
           continue
         else:
@@ -84,11 +84,17 @@ class SheetParser(object):
         visited_a_date = True
         self.first_data_row = cell.row
 
-      date = cell.internal_value .strftime('%Y-%m-%d')
+      if isinstance(cell.internal_value, datetime.date):
+        date = cell.internal_value.strftime('%Y-%m-%d')
+      else:
+        date = "{}-01-01".format(cell.internal_value)
       dates.append(date)
 
     self.dates = dates
     self.number_values = len(self.dates)
+
+    if not self.first_data_row:
+      raise SheetParsingError("Not able to parse the date columns.")
 
   def parse_references(self):
     if not self.reference_column:
