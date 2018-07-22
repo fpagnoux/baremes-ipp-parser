@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from .commons import slugify
+from .sheets import SheetParsingError
 
 class SummaryParser(object):
 
@@ -32,5 +33,7 @@ class SummaryParser(object):
         cell = row[1]
         description = ''.join(cell.internal_value.split('.')[1:]).strip()
         key = slugify(description, stopwords = True)
+        if self.sections.get(key):
+          raise SheetParsingError("Name collision: sheet '{}' alredy exists.".format(key))
         self.sections[key] = {'description': description}
         current_path = key

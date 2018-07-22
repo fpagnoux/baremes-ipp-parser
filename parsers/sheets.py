@@ -150,7 +150,10 @@ class SheetParser(object):
 
     clean_none_values(values)
 
-    dpath.util.new(self.sheet_data, '/'.join([path, 'values']), values)
+    values_path = '/'.join([path, 'values'])
+    if dpath.util.search(self.sheet_data, values_path):
+      raise SheetParsingError("Name collision: column '{}' alredy exists.".format(path))
+    dpath.util.new(self.sheet_data, values_path, values)
 
 
   def parse(self):
