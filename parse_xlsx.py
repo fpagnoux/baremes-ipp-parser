@@ -11,7 +11,8 @@ from parsers.workbook import parse_workbook
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 NODE_MAP = {
-  'baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx': 'prelevements_sociaux'
+  'baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx': 'prelevements_sociaux',
+  'baremes-ipp-taxation-capital.xlsx': 'taxation_capital'
 }
 
 def main():
