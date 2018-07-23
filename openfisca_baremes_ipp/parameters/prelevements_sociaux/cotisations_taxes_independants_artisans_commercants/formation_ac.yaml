@@ -5,6 +5,10 @@ artisans:
     metadata:
       unit: /1
     values:
+      '1992-01-01':
+        metadata:
+          reference: Loi 91-1405 du 31/12/1991, art. 32
+        value: null
       '2000-01-01':
         metadata:
           reference: Loi 99-1172 du 30/12/1999

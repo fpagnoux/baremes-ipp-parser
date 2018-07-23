@@ -29,6 +29,15 @@ abattement:
         metadata:
           reference: Loi 2010-1594 du 20/12/2010, art. 20 (LFSS pour 2011)
         value: null
+      '2012-01-01':
+        metadata:
+          reference: Loi 2011-1906 du 28/12/2011, art. 17 (LFSS pour 2012)
+        value: null
+      '2018-01-01':
+        metadata:
+          reference: Loi 2017-1836 du 30/12/2017, art. 8 (LFSS pour 2018) ; Loi 2017-1837
+            du 30/12/2017, art. 67 (LF pour 2018)
+        value: null
   sous_4_pss:
     description: Sous 4 PSS
     metadata:
@@ -74,6 +83,14 @@ allocations_chomage:
     metadata:
       unit: /1
     values:
+      '1991-02-01':
+        metadata:
+          reference: Loi 90-1168 du 29/12/90, art. 127 à 135 (LF pour 1991)
+        value: null
+      '1993-07-01':
+        metadata:
+          reference: Loi 93-859 du 22/06/1993, art. 42 (LFR pour 1993)
+        value: null
       '1997-01-01':
         metadata:
           reference: Loi 96-1160 du 27/12/1996, art. 9 à 17 (LFSS pour 1997)
@@ -104,6 +121,14 @@ allocations_chomage:
     metadata:
       unit: /1
     values:
+      '1991-02-01':
+        metadata:
+          reference: Loi 90-1168 du 29/12/90, art. 127 à 135 (LF pour 1991)
+        value: null
+      '1993-07-01':
+        metadata:
+          reference: Loi 93-859 du 22/06/1993, art. 42 (LFR pour 1993)
+        value: null
       '1997-01-01':
         metadata:
           reference: Loi 96-1160 du 27/12/1996, art. 9 à 17 (LFSS pour 1997)
@@ -134,6 +159,14 @@ allocations_chomage:
     metadata:
       unit: /1
     values:
+      '1991-02-01':
+        metadata:
+          reference: Loi 90-1168 du 29/12/90, art. 127 à 135 (LF pour 1991)
+        value: null
+      '1993-07-01':
+        metadata:
+          reference: Loi 93-859 du 22/06/1993, art. 42 (LFR pour 1993)
+        value: null
       '1997-01-01':
         metadata:
           reference: Loi 96-1160 du 27/12/1996, art. 9 à 17 (LFSS pour 1997)
@@ -167,6 +200,14 @@ revenus_activite:
     metadata:
       unit: /1
     values:
+      '1991-02-01':
+        metadata:
+          reference: Loi 90-1168 du 29/12/90, art. 127 à 135 (LF pour 1991)
+        value: null
+      '1993-07-01':
+        metadata:
+          reference: Loi 93-859 du 22/06/1993, art. 42 (LFR pour 1993)
+        value: null
       '1997-01-01':
         metadata:
           reference: Loi 96-1160 du 27/12/1996, art. 9 à 17 (LFSS pour 1997)

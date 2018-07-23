@@ -11,18 +11,15 @@ from .commons import slugify
 log = logging.getLogger(__name__)
 
 
-def clean_none_values(values):
+def contract(values):
+  result = values.copy()
   sorted_dates = sorted(values.keys())
-  first_value_found = False
-  first_none_found = False
-  for date in sorted_dates:
-    value = values[date]['value']
-    if value is None and (first_none_found or not first_value_found):
-      del values[date]
-    elif value is None:
-      first_none_found = True
-    elif value is not None and not first_value_found:
-      first_value_found = True
+  last_date = sorted_dates[0]
+  for date in sorted_dates[1:]:
+    if values[date] == values[last_date]:
+      del result[date]
+    last_date = date
+  return result
 
 
 class SheetParsingError(Exception):
@@ -172,7 +169,7 @@ class SheetParser(object):
         item['metadata']['reference'] = self.references[index]
       values[date] = item
 
-    clean_none_values(values)
+    values = contract(values)
 
     if parameter.get('values') is not None:
       raise SheetParsingError("Name collision: column '{}' alredy exists.".format(path))

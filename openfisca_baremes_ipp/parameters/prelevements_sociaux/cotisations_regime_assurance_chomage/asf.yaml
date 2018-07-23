@@ -72,6 +72,10 @@ tranche_b:
     metadata:
       unit: /1
     values:
+      '1984-01-01':
+        metadata:
+          reference: Accord du 10/01/1984
+        value: null
       '1984-04-01':
         metadata:
           reference: Convention et règlement Unedic du 24/02/84 agréés par arrêté
@@ -100,6 +104,10 @@ tranche_b:
     metadata:
       unit: /1
     values:
+      '1984-01-01':
+        metadata:
+          reference: Accord du 10/01/1984
+        value: null
       '1984-04-01':
         metadata:
           reference: Convention et règlement Unedic du 24/02/84 agréés par arrêté

@@ -6,6 +6,22 @@ agents_generaux_assurance:
       metadata:
         unit: /1
       values:
+        '1949-01-01':
+          metadata:
+            reference: Arrêté du 24/05/1949
+          value: null
+        '1951-01-01':
+          metadata:
+            reference: Décret 51-310 du 03/03/1951; Arrêté du 4/03/1951
+          value: null
+        '1962-01-01':
+          metadata:
+            reference: Décret 62-502 du 13/04/1962
+          value: null
+        '1963-01-01':
+          metadata:
+            reference: Décret 63-106 du 8/02/1963
+          value: null
         '1968-01-01':
           metadata:
             reference: Décret 67-1169 du 22/12/1967
@@ -112,6 +128,22 @@ agents_generaux_assurance:
       metadata:
         unit: /1
       values:
+        '1949-01-01':
+          metadata:
+            reference: Arrêté du 24/05/1949
+          value: null
+        '1951-01-01':
+          metadata:
+            reference: Décret 51-310 du 03/03/1951; Arrêté du 4/03/1951
+          value: null
+        '1962-01-01':
+          metadata:
+            reference: Décret 62-502 du 13/04/1962
+          value: null
+        '1963-01-01':
+          metadata:
+            reference: Décret 63-106 du 8/02/1963
+          value: null
         '1968-01-01':
           metadata:
             reference: Décret 67-1169 du 22/12/1967
@@ -218,6 +250,70 @@ agents_generaux_assurance:
       metadata:
         unit: /1
       values:
+        '1949-01-01':
+          metadata:
+            reference: Arrêté du 24/05/1949
+          value: null
+        '1951-01-01':
+          metadata:
+            reference: Décret 51-310 du 03/03/1951; Arrêté du 4/03/1951
+          value: null
+        '1962-01-01':
+          metadata:
+            reference: Décret 62-502 du 13/04/1962
+          value: null
+        '1963-01-01':
+          metadata:
+            reference: Décret 63-106 du 8/02/1963
+          value: null
+        '1968-01-01':
+          metadata:
+            reference: Décret 67-1169 du 22/12/1967
+          value: null
+        '1971-01-01':
+          metadata:
+            reference: Décret 71-878 du 22/10/1971
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: Décret 82-1154 du 30/12/1982; Décret 83-618 du 1/07/1983
+          value: null
+        '1991-01-01':
+          metadata:
+            reference: Décret 91-864 du 30/08/1991
+          value: null
+        '1993-01-01':
+          metadata:
+            reference: Décret 92-1372 du 29/12/1992
+          value: null
+        '1996-01-01':
+          metadata:
+            reference: Décret 96-654 du 16/07/1996
+          value: null
+        '1997-01-01':
+          metadata:
+            reference: Décret 97-830 du 4/09/1997 ; Décret 96-1164 du 26/12/1996
+          value: null
+        '1998-01-01':
+          metadata:
+            reference: Décret 97-1056 du 13/11/1997; Décret 98-599 du 13/07/1998
+          value: null
+        '1999-01-01':
+          metadata:
+            reference: Décret 99-959 du 22/11/1999
+          value: null
+        '2000-01-01':
+          metadata:
+            reference: Décret 2000-1082 du 7/11/2000
+          value: null
+        '2001-01-01':
+          metadata:
+            reference: Décret 2001-1182 du 11/12/2001
+          value: null
+        '2002-01-01':
+          metadata:
+            reference: Décret 2001-864 du 17/09/2001; Décret 2002-1525 du 23/12/2002
+          value: null
         '2004-01-01':
           metadata:
             reference: Décret 2004-1095 du 15/10/2004; Décret 2003-1273 du 26/12/2003
@@ -281,6 +377,46 @@ chirurgiens_dentistes_sages_femmes_depuis_janvier_2009:
       metadata:
         unit: /1
       values:
+        '1949-01-01':
+          metadata:
+            reference: Arrêté du 24/05/1949
+          value: null
+        '1951-01-01':
+          metadata:
+            reference: Décret 51-310 du 03/03/1951; Arrêté du 4/03/1951
+          value: null
+        '1962-01-01':
+          metadata:
+            reference: Décret 62-502 du 13/04/1962
+          value: null
+        '1963-01-01':
+          metadata:
+            reference: Décret 63-106 du 8/02/1963
+          value: null
+        '1968-01-01':
+          metadata:
+            reference: Décret 67-1169 du 22/12/1967
+          value: null
+        '1971-01-01':
+          metadata:
+            reference: Décret 71-878 du 22/10/1971
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: Décret 82-1154 du 30/12/1982; Décret 83-618 du 1/07/1983
+          value: null
+        '1991-01-01':
+          metadata:
+            reference: Décret 91-864 du 30/08/1991
+          value: null
+        '1993-01-01':
+          metadata:
+            reference: Décret 92-1372 du 29/12/1992
+          value: null
+        '1996-01-01':
+          metadata:
+            reference: Décret 96-654 du 16/07/1996
+          value: null
         '1997-01-01':
           metadata:
             reference: Décret 97-830 du 4/09/1997 ; Décret 96-1164 du 26/12/1996
@@ -365,6 +501,78 @@ chirurgiens_dentistes_sages_femmes_depuis_janvier_2009:
       metadata:
         unit: /1
       values:
+        '1949-01-01':
+          metadata:
+            reference: Arrêté du 24/05/1949
+          value: null
+        '1951-01-01':
+          metadata:
+            reference: Décret 51-310 du 03/03/1951; Arrêté du 4/03/1951
+          value: null
+        '1962-01-01':
+          metadata:
+            reference: Décret 62-502 du 13/04/1962
+          value: null
+        '1963-01-01':
+          metadata:
+            reference: Décret 63-106 du 8/02/1963
+          value: null
+        '1968-01-01':
+          metadata:
+            reference: Décret 67-1169 du 22/12/1967
+          value: null
+        '1971-01-01':
+          metadata:
+            reference: Décret 71-878 du 22/10/1971
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: Décret 82-1154 du 30/12/1982; Décret 83-618 du 1/07/1983
+          value: null
+        '1991-01-01':
+          metadata:
+            reference: Décret 91-864 du 30/08/1991
+          value: null
+        '1993-01-01':
+          metadata:
+            reference: Décret 92-1372 du 29/12/1992
+          value: null
+        '1996-01-01':
+          metadata:
+            reference: Décret 96-654 du 16/07/1996
+          value: null
+        '1997-01-01':
+          metadata:
+            reference: Décret 97-830 du 4/09/1997 ; Décret 96-1164 du 26/12/1996
+          value: null
+        '1998-01-01':
+          metadata:
+            reference: Décret 97-1056 du 13/11/1997; Décret 98-599 du 13/07/1998
+          value: null
+        '1999-01-01':
+          metadata:
+            reference: Décret 99-959 du 22/11/1999
+          value: null
+        '2000-01-01':
+          metadata:
+            reference: Décret 2000-1082 du 7/11/2000
+          value: null
+        '2001-01-01':
+          metadata:
+            reference: Décret 2001-1182 du 11/12/2001
+          value: null
+        '2002-01-01':
+          metadata:
+            reference: Décret 2001-864 du 17/09/2001; Décret 2002-1525 du 23/12/2002
+          value: null
+        '2004-01-01':
+          metadata:
+            reference: Décret 2004-1095 du 15/10/2004; Décret 2003-1273 du 26/12/2003
+          value: null
+        '2005-01-01':
+          metadata:
+            reference: Décret 2004-1142 du 20/10/2004
+          value: null
         '2008-01-01':
           metadata:
             reference: Décret 2007-597 du 24/04/2007 ; Décret 2007-458 du 25/03/2007
@@ -420,6 +628,42 @@ infirmiers_masseurs_kine_orthophonistes_orthoptistes:
       metadata:
         unit: /1
       values:
+        '1949-01-01':
+          metadata:
+            reference: Arrêté du 24/05/1949
+          value: null
+        '1951-01-01':
+          metadata:
+            reference: Décret 51-310 du 03/03/1951; Arrêté du 4/03/1951
+          value: null
+        '1962-01-01':
+          metadata:
+            reference: Décret 62-502 du 13/04/1962
+          value: null
+        '1963-01-01':
+          metadata:
+            reference: Décret 63-106 du 8/02/1963
+          value: null
+        '1968-01-01':
+          metadata:
+            reference: Décret 67-1169 du 22/12/1967
+          value: null
+        '1971-01-01':
+          metadata:
+            reference: Décret 71-878 du 22/10/1971
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: Décret 82-1154 du 30/12/1982; Décret 83-618 du 1/07/1983
+          value: null
+        '1991-01-01':
+          metadata:
+            reference: Décret 91-864 du 30/08/1991
+          value: null
+        '1993-01-01':
+          metadata:
+            reference: Décret 92-1372 du 29/12/1992
+          value: null
         '1996-01-01':
           metadata:
             reference: Décret 96-654 du 16/07/1996
@@ -510,6 +754,86 @@ infirmiers_masseurs_kine_orthophonistes_orthoptistes:
       metadata:
         unit: /1
       values:
+        '1949-01-01':
+          metadata:
+            reference: Arrêté du 24/05/1949
+          value: null
+        '1951-01-01':
+          metadata:
+            reference: Décret 51-310 du 03/03/1951; Arrêté du 4/03/1951
+          value: null
+        '1962-01-01':
+          metadata:
+            reference: Décret 62-502 du 13/04/1962
+          value: null
+        '1963-01-01':
+          metadata:
+            reference: Décret 63-106 du 8/02/1963
+          value: null
+        '1968-01-01':
+          metadata:
+            reference: Décret 67-1169 du 22/12/1967
+          value: null
+        '1971-01-01':
+          metadata:
+            reference: Décret 71-878 du 22/10/1971
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: Décret 82-1154 du 30/12/1982; Décret 83-618 du 1/07/1983
+          value: null
+        '1991-01-01':
+          metadata:
+            reference: Décret 91-864 du 30/08/1991
+          value: null
+        '1993-01-01':
+          metadata:
+            reference: Décret 92-1372 du 29/12/1992
+          value: null
+        '1996-01-01':
+          metadata:
+            reference: Décret 96-654 du 16/07/1996
+          value: null
+        '1997-01-01':
+          metadata:
+            reference: Décret 97-830 du 4/09/1997 ; Décret 96-1164 du 26/12/1996
+          value: null
+        '1998-01-01':
+          metadata:
+            reference: Décret 97-1056 du 13/11/1997; Décret 98-599 du 13/07/1998
+          value: null
+        '1999-01-01':
+          metadata:
+            reference: Décret 99-959 du 22/11/1999
+          value: null
+        '2000-01-01':
+          metadata:
+            reference: Décret 2000-1082 du 7/11/2000
+          value: null
+        '2001-01-01':
+          metadata:
+            reference: Décret 2001-1182 du 11/12/2001
+          value: null
+        '2002-01-01':
+          metadata:
+            reference: Décret 2001-864 du 17/09/2001; Décret 2002-1525 du 23/12/2002
+          value: null
+        '2004-01-01':
+          metadata:
+            reference: Décret 2004-1095 du 15/10/2004; Décret 2003-1273 du 26/12/2003
+          value: null
+        '2005-01-01':
+          metadata:
+            reference: Décret 2004-1142 du 20/10/2004
+          value: null
+        '2008-01-01':
+          metadata:
+            reference: Décret 2007-597 du 24/04/2007 ; Décret 2007-458 du 25/03/2007
+          value: null
+        '2009-01-01':
+          metadata:
+            reference: Décret 2009-1635 du 23/12/2009
+          value: null
         '2010-01-01':
           metadata:
             reference: Décret 2010-1253 du 21/10/2010; Décret 2008-1044 du 10/10/2008
@@ -556,6 +880,30 @@ medecins:
       metadata:
         unit: /1
       values:
+        '1949-01-01':
+          metadata:
+            reference: Arrêté du 24/05/1949
+          value: null
+        '1951-01-01':
+          metadata:
+            reference: Décret 51-310 du 03/03/1951; Arrêté du 4/03/1951
+          value: null
+        '1962-01-01':
+          metadata:
+            reference: Décret 62-502 du 13/04/1962
+          value: null
+        '1963-01-01':
+          metadata:
+            reference: Décret 63-106 du 8/02/1963
+          value: null
+        '1968-01-01':
+          metadata:
+            reference: Décret 67-1169 du 22/12/1967
+          value: null
+        '1971-01-01':
+          metadata:
+            reference: Décret 71-878 du 22/10/1971
+          value: null
         '1983-01-01':
           metadata:
             reference: Décret 82-1154 du 30/12/1982; Décret 83-618 du 1/07/1983
@@ -657,6 +1005,94 @@ medecins:
       metadata:
         unit: /1
       values:
+        '1949-01-01':
+          metadata:
+            reference: Arrêté du 24/05/1949
+          value: null
+        '1951-01-01':
+          metadata:
+            reference: Décret 51-310 du 03/03/1951; Arrêté du 4/03/1951
+          value: null
+        '1962-01-01':
+          metadata:
+            reference: Décret 62-502 du 13/04/1962
+          value: null
+        '1963-01-01':
+          metadata:
+            reference: Décret 63-106 du 8/02/1963
+          value: null
+        '1968-01-01':
+          metadata:
+            reference: Décret 67-1169 du 22/12/1967
+          value: null
+        '1971-01-01':
+          metadata:
+            reference: Décret 71-878 du 22/10/1971
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: Décret 82-1154 du 30/12/1982; Décret 83-618 du 1/07/1983
+          value: null
+        '1991-01-01':
+          metadata:
+            reference: Décret 91-864 du 30/08/1991
+          value: null
+        '1993-01-01':
+          metadata:
+            reference: Décret 92-1372 du 29/12/1992
+          value: null
+        '1996-01-01':
+          metadata:
+            reference: Décret 96-654 du 16/07/1996
+          value: null
+        '1997-01-01':
+          metadata:
+            reference: Décret 97-830 du 4/09/1997 ; Décret 96-1164 du 26/12/1996
+          value: null
+        '1998-01-01':
+          metadata:
+            reference: Décret 97-1056 du 13/11/1997; Décret 98-599 du 13/07/1998
+          value: null
+        '1999-01-01':
+          metadata:
+            reference: Décret 99-959 du 22/11/1999
+          value: null
+        '2000-01-01':
+          metadata:
+            reference: Décret 2000-1082 du 7/11/2000
+          value: null
+        '2001-01-01':
+          metadata:
+            reference: Décret 2001-1182 du 11/12/2001
+          value: null
+        '2002-01-01':
+          metadata:
+            reference: Décret 2001-864 du 17/09/2001; Décret 2002-1525 du 23/12/2002
+          value: null
+        '2004-01-01':
+          metadata:
+            reference: Décret 2004-1095 du 15/10/2004; Décret 2003-1273 du 26/12/2003
+          value: null
+        '2005-01-01':
+          metadata:
+            reference: Décret 2004-1142 du 20/10/2004
+          value: null
+        '2008-01-01':
+          metadata:
+            reference: Décret 2007-597 du 24/04/2007 ; Décret 2007-458 du 25/03/2007
+          value: null
+        '2009-01-01':
+          metadata:
+            reference: Décret 2009-1635 du 23/12/2009
+          value: null
+        '2010-01-01':
+          metadata:
+            reference: Décret 2010-1253 du 21/10/2010; Décret 2008-1044 du 10/10/2008
+          value: null
+        '2011-01-01':
+          metadata:
+            reference: Décret 2011-674 du 15/06/2011
+          value: null
         '2012-01-01':
           metadata:
             reference: Décret 2011-1419 du 31/10/2011; Décret 2012-478 du 12/04/2012;
@@ -694,6 +1130,10 @@ notaires:
       metadata:
         unit: /1
       values:
+        '1949-01-01':
+          metadata:
+            reference: Arrêté du 24/05/1949
+          value: null
         '1951-01-01':
           metadata:
             reference: Décret 51-310 du 03/03/1951; Arrêté du 4/03/1951
@@ -798,6 +1238,14 @@ notaires:
         '2016-01-01':
           metadata:
             reference: Décret 2015-1802 du 29/12/2015 ; Décret 2007-597 du 24/04/2007
+          value: null
+        '2017-01-01':
+          metadata:
+            reference: Décret 2017-730 du 3/05/2017
+          value: null
+        '2018-01-01':
+          metadata:
+            reference: Décret 2017-730 du 3/05/2017 ; Décret 2017-993 du 10/05/2017
           value: null
     description: Moyenne des produits de base de l'office des 3 dernières années,
       limitée à 3*moyenne générale des produits des offices de France
@@ -1055,6 +1503,78 @@ pharmaciens:
       metadata:
         unit: /1
       values:
+        '1949-01-01':
+          metadata:
+            reference: Arrêté du 24/05/1949
+          value: null
+        '1951-01-01':
+          metadata:
+            reference: Décret 51-310 du 03/03/1951; Arrêté du 4/03/1951
+          value: null
+        '1962-01-01':
+          metadata:
+            reference: Décret 62-502 du 13/04/1962
+          value: null
+        '1963-01-01':
+          metadata:
+            reference: Décret 63-106 du 8/02/1963
+          value: null
+        '1968-01-01':
+          metadata:
+            reference: Décret 67-1169 du 22/12/1967
+          value: null
+        '1971-01-01':
+          metadata:
+            reference: Décret 71-878 du 22/10/1971
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: Décret 82-1154 du 30/12/1982; Décret 83-618 du 1/07/1983
+          value: null
+        '1991-01-01':
+          metadata:
+            reference: Décret 91-864 du 30/08/1991
+          value: null
+        '1993-01-01':
+          metadata:
+            reference: Décret 92-1372 du 29/12/1992
+          value: null
+        '1996-01-01':
+          metadata:
+            reference: Décret 96-654 du 16/07/1996
+          value: null
+        '1997-01-01':
+          metadata:
+            reference: Décret 97-830 du 4/09/1997 ; Décret 96-1164 du 26/12/1996
+          value: null
+        '1998-01-01':
+          metadata:
+            reference: Décret 97-1056 du 13/11/1997; Décret 98-599 du 13/07/1998
+          value: null
+        '1999-01-01':
+          metadata:
+            reference: Décret 99-959 du 22/11/1999
+          value: null
+        '2000-01-01':
+          metadata:
+            reference: Décret 2000-1082 du 7/11/2000
+          value: null
+        '2001-01-01':
+          metadata:
+            reference: Décret 2001-1182 du 11/12/2001
+          value: null
+        '2002-01-01':
+          metadata:
+            reference: Décret 2001-864 du 17/09/2001; Décret 2002-1525 du 23/12/2002
+          value: null
+        '2004-01-01':
+          metadata:
+            reference: Décret 2004-1095 du 15/10/2004; Décret 2003-1273 du 26/12/2003
+          value: null
+        '2005-01-01':
+          metadata:
+            reference: Décret 2004-1142 du 20/10/2004
+          value: null
         '2008-01-01':
           metadata:
             reference: Décret 2007-597 du 24/04/2007 ; Décret 2007-458 du 25/03/2007

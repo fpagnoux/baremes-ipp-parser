@@ -107,6 +107,18 @@ assurance_maladie:
         metadata:
           unit: /1
         values:
+          '1961-05-01':
+            metadata:
+              reference: Arrêté du 01/05/1961
+            value: null
+          '1962-04-01':
+            metadata:
+              reference: Arrêté du 26/02/1962
+            value: null
+          '1966-10-01':
+            metadata:
+              reference: Arrêté du 15/09/1966
+            value: null
           '1967-10-01':
             metadata:
               reference: Arrêté du 29/09/1967
@@ -140,6 +152,18 @@ assurance_maladie:
         metadata:
           unit: /1
         values:
+          '1961-05-01':
+            metadata:
+              reference: Arrêté du 01/05/1961
+            value: null
+          '1962-04-01':
+            metadata:
+              reference: Arrêté du 26/02/1962
+            value: null
+          '1966-10-01':
+            metadata:
+              reference: Arrêté du 15/09/1966
+            value: null
           '1967-10-01':
             metadata:
               reference: Arrêté du 29/09/1967
@@ -175,6 +199,18 @@ assurance_maladie:
         metadata:
           unit: /1
         values:
+          '1961-05-01':
+            metadata:
+              reference: Arrêté du 01/05/1961
+            value: null
+          '1962-04-01':
+            metadata:
+              reference: Arrêté du 26/02/1962
+            value: null
+          '1966-10-01':
+            metadata:
+              reference: Arrêté du 15/09/1966
+            value: null
           '1967-10-01':
             metadata:
               reference: Arrêté du 29/09/1967
@@ -208,6 +244,18 @@ assurance_maladie:
         metadata:
           unit: /1
         values:
+          '1961-05-01':
+            metadata:
+              reference: Arrêté du 01/05/1961
+            value: null
+          '1962-04-01':
+            metadata:
+              reference: Arrêté du 26/02/1962
+            value: null
+          '1966-10-01':
+            metadata:
+              reference: Arrêté du 15/09/1966
+            value: null
           '1967-10-01':
             metadata:
               reference: Arrêté du 29/09/1967
@@ -241,6 +289,18 @@ assurance_maladie:
       metadata:
         unit: /1
       values:
+        '1961-05-01':
+          metadata:
+            reference: Arrêté du 01/05/1961
+          value: null
+        '1962-04-01':
+          metadata:
+            reference: Arrêté du 26/02/1962
+          value: null
+        '1966-10-01':
+          metadata:
+            reference: Arrêté du 15/09/1966
+          value: null
         '1967-10-01':
           metadata:
             reference: Arrêté du 29/09/1967
@@ -278,6 +338,18 @@ assurance_maladie:
         metadata:
           unit: /1
         values:
+          '1961-05-01':
+            metadata:
+              reference: Arrêté du 01/05/1961
+            value: null
+          '1962-04-01':
+            metadata:
+              reference: Arrêté du 26/02/1962
+            value: null
+          '1966-10-01':
+            metadata:
+              reference: Arrêté du 15/09/1966
+            value: null
           '1967-10-01':
             metadata:
               reference: Arrêté du 29/09/1967
@@ -311,6 +383,18 @@ assurance_maladie:
         metadata:
           unit: /1
         values:
+          '1961-05-01':
+            metadata:
+              reference: Arrêté du 01/05/1961
+            value: null
+          '1962-04-01':
+            metadata:
+              reference: Arrêté du 26/02/1962
+            value: null
+          '1966-10-01':
+            metadata:
+              reference: Arrêté du 15/09/1966
+            value: null
           '1967-10-01':
             metadata:
               reference: Arrêté du 29/09/1967
@@ -350,6 +434,18 @@ assurance_vieillesse:
         metadata:
           unit: /1
         values:
+          '1961-05-01':
+            metadata:
+              reference: Arrêté du 01/05/1961
+            value: null
+          '1962-04-01':
+            metadata:
+              reference: Arrêté du 26/02/1962
+            value: null
+          '1966-10-01':
+            metadata:
+              reference: Arrêté du 15/09/1966
+            value: null
           '1967-10-01':
             metadata:
               reference: Arrêté du 29/09/1967
@@ -383,6 +479,18 @@ assurance_vieillesse:
         metadata:
           unit: /1
         values:
+          '1961-05-01':
+            metadata:
+              reference: Arrêté du 01/05/1961
+            value: null
+          '1962-04-01':
+            metadata:
+              reference: Arrêté du 26/02/1962
+            value: null
+          '1966-10-01':
+            metadata:
+              reference: Arrêté du 15/09/1966
+            value: null
           '1967-10-01':
             metadata:
               reference: Arrêté du 29/09/1967
@@ -416,6 +524,18 @@ assurance_vieillesse:
       metadata:
         unit: /1
       values:
+        '1961-05-01':
+          metadata:
+            reference: Arrêté du 01/05/1961
+          value: null
+        '1962-04-01':
+          metadata:
+            reference: Arrêté du 26/02/1962
+          value: null
+        '1966-10-01':
+          metadata:
+            reference: Arrêté du 15/09/1966
+          value: null
         '1967-10-01':
           metadata:
             reference: Arrêté du 29/09/1967
@@ -471,6 +591,30 @@ assurances_sociales:
             metadata:
               reference: Arrêté du 29/09/1967
             value: null
+          '1969-01-01':
+            metadata:
+              reference: Arrêté du 31/12/1968
+            value: null
+          '1970-01-01':
+            metadata:
+              reference: Arrêté du 31/12/1969
+            value: null
+          '1971-01-01':
+            metadata:
+              reference: Arrêté du 30/12/1970
+            value: null
+          '1972-01-01':
+            metadata:
+              reference: Arrêté du 24/02/1972
+            value: null
+          '1973-01-01':
+            metadata:
+              reference: Arrêté du 31/01/1973
+            value: null
+          '1974-01-01':
+            metadata:
+              reference: Arrêté du 15/01/1974
+            value: null
       plus_65_ans:
         description: Plus de 65 ans
         metadata:
@@ -491,6 +635,30 @@ assurances_sociales:
           '1967-10-01':
             metadata:
               reference: Arrêté du 29/09/1967
+            value: null
+          '1969-01-01':
+            metadata:
+              reference: Arrêté du 31/12/1968
+            value: null
+          '1970-01-01':
+            metadata:
+              reference: Arrêté du 31/12/1969
+            value: null
+          '1971-01-01':
+            metadata:
+              reference: Arrêté du 30/12/1970
+            value: null
+          '1972-01-01':
+            metadata:
+              reference: Arrêté du 24/02/1972
+            value: null
+          '1973-01-01':
+            metadata:
+              reference: Arrêté du 31/01/1973
+            value: null
+          '1974-01-01':
+            metadata:
+              reference: Arrêté du 15/01/1974
             value: null
     employe_hors_am:
       description: Employé (hors AM)
@@ -515,6 +683,30 @@ assurances_sociales:
             metadata:
               reference: Arrêté du 29/09/1967
             value: null
+          '1969-01-01':
+            metadata:
+              reference: Arrêté du 31/12/1968
+            value: null
+          '1970-01-01':
+            metadata:
+              reference: Arrêté du 31/12/1969
+            value: null
+          '1971-01-01':
+            metadata:
+              reference: Arrêté du 30/12/1970
+            value: null
+          '1972-01-01':
+            metadata:
+              reference: Arrêté du 24/02/1972
+            value: null
+          '1973-01-01':
+            metadata:
+              reference: Arrêté du 31/01/1973
+            value: null
+          '1974-01-01':
+            metadata:
+              reference: Arrêté du 15/01/1974
+            value: null
       plus_65_ans:
         description: Plus de 65 ans
         metadata:
@@ -536,6 +728,30 @@ assurances_sociales:
             metadata:
               reference: Arrêté du 29/09/1967
             value: null
+          '1969-01-01':
+            metadata:
+              reference: Arrêté du 31/12/1968
+            value: null
+          '1970-01-01':
+            metadata:
+              reference: Arrêté du 31/12/1969
+            value: null
+          '1971-01-01':
+            metadata:
+              reference: Arrêté du 30/12/1970
+            value: null
+          '1972-01-01':
+            metadata:
+              reference: Arrêté du 24/02/1972
+            value: null
+          '1973-01-01':
+            metadata:
+              reference: Arrêté du 31/01/1973
+            value: null
+          '1974-01-01':
+            metadata:
+              reference: Arrêté du 15/01/1974
+            value: null
     employeur_sous_pss:
       description: Employeur (sous PSS)
       metadata:
@@ -556,5 +772,29 @@ assurances_sociales:
         '1967-10-01':
           metadata:
             reference: Arrêté du 29/09/1967
+          value: null
+        '1969-01-01':
+          metadata:
+            reference: Arrêté du 31/12/1968
+          value: null
+        '1970-01-01':
+          metadata:
+            reference: Arrêté du 31/12/1969
+          value: null
+        '1971-01-01':
+          metadata:
+            reference: Arrêté du 30/12/1970
+          value: null
+        '1972-01-01':
+          metadata:
+            reference: Arrêté du 24/02/1972
+          value: null
+        '1973-01-01':
+          metadata:
+            reference: Arrêté du 31/01/1973
+          value: null
+        '1974-01-01':
+          metadata:
+            reference: Arrêté du 15/01/1974
           value: null
 description: Cotisations SS des professions médicales à temps partiel (1961-1974)

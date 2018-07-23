@@ -2,7 +2,7 @@ description: Plafond de la Sécurité Sociale (1930-2017)
 plafond_securite_sociale_annuel:
   description: Plafond de la Sécurité sociale (annuel)
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
     '1930-07-01':
       metadata:
@@ -208,15 +208,7 @@ plafond_securite_sociale_annuel:
       metadata:
         reference: Décret 84-1197 du 28/12/1984
       value: 106740.0
-    '1985-07-01':
-      metadata:
-        reference: Décret 84-1197 du 28/12/1984
-      value: 106740.0
     '1986-01-01':
-      metadata:
-        reference: Décret 85-1492 du 31/12/1985
-      value: 112200.0
-    '1986-07-01':
       metadata:
         reference: Décret 85-1492 du 31/12/1985
       value: 112200.0
@@ -224,15 +216,7 @@ plafond_securite_sociale_annuel:
       metadata:
         reference: Décret 86-1374 du 31/12/1986
       value: 116820.0
-    '1987-07-01':
-      metadata:
-        reference: Décret 86-1374 du 31/12/1986
-      value: 116820.0
     '1988-01-01':
-      metadata:
-        reference: Décret 87-1057 du 29/12/1987
-      value: 120360.0
-    '1988-07-01':
       metadata:
         reference: Décret 87-1057 du 29/12/1987
       value: 120360.0
@@ -248,15 +232,7 @@ plafond_securite_sociale_annuel:
       metadata:
         reference: Décret 90-6 du 02/01/1990
       value: 131040.0
-    '1990-07-01':
-      metadata:
-        reference: Décret 90-6 du 02/01/1990
-      value: 131040.0
     '1991-01-01':
-      metadata:
-        reference: Décret 90-1240 du 31/12/1990
-      value: 137760.0
-    '1991-07-01':
       metadata:
         reference: Décret 90-1240 du 31/12/1990
       value: 137760.0
@@ -264,15 +240,7 @@ plafond_securite_sociale_annuel:
       metadata:
         reference: Décret 91-1374 du 30/12/1991
       value: 144120.0
-    '1992-07-01':
-      metadata:
-        reference: Décret 91-1374 du 30/12/1991
-      value: 144120.0
     '1993-01-01':
-      metadata:
-        reference: Décret 92-1371 du 29/12/1992
-      value: 149820.0
-    '1993-07-01':
       metadata:
         reference: Décret 92-1371 du 29/12/1992
       value: 149820.0
@@ -280,23 +248,11 @@ plafond_securite_sociale_annuel:
       metadata:
         reference: Décret 93-1308 du 15/12/1993
       value: 153120.0
-    '1994-07-01':
-      metadata:
-        reference: Décret 93-1308 du 15/12/1993
-      value: 153120.0
     '1995-01-01':
       metadata:
         reference: Décret 94-1154 du 28/12/1994
       value: 155940.0
-    '1995-07-01':
-      metadata:
-        reference: Décret 94-1154 du 28/12/1994
-      value: 155940.0
     '1996-01-01':
-      metadata:
-        reference: Décret 95-1357 du 30/12/1995
-      value: 161220.0
-    '1996-07-01':
       metadata:
         reference: Décret 95-1357 du 30/12/1995
       value: 161220.0
@@ -391,8 +347,40 @@ plafond_securite_sociale_annuel:
 plafond_securite_sociale_mensuel:
   description: Plafond de la Sécurité sociale (mensuel)
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
+    '1930-07-01':
+      metadata:
+        reference: Loi du 05/04/1928 modifiée
+      value: null
+    '1936-01-01':
+      metadata:
+        reference: Décret-loi du 28/10/1935 art. 2 § 2
+      value: null
+    '1937-01-01':
+      metadata:
+        reference: Loi du 26/08/1936 modifiée
+      value: null
+    '1938-07-01':
+      metadata:
+        reference: Décret-loi du 14/06/1938
+      value: null
+    '1941-04-01':
+      metadata:
+        reference: Loi du 14/03/1941 art.19
+      value: null
+    '1942-01-01':
+      metadata:
+        reference: Loi du 06/01/1942
+      value: null
+    '1944-09-01':
+      metadata:
+        reference: Ordonnance du 20/10/1944
+      value: null
+    '1945-04-01':
+      metadata:
+        reference: Ordonnance du 20/06/1945
+      value: null
     '1946-07-01':
       metadata:
         reference: Ordonnance 45-2250 du 04/10/1945 art. 31

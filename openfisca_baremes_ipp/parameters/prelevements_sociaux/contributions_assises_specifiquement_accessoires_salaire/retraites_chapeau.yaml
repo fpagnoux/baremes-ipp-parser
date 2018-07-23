@@ -5,6 +5,10 @@ majoration:
   metadata:
     unit: /1
   values:
+    '2004-01-01':
+      metadata:
+        reference: Loi 2003-775 du 21/08/2003, art. 115
+      value: null
     '2010-01-01':
       metadata:
         reference: Loi 2009-1646 du 24/12/2009 (LFSS pour 2010), art. 15

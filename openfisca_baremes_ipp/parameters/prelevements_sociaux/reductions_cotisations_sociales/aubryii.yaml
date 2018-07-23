@@ -2,7 +2,7 @@ description: Allègement de cotisations sociales des lois Aubry II (2000-2003)
 exoneration_annuelle_minimale:
   description: Exonération annuelle minimale
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
     '2000-02-01':
       metadata:
@@ -27,7 +27,7 @@ exoneration_annuelle_minimale:
 majoration_1:
   description: Majoration 1
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
     '2000-02-01':
       metadata:
@@ -52,7 +52,7 @@ majoration_1:
 marjoration_2:
   description: Marjoration 2
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
     '2000-02-01':
       metadata:
@@ -77,7 +77,7 @@ marjoration_2:
 parametre_1:
   description: Paramètre 1
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
     '2000-02-01':
       metadata:
@@ -102,7 +102,7 @@ parametre_1:
 parametre_2:
   description: Paramètre 2
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
     '2000-02-01':
       metadata:
@@ -127,7 +127,7 @@ parametre_2:
 parametre_3:
   description: Paramètre 3
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
     '2000-02-01':
       metadata:

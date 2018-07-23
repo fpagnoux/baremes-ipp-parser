@@ -4,6 +4,10 @@ autres_produits_placement_revenu_fixe_comptes_livrets_creances_depots_cautionnem
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
       '1974-01-01':
         metadata:
           reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
@@ -81,6 +85,18 @@ autres_produits_placement_revenu_fixe_comptes_livrets_creances_depots_cautionnem
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
+      '1979-07-01':
+        metadata:
+          reference: Loi 78-741 du 13/07/1978, art. 35
+        value: null
       '1980-01-01':
         metadata:
           reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
@@ -150,6 +166,23 @@ autres_produits_placement_revenu_fixe_comptes_livrets_creances_depots_cautionnem
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
+      '1979-07-01':
+        metadata:
+          reference: Loi 78-741 du 13/07/1978, art. 35
+        value: null
+      '1980-01-01':
+        metadata:
+          reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+            du 18/01/1980, art. 67 (LF pour 1980)
+        value: null
       '1983-01-01':
         metadata:
           reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
@@ -214,6 +247,32 @@ autres_produits_placement_revenu_fixe_comptes_livrets_creances_depots_cautionnem
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
+      '1979-07-01':
+        metadata:
+          reference: Loi 78-741 du 13/07/1978, art. 35
+        value: null
+      '1980-01-01':
+        metadata:
+          reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+            du 18/01/1980, art. 67 (LF pour 1980)
+        value: null
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
+            3/01/1983, art. 22
+        value: null
+      '1986-01-01':
+        metadata:
+          reference: Loi 85-1321 du 14/12/1985, art. 37
+        value: null
       '1990-06-15':
         metadata:
           reference: Loi 89-935 du 29/12/1989, art. 109 (LF pour 1990) (modif art.
@@ -269,6 +328,41 @@ autres_produits_placement_revenu_fixe_comptes_livrets_creances_depots_cautionnem
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
+      '1979-07-01':
+        metadata:
+          reference: Loi 78-741 du 13/07/1978, art. 35
+        value: null
+      '1980-01-01':
+        metadata:
+          reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+            du 18/01/1980, art. 67 (LF pour 1980)
+        value: null
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
+            3/01/1983, art. 22
+        value: null
+      '1986-01-01':
+        metadata:
+          reference: Loi 85-1321 du 14/12/1985, art. 37
+        value: null
+      '1990-06-15':
+        metadata:
+          reference: Loi 89-935 du 29/12/1989, art. 109 (LF pour 1990) (modif art.
+            157 -22° du CGI)
+        value: null
+      '1994-01-01':
+        metadata:
+          reference: Loi 93-1352 du 30/12/1993, art. 79 IV (LF pour 1994)
+        value: null
       '1995-01-01':
         metadata:
           reference: Loi 93-1352 du 30/12/1993, art. 79 I, II et III (LF pour 1994)
@@ -320,6 +414,10 @@ bons_caisse_banque_bons_tresor_formules_bons_epargne_ptt:
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
       '1974-01-01':
         metadata:
           reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
@@ -397,6 +495,23 @@ bons_caisse_banque_bons_tresor_formules_bons_epargne_ptt:
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
+      '1979-07-01':
+        metadata:
+          reference: Loi 78-741 du 13/07/1978, art. 35
+        value: null
+      '1980-01-01':
+        metadata:
+          reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+            du 18/01/1980, art. 67 (LF pour 1980)
+        value: null
       '1983-01-01':
         metadata:
           reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
@@ -461,6 +576,23 @@ bons_caisse_banque_bons_tresor_formules_bons_epargne_ptt:
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
+      '1979-07-01':
+        metadata:
+          reference: Loi 78-741 du 13/07/1978, art. 35
+        value: null
+      '1980-01-01':
+        metadata:
+          reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+            du 18/01/1980, art. 67 (LF pour 1980)
+        value: null
       '1983-01-01':
         metadata:
           reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
@@ -525,6 +657,32 @@ bons_caisse_banque_bons_tresor_formules_bons_epargne_ptt:
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
+      '1979-07-01':
+        metadata:
+          reference: Loi 78-741 du 13/07/1978, art. 35
+        value: null
+      '1980-01-01':
+        metadata:
+          reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+            du 18/01/1980, art. 67 (LF pour 1980)
+        value: null
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
+            3/01/1983, art. 22
+        value: null
+      '1986-01-01':
+        metadata:
+          reference: Loi 85-1321 du 14/12/1985, art. 37
+        value: null
       '1990-06-15':
         metadata:
           reference: Loi 89-935 du 29/12/1989, art. 109 (LF pour 1990) (modif art.
@@ -580,6 +738,14 @@ bons_caisse_banque_bons_tresor_formules_bons_epargne_ptt:
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
       '1979-07-01':
         metadata:
           reference: Loi 78-741 du 13/07/1978, art. 35
@@ -653,6 +819,18 @@ bons_caisse_banque_bons_tresor_formules_bons_epargne_ptt:
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
+      '1979-07-01':
+        metadata:
+          reference: Loi 78-741 du 13/07/1978, art. 35
+        value: null
       '1980-01-01':
         metadata:
           reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
@@ -722,6 +900,18 @@ bons_caisse_banque_bons_tresor_formules_bons_epargne_ptt:
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
+      '1979-07-01':
+        metadata:
+          reference: Loi 78-741 du 13/07/1978, art. 35
+        value: null
       '1980-01-01':
         metadata:
           reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
@@ -791,6 +981,41 @@ bons_caisse_banque_bons_tresor_formules_bons_epargne_ptt:
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
+      '1979-07-01':
+        metadata:
+          reference: Loi 78-741 du 13/07/1978, art. 35
+        value: null
+      '1980-01-01':
+        metadata:
+          reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+            du 18/01/1980, art. 67 (LF pour 1980)
+        value: null
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
+            3/01/1983, art. 22
+        value: null
+      '1986-01-01':
+        metadata:
+          reference: Loi 85-1321 du 14/12/1985, art. 37
+        value: null
+      '1990-06-15':
+        metadata:
+          reference: Loi 89-935 du 29/12/1989, art. 109 (LF pour 1990) (modif art.
+            157 -22° du CGI)
+        value: null
+      '1994-01-01':
+        metadata:
+          reference: Loi 93-1352 du 30/12/1993, art. 79 IV (LF pour 1994)
+        value: null
       '1995-01-01':
         metadata:
           reference: Loi 93-1352 du 30/12/1993, art. 79 I, II et III (LF pour 1994)
@@ -838,6 +1063,57 @@ dividendes:
   metadata:
     unit: /1
   values:
+    '1965-01-01':
+      metadata:
+        reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+      value: null
+    '1974-01-01':
+      metadata:
+        reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+      value: null
+    '1979-07-01':
+      metadata:
+        reference: Loi 78-741 du 13/07/1978, art. 35
+      value: null
+    '1980-01-01':
+      metadata:
+        reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+          du 18/01/1980, art. 67 (LF pour 1980)
+      value: null
+    '1983-01-01':
+      metadata:
+        reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
+          3/01/1983, art. 22
+      value: null
+    '1986-01-01':
+      metadata:
+        reference: Loi 85-1321 du 14/12/1985, art. 37
+      value: null
+    '1990-06-15':
+      metadata:
+        reference: Loi 89-935 du 29/12/1989, art. 109 (LF pour 1990) (modif art. 157
+          -22° du CGI)
+      value: null
+    '1994-01-01':
+      metadata:
+        reference: Loi 93-1352 du 30/12/1993, art. 79 IV (LF pour 1994)
+      value: null
+    '1995-01-01':
+      metadata:
+        reference: Loi 93-1352 du 30/12/1993, art. 79 I, II et III (LF pour 1994)
+      value: null
+    '1997-04-01':
+      metadata:
+        reference: Loi 96-1181 du 30/12/1996, art. 97 (LF pour 1997)
+      value: null
+    '1999-04-01':
+      metadata:
+        reference: Loi 98-1266 du 30/12/1998, art. 6 (LF pour 1999)
+      value: null
+    '2004-01-01':
+      metadata:
+        reference: Loi 2003-1311 du 30/12/2003, art. 12 (LF pour 2004)
+      value: null
     '2008-01-01':
       metadata:
         reference: Loi 2007-1822 du 24/12/2007, art. 10 et 12 (LF pour 2008)
@@ -868,6 +1144,45 @@ emis_partir_1_1_1998_avec_anonymat:
   metadata:
     unit: /1
   values:
+    '1965-01-01':
+      metadata:
+        reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+      value: null
+    '1974-01-01':
+      metadata:
+        reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+      value: null
+    '1979-07-01':
+      metadata:
+        reference: Loi 78-741 du 13/07/1978, art. 35
+      value: null
+    '1980-01-01':
+      metadata:
+        reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+          du 18/01/1980, art. 67 (LF pour 1980)
+      value: null
+    '1983-01-01':
+      metadata:
+        reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
+          3/01/1983, art. 22
+      value: null
+    '1986-01-01':
+      metadata:
+        reference: Loi 85-1321 du 14/12/1985, art. 37
+      value: null
+    '1990-06-15':
+      metadata:
+        reference: Loi 89-935 du 29/12/1989, art. 109 (LF pour 1990) (modif art. 157
+          -22° du CGI)
+      value: null
+    '1994-01-01':
+      metadata:
+        reference: Loi 93-1352 du 30/12/1993, art. 79 IV (LF pour 1994)
+      value: null
+    '1995-01-01':
+      metadata:
+        reference: Loi 93-1352 du 30/12/1993, art. 79 I, II et III (LF pour 1994)
+      value: null
     '1997-04-01':
       metadata:
         reference: Loi 96-1181 du 30/12/1996, art. 97 (LF pour 1997)
@@ -991,6 +1306,61 @@ paiement_produits_dans_etat_non_cooperatif_4:
   metadata:
     unit: /1
   values:
+    '1965-01-01':
+      metadata:
+        reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+      value: null
+    '1974-01-01':
+      metadata:
+        reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+      value: null
+    '1979-07-01':
+      metadata:
+        reference: Loi 78-741 du 13/07/1978, art. 35
+      value: null
+    '1980-01-01':
+      metadata:
+        reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+          du 18/01/1980, art. 67 (LF pour 1980)
+      value: null
+    '1983-01-01':
+      metadata:
+        reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
+          3/01/1983, art. 22
+      value: null
+    '1986-01-01':
+      metadata:
+        reference: Loi 85-1321 du 14/12/1985, art. 37
+      value: null
+    '1990-06-15':
+      metadata:
+        reference: Loi 89-935 du 29/12/1989, art. 109 (LF pour 1990) (modif art. 157
+          -22° du CGI)
+      value: null
+    '1994-01-01':
+      metadata:
+        reference: Loi 93-1352 du 30/12/1993, art. 79 IV (LF pour 1994)
+      value: null
+    '1995-01-01':
+      metadata:
+        reference: Loi 93-1352 du 30/12/1993, art. 79 I, II et III (LF pour 1994)
+      value: null
+    '1997-04-01':
+      metadata:
+        reference: Loi 96-1181 du 30/12/1996, art. 97 (LF pour 1997)
+      value: null
+    '1999-04-01':
+      metadata:
+        reference: Loi 98-1266 du 30/12/1998, art. 6 (LF pour 1999)
+      value: null
+    '2004-01-01':
+      metadata:
+        reference: Loi 2003-1311 du 30/12/2003, art. 12 (LF pour 2004)
+      value: null
+    '2008-01-01':
+      metadata:
+        reference: Loi 2007-1822 du 24/12/2007, art. 10 et 12 (LF pour 2008)
+      value: null
     '2010-03-01':
       metadata:
         reference: Loi 2009-1674 du 30/12/2009, art. 22
@@ -1019,6 +1389,32 @@ plan_epargne_populaire:
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
+      '1979-07-01':
+        metadata:
+          reference: Loi 78-741 du 13/07/1978, art. 35
+        value: null
+      '1980-01-01':
+        metadata:
+          reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+            du 18/01/1980, art. 67 (LF pour 1980)
+        value: null
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
+            3/01/1983, art. 22
+        value: null
+      '1986-01-01':
+        metadata:
+          reference: Loi 85-1321 du 14/12/1985, art. 37
+        value: null
       '1990-06-15':
         metadata:
           reference: Loi 89-935 du 29/12/1989, art. 109 (LF pour 1990) (modif art.
@@ -1064,11 +1460,47 @@ plan_epargne_populaire:
         metadata:
           reference: Loi 2012-1509 du 29/12/2012, art. 9   (LFR pour 2013)
         value: null
+      '2018-01-01':
+        metadata:
+          reference: Loi n°2017-1837 du 30 décembre 2017 - art. 28 (modif art 125
+            A, 125-0 A, 200 A et art 117 quater du CGI)
+        value: null
   retrait_avant_4_ans:
     description: Retrait avant 4 ans
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
+      '1979-07-01':
+        metadata:
+          reference: Loi 78-741 du 13/07/1978, art. 35
+        value: null
+      '1980-01-01':
+        metadata:
+          reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+            du 18/01/1980, art. 67 (LF pour 1980)
+        value: null
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
+            3/01/1983, art. 22
+        value: null
+      '1986-01-01':
+        metadata:
+          reference: Loi 85-1321 du 14/12/1985, art. 37
+        value: null
+      '1990-06-15':
+        metadata:
+          reference: Loi 89-935 du 29/12/1989, art. 109 (LF pour 1990) (modif art.
+            157 -22° du CGI)
+        value: null
       '1994-01-01':
         metadata:
           reference: Loi 93-1352 du 30/12/1993, art. 79 IV (LF pour 1994)
@@ -1093,11 +1525,58 @@ plan_epargne_populaire:
         metadata:
           reference: Loi 2007-1822 du 24/12/2007, art. 10 et 12 (LF pour 2008)
         value: null
+      '2010-03-01':
+        metadata:
+          reference: Loi 2009-1674 du 30/12/2009, art. 22
+        value: null
+      '2011-01-01':
+        metadata:
+          reference: Loi 2010-1657 du 29/12/2010, art. 6 (LF pour 2011)
+        value: null
+      '2012-01-01':
+        metadata:
+          reference: Loi 2011-1978 du 28/12/2011, art. 20 et 59 (LFR pour 2011)
+        value: null
+      '2013-01-01':
+        metadata:
+          reference: Loi 2012-1509 du 29/12/2012, art. 9   (LFR pour 2013)
+        value: null
+      '2018-01-01':
+        metadata:
+          reference: Loi n°2017-1837 du 30 décembre 2017 - art. 28 (modif art 125
+            A, 125-0 A, 200 A et art 117 quater du CGI)
+        value: null
   retrait_entre_4_8_ans:
     description: Retrait entre 4 et 8 ans
     metadata:
       unit: /1
     values:
+      '1965-01-01':
+        metadata:
+          reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+        value: null
+      '1979-07-01':
+        metadata:
+          reference: Loi 78-741 du 13/07/1978, art. 35
+        value: null
+      '1980-01-01':
+        metadata:
+          reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+            du 18/01/1980, art. 67 (LF pour 1980)
+        value: null
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
+            3/01/1983, art. 22
+        value: null
+      '1986-01-01':
+        metadata:
+          reference: Loi 85-1321 du 14/12/1985, art. 37
+        value: null
       '1990-06-15':
         metadata:
           reference: Loi 89-935 du 29/12/1989, art. 109 (LF pour 1990) (modif art.
@@ -1143,11 +1622,67 @@ plan_epargne_populaire:
         metadata:
           reference: Loi 2012-1509 du 29/12/2012, art. 9   (LFR pour 2013)
         value: null
+      '2018-01-01':
+        metadata:
+          reference: Loi n°2017-1837 du 30 décembre 2017 - art. 28 (modif art 125
+            A, 125-0 A, 200 A et art 117 quater du CGI)
+        value: null
 produits_epargne_solidaire_partage:
   description: Produits d'épargne solidaire de partage
   metadata:
     unit: /1
   values:
+    '1965-01-01':
+      metadata:
+        reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+      value: null
+    '1974-01-01':
+      metadata:
+        reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)
+      value: null
+    '1979-07-01':
+      metadata:
+        reference: Loi 78-741 du 13/07/1978, art. 35
+      value: null
+    '1980-01-01':
+      metadata:
+        reference: Loi 79-1102 du 21/12/1979, art. 11 (LFR pour 1979) ; Loi 80-30
+          du 18/01/1980, art. 67 (LF pour 1980)
+      value: null
+    '1983-01-01':
+      metadata:
+        reference: Loi 82-1126 du 29/12/1982, art. 6 (LF pour 1983) ; Loi 83-1 du
+          3/01/1983, art. 22
+      value: null
+    '1986-01-01':
+      metadata:
+        reference: Loi 85-1321 du 14/12/1985, art. 37
+      value: null
+    '1990-06-15':
+      metadata:
+        reference: Loi 89-935 du 29/12/1989, art. 109 (LF pour 1990) (modif art. 157
+          -22° du CGI)
+      value: null
+    '1994-01-01':
+      metadata:
+        reference: Loi 93-1352 du 30/12/1993, art. 79 IV (LF pour 1994)
+      value: null
+    '1995-01-01':
+      metadata:
+        reference: Loi 93-1352 du 30/12/1993, art. 79 I, II et III (LF pour 1994)
+      value: null
+    '1997-04-01':
+      metadata:
+        reference: Loi 96-1181 du 30/12/1996, art. 97 (LF pour 1997)
+      value: null
+    '1999-04-01':
+      metadata:
+        reference: Loi 98-1266 du 30/12/1998, art. 6 (LF pour 1999)
+      value: null
+    '2004-01-01':
+      metadata:
+        reference: Loi 2003-1311 du 30/12/2003, art. 12 (LF pour 2004)
+      value: null
     '2008-01-01':
       metadata:
         reference: Loi 2007-1822 du 24/12/2007, art. 10 et 12 (LF pour 2008)
@@ -1180,6 +1715,10 @@ produits_epargne_solidaire_partage:
   metadata:
     unit: /1
   values:
+    '1965-01-01':
+      metadata:
+        reference: Loi 65-997 du 29/11/1965, art. 57 (LFpour 1966)
+      value: null
     '1974-01-01':
       metadata:
         reference: Loi 73-1150 du 27/12/1973, art. 12-1 (LF pour 1974)

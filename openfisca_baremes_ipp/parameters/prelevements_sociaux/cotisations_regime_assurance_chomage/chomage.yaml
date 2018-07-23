@@ -150,15 +150,34 @@ employeurs:
         metadata:
           reference: Loi 2017-1836 du 30/12/2017, art. 8 (LFSS pour 2018)
         value: 0.0405
-      '2018-10-01':
-        metadata:
-          reference: Loi 2017-1836 du 30/12/2017, art. 8 (LFSS pour 2018)
-        value: 0.0405
   tranche_b:
     description: Tranche B
     metadata:
       unit: /1
     values:
+      '1959-01-01':
+        metadata:
+          reference: Convention du 31/12/1958
+        value: null
+      '1962-01-01':
+        metadata:
+          reference: Décision conseil adm. 27 nov. 1961
+        value: null
+      '1968-01-01':
+        metadata: {}
+        value: null
+      '1973-01-01':
+        metadata:
+          reference: Bureau Unedic du 22 nov. 1971
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Décision du conseil administration du 04/12/1973.
+        value: null
+      '1975-01-01':
+        metadata:
+          reference: Décision du conseil administration du 27/11/1974.
+        value: null
       '1975-07-01':
         metadata:
           reference: Circulaire Unedic 75-22 du 21/05/1975
@@ -274,10 +293,6 @@ employeurs:
             à l'assurance chômage du 14/04/2017 (arrêté ministériel du 04/05/2017)
         value: 0.0405
       '2018-01-01':
-        metadata:
-          reference: Loi 2017-1836 du 30/12/2017, art. 8 (LFSS pour 2018)
-        value: 0.0405
-      '2018-10-01':
         metadata:
           reference: Loi 2017-1836 du 30/12/2017, art. 8 (LFSS pour 2018)
         value: 0.0405
@@ -441,6 +456,29 @@ salaries:
     metadata:
       unit: /1
     values:
+      '1959-01-01':
+        metadata:
+          reference: Convention du 31/12/1958
+        value: null
+      '1962-01-01':
+        metadata:
+          reference: Décision conseil adm. 27 nov. 1961
+        value: null
+      '1968-01-01':
+        metadata: {}
+        value: null
+      '1973-01-01':
+        metadata:
+          reference: Bureau Unedic du 22 nov. 1971
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Décision du conseil administration du 04/12/1973.
+        value: null
+      '1975-01-01':
+        metadata:
+          reference: Décision du conseil administration du 27/11/1974.
+        value: null
       '1975-07-01':
         metadata:
           reference: Circulaire Unedic 75-22 du 21/05/1975

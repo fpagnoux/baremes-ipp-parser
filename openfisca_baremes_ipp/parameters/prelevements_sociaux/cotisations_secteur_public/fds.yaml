@@ -3,6 +3,9 @@ indice_majore_reference:
   description: Indice majoré de référence
   metadata: {}
   values:
+    '1982-11-01':
+      metadata: {}
+      value: null
     '1989-09-01':
       metadata:
         reference: Décret 89-598 du 30/08/1989
@@ -26,10 +29,6 @@ indice_majore_reference:
       metadata:
         reference: Décret 91-1191 du 19/11/1991
       value: 261.0
-    '1991-11-01':
-      metadata:
-        reference: Décret 91-1191 du 19/11/1991
-      value: 261.0
     '1992-02-01':
       metadata:
         reference: Décret 92-107 du 30/01/1992
@@ -43,10 +42,6 @@ indice_majore_reference:
         reference: Décret 93-93 du 25/01/1993
       value: 261.0
     '1994-01-01':
-      metadata:
-        reference: Décret 93-1317 du 20/12/1993
-      value: 261.0
-    '1994-08-01':
       metadata:
         reference: Décret 93-1317 du 20/12/1993
       value: 261.0
@@ -106,10 +101,6 @@ indice_majore_reference:
         reference: Décret 2001-370 du 25/04/2001
       value: 288.0
     '2001-11-01':
-      metadata:
-        reference: Décret  2001-895 du 26/09/2001
-      value: 288.0
-    '2002-01-01':
       metadata:
         reference: Décret  2001-895 du 26/09/2001
       value: 288.0
@@ -193,10 +184,6 @@ indice_majore_reference:
       metadata:
         reference: Décret 2016-670 du 25/05/2016
       value: 309.0
-    '2017-02-01':
-      metadata:
-        reference: Décret 2016-670 du 25/05/2016
-      value: 309.0
     '2018-01-01':
       metadata:
         reference: Loi 2017-1837 du 30/12/2017 (LF pour 2018)
@@ -204,7 +191,7 @@ indice_majore_reference:
 seuil_assujettissement:
   description: Seuil d'assujettissement
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
     '1982-11-01':
       metadata: {}
@@ -466,57 +453,6 @@ taux:
     '1982-11-01':
       metadata: {}
       value: 0.01
-    '1982-12-01':
-      metadata: {}
-      value: 0.01
-    '1983-01-01':
-      metadata: {}
-      value: 0.01
-    '1983-04-04':
-      metadata: {}
-      value: 0.01
-    '1983-07-06':
-      metadata: {}
-      value: 0.01
-    '1983-11-07':
-      metadata: {}
-      value: 0.01
-    '1984-01-08':
-      metadata: {}
-      value: 0.01
-    '1984-04-10':
-      metadata: {}
-      value: 0.01
-    '1984-11-13':
-      metadata: {}
-      value: 0.01
-    '1985-02-14':
-      metadata: {}
-      value: 0.01
-    '1985-07-16':
-      metadata: {}
-      value: 0.01
-    '1985-11-17':
-      metadata: {}
-      value: 0.01
-    '1986-02-18':
-      metadata: {}
-      value: 0.01
-    '1987-03-22':
-      metadata: {}
-      value: 0.01
-    '1987-05-23':
-      metadata: {}
-      value: 0.01
-    '1987-08-24':
-      metadata: {}
-      value: 0.01
-    '1988-03-21':
-      metadata: {}
-      value: 0.01
-    '1988-09-23':
-      metadata: {}
-      value: 0.01
     '1989-09-01':
       metadata:
         reference: Décret 89-598 du 30/08/1989
@@ -540,10 +476,6 @@ taux:
       metadata:
         reference: Décret 91-1191 du 19/11/1991
       value: 0.01
-    '1991-11-01':
-      metadata:
-        reference: Décret 91-1191 du 19/11/1991
-      value: 0.01
     '1992-02-01':
       metadata:
         reference: Décret 92-107 du 30/01/1992
@@ -557,10 +489,6 @@ taux:
         reference: Décret 93-93 du 25/01/1993
       value: 0.01
     '1994-01-01':
-      metadata:
-        reference: Décret 93-1317 du 20/12/1993
-      value: 0.01
-    '1994-08-01':
       metadata:
         reference: Décret 93-1317 du 20/12/1993
       value: 0.01
@@ -620,10 +548,6 @@ taux:
         reference: Décret 2001-370 du 25/04/2001
       value: 0.01
     '2001-11-01':
-      metadata:
-        reference: Décret  2001-895 du 26/09/2001
-      value: 0.01
-    '2002-01-01':
       metadata:
         reference: Décret  2001-895 du 26/09/2001
       value: 0.01
@@ -707,10 +631,6 @@ taux:
       metadata:
         reference: Décret 2016-670 du 25/05/2016
       value: 0.01
-    '2017-02-01':
-      metadata:
-        reference: Décret 2016-670 du 25/05/2016
-      value: 0.01
     '2018-01-01':
       metadata:
         reference: Loi 2017-1837 du 30/12/2017 (LF pour 2018)
@@ -718,8 +638,11 @@ taux:
 traitement_brut_annuel:
   description: Traitement brut annuel
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
+    '1982-11-01':
+      metadata: {}
+      value: null
     '1989-09-01':
       metadata:
         reference: Décret 89-598 du 30/08/1989
@@ -921,8 +844,11 @@ traitement_brut_annuel:
 valeur_annuelle_point_fp:
   description: Valeur annuelle point FP
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
+    '1982-11-01':
+      metadata: {}
+      value: null
     '1989-09-01':
       metadata:
         reference: Décret 89-598 du 30/08/1989

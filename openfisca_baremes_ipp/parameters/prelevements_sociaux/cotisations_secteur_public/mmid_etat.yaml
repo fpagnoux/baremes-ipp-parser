@@ -39,6 +39,26 @@ fp_etat:
           metadata:
             reference: Décret 83-1196 du 30/12/1983
           value: null
+        '1986-01-01':
+          metadata:
+            reference: Décret 85-1354 du 17/12/1985, art. 1
+          value: null
+        '1988-07-01':
+          metadata:
+            reference: Décret 88-795 du 22/06/1988, art. 1
+          value: null
+        '1991-07-01':
+          metadata:
+            reference: Décret 91-615 du 28/06/1991, art. 1
+          value: null
+        '1997-01-01':
+          metadata:
+            reference: Décret 96-1151 du 26/12/1996, art. 6
+          value: null
+        '1998-01-01':
+          metadata:
+            reference: Décret 97-1249 du 29/12/1997, art. 5
+          value: null
     description: Sous PSS
     employeur:
       description: Employeur
@@ -65,10 +85,6 @@ fp_etat:
           metadata:
             reference: Décret 78-1215 du 26/12/1978
           value: 0.055
-        '1980-01-01':
-          metadata:
-            reference: Décret 78-1215 du 26/12/1978
-          value: 0.055
         '1981-11-01':
           metadata:
             reference: Décret 81-1015 du 13/11/1981
@@ -76,6 +92,26 @@ fp_etat:
         '1984-01-01':
           metadata:
             reference: Décret 83-1196 du 30/12/1983
+          value: null
+        '1986-01-01':
+          metadata:
+            reference: Décret 85-1354 du 17/12/1985, art. 1
+          value: null
+        '1988-07-01':
+          metadata:
+            reference: Décret 88-795 du 22/06/1988, art. 1
+          value: null
+        '1991-07-01':
+          metadata:
+            reference: Décret 91-615 du 28/06/1991, art. 1
+          value: null
+        '1997-01-01':
+          metadata:
+            reference: Décret 96-1151 du 26/12/1996, art. 6
+          value: null
+        '1998-01-01':
+          metadata:
+            reference: Décret 97-1249 du 29/12/1997, art. 5
           value: null
   tout_traitement:
     agent:
@@ -158,10 +194,6 @@ fp_etat:
             reference: Décret 76-896 du 29/09/1976
           value: 0.025
         '1979-01-01':
-          metadata:
-            reference: Décret 78-1215 du 26/12/1978
-          value: 0.045
-        '1980-01-01':
           metadata:
             reference: Décret 78-1215 du 26/12/1978
           value: 0.045

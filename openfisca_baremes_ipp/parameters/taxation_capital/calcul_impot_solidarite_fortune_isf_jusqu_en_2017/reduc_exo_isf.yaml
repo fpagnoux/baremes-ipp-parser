@@ -3,6 +3,10 @@ abattement_residence_principale:
   metadata:
     unit: /1
   values:
+    '1989-01-01':
+      metadata:
+        reference: Loi 88-1149 du 23/12/1988, art. 26 (LF  pour 1989)
+      value: null
     '1999-01-01':
       metadata:
         reference: Loi 98-1266 du 30/12/1998, art. 17 (LF pour 1999)
@@ -32,7 +36,7 @@ description: Réductions et abattements de l'ISF
 reduction_isf_enfant_charge:
   description: Réduction ISF enfant à charge
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
     '1989-01-01':
       metadata:
@@ -57,4 +61,9 @@ reduction_isf_enfant_charge:
     '2013-01-01':
       metadata:
         reference: Loi 2012-1509 du 29/12/2012, art. 13 (LF pour 2013)
+      value: null
+    '2018-01-01':
+      metadata:
+        reference: Loi 2017-1837 du 30/12/2017, art. 31 (LF pour 2018) (abroge art.
+          885 S du CGI)
       value: null

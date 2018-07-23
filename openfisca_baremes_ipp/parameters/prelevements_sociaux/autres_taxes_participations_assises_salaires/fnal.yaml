@@ -6,6 +6,10 @@ entreprises_plus_20_salaries:
     metadata:
       unit: /1
     values:
+      '1972-07-01':
+        metadata:
+          reference: Décret 72-526 du 29/06/1972, art. 29
+        value: null
       '1986-01-01':
         metadata:
           reference: Loi 86-1317 du 30/12/1986, art. 82-II et III. (LF pour 1986)
@@ -31,6 +35,10 @@ entreprises_plus_20_salaries:
     metadata:
       unit: /1
     values:
+      '1972-07-01':
+        metadata:
+          reference: Décret 72-526 du 29/06/1972, art. 29
+        value: null
       '1986-01-01':
         metadata:
           reference: Loi 86-1317 du 30/12/1986, art. 82-II et III. (LF pour 1986)

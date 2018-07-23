@@ -41,6 +41,22 @@ bons_contrats_capitalisation_placements_meme_nature_assurance_vie_lors_denouemen
     metadata:
       unit: /1
     values:
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 14 (LF pour 1983)
+        value: null
+      '1990-01-01':
+        metadata:
+          reference: Loi 89-936 du 29/12/1989, art. 112 (LF pour 1990)
+        value: null
+      '1998-01-01':
+        metadata:
+          reference: Loi 97-1269 du 30/12/1997, art. 21 (LF pour 1998)
+        value: null
+      '1999-04-01':
+        metadata:
+          reference: Loi 98-1266 du 30/12/1998, art. 6 (LF pour 1999)
+        value: null
       '2010-03-01':
         metadata:
           reference: Loi 2009-1674 du 30/12/2009, art. 22
@@ -60,6 +76,10 @@ bons_contrats_capitalisation_placements_meme_nature_assurance_vie_lors_denouemen
       metadata:
         unit: /1
       values:
+        '1983-01-01':
+          metadata:
+            reference: Loi 82-1126 du 29/12/1982, art. 14 (LF pour 1983)
+          value: null
         '1990-01-01':
           metadata:
             reference: Loi 89-936 du 29/12/1989, art. 112 (LF pour 1990)
@@ -91,6 +111,10 @@ bons_contrats_capitalisation_placements_meme_nature_assurance_vie_lors_denouemen
       metadata:
         unit: /1
       values:
+        '1983-01-01':
+          metadata:
+            reference: Loi 82-1126 du 29/12/1982, art. 14 (LF pour 1983)
+          value: null
         '1990-01-01':
           metadata:
             reference: Loi 89-936 du 29/12/1989, art. 112 (LF pour 1990)
@@ -122,6 +146,14 @@ bons_contrats_capitalisation_placements_meme_nature_assurance_vie_lors_denouemen
       metadata:
         unit: /1
       values:
+        '1983-01-01':
+          metadata:
+            reference: Loi 82-1126 du 29/12/1982, art. 14 (LF pour 1983)
+          value: null
+        '1990-01-01':
+          metadata:
+            reference: Loi 89-936 du 29/12/1989, art. 112 (LF pour 1990)
+          value: null
         '1998-01-01':
           metadata:
             reference: Loi 97-1269 du 30/12/1997, art. 21 (LF pour 1998)
@@ -149,6 +181,10 @@ bons_contrats_capitalisation_placements_meme_nature_assurance_vie_lors_denouemen
       metadata:
         unit: /1
       values:
+        '1983-01-01':
+          metadata:
+            reference: Loi 82-1126 du 29/12/1982, art. 14 (LF pour 1983)
+          value: null
         '1990-01-01':
           metadata:
             reference: Loi 89-936 du 29/12/1989, art. 112 (LF pour 1990)
@@ -192,6 +228,23 @@ bons_contrats_capitalisation_placements_meme_nature_assurance_vie_lors_denouemen
           metadata:
             reference: Loi 97-1269 du 30/12/1997, art. 21 (LF pour 1998)
           value: null
+        '1999-04-01':
+          metadata:
+            reference: Loi 98-1266 du 30/12/1998, art. 6 (LF pour 1999)
+          value: null
+        '2010-03-01':
+          metadata:
+            reference: Loi 2009-1674 du 30/12/2009, art. 22
+          value: null
+        '2013-01-01':
+          metadata:
+            reference: Loi 2012-1509 du 29/12/2012, art. 9
+          value: null
+        '2018-01-01':
+          metadata:
+            reference: Loi n°2017-1837 du 30 décembre 2017 - art. 28 (modif art 125
+              A, 125-0 A, 200 A et art 117 quater du CGI)
+          value: null
     4_6_ans_4:
       description: '4 à 6 ans
 
@@ -210,6 +263,23 @@ bons_contrats_capitalisation_placements_meme_nature_assurance_vie_lors_denouemen
         '1998-01-01':
           metadata:
             reference: Loi 97-1269 du 30/12/1997, art. 21 (LF pour 1998)
+          value: null
+        '1999-04-01':
+          metadata:
+            reference: Loi 98-1266 du 30/12/1998, art. 6 (LF pour 1999)
+          value: null
+        '2010-03-01':
+          metadata:
+            reference: Loi 2009-1674 du 30/12/2009, art. 22
+          value: null
+        '2013-01-01':
+          metadata:
+            reference: Loi 2012-1509 du 29/12/2012, art. 9
+          value: null
+        '2018-01-01':
+          metadata:
+            reference: Loi n°2017-1837 du 30 décembre 2017 - art. 28 (modif art 125
+              A, 125-0 A, 200 A et art 117 quater du CGI)
           value: null
     6_ans_plus_primes_versees_avant_01_01_1998_produits_afferents_acquis_apres_cette_date:
       description: 6 ans et plus (pour les primes versées avant le 01/01/1998 et les
@@ -252,6 +322,14 @@ bons_contrats_capitalisation_placements_meme_nature_assurance_vie_lors_denouemen
       metadata:
         unit: /1
       values:
+        '1983-01-01':
+          metadata:
+            reference: Loi 82-1126 du 29/12/1982, art. 14 (LF pour 1983)
+          value: null
+        '1990-01-01':
+          metadata:
+            reference: Loi 89-936 du 29/12/1989, art. 112 (LF pour 1990)
+          value: null
         '1998-01-01':
           metadata:
             reference: Loi 97-1269 du 30/12/1997, art. 21 (LF pour 1998)
@@ -290,5 +368,22 @@ bons_contrats_capitalisation_placements_meme_nature_assurance_vie_lors_denouemen
         '1998-01-01':
           metadata:
             reference: Loi 97-1269 du 30/12/1997, art. 21 (LF pour 1998)
+          value: null
+        '1999-04-01':
+          metadata:
+            reference: Loi 98-1266 du 30/12/1998, art. 6 (LF pour 1999)
+          value: null
+        '2010-03-01':
+          metadata:
+            reference: Loi 2009-1674 du 30/12/2009, art. 22
+          value: null
+        '2013-01-01':
+          metadata:
+            reference: Loi 2012-1509 du 29/12/2012, art. 9
+          value: null
+        '2018-01-01':
+          metadata:
+            reference: Loi n°2017-1837 du 30 décembre 2017 - art. 28 (modif art 125
+              A, 125-0 A, 200 A et art 117 quater du CGI)
           value: null
 description: Prélèvement libératoire sur les assurances vie

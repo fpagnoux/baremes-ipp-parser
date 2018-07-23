@@ -43,6 +43,12 @@ cotisation_base:
   metadata:
     unit: /1
   values:
+    '2015-01-01':
+      metadata:
+        reference: Loi 2014-40 du 20/01/2014 (voir Notes). Loi 2015-994 du 17/08/2015.  Décret
+          2016-953 du 11/07/2016 (cotisations additionnelles). Décret 2014-1157 du
+          9/10/2014 (cotisation de base)
+      value: null
     '2017-01-01':
       metadata:
         reference: Décret 2016-953 du 11/07/2016 (cotisations additionnelles). Décret

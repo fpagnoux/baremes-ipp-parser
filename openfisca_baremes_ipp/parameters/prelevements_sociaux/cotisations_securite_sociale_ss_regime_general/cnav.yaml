@@ -4,6 +4,46 @@ remise_forfaitaire_mensuelle_cotisation_salariale:
   metadata:
     unit: currency-FRF
   values:
+    '1967-10-01':
+      metadata:
+        reference: Décret 67-803 du 20/09/1967
+      value: null
+    '1970-08-01':
+      metadata:
+        reference: Décret 70-680 du 30/07/1970
+      value: null
+    '1974-01-01':
+      metadata:
+        reference: Décret 73-1209 du 29/12/1973
+      value: null
+    '1976-01-01':
+      metadata:
+        reference: Décret 75-1273 du 29/12/1975
+      value: null
+    '1976-10-01':
+      metadata:
+        reference: Décret 76-894 du 29/09/1976
+      value: null
+    '1979-01-01':
+      metadata:
+        reference: Décret 78-1213 du 26/12/1978
+      value: null
+    '1984-01-01':
+      metadata:
+        reference: Décret 83-1198 du 30/12/1983
+      value: null
+    '1986-08-01':
+      metadata:
+        reference: Décret 86-876 du 29/07/1986
+      value: null
+    '1987-07-01':
+      metadata:
+        reference: Décret 87-453 du 29/06/1987
+      value: null
+    '1989-01-01':
+      metadata:
+        reference: Décret 88-1234 du 30/12/1988
+      value: null
     '1991-02-01':
       metadata:
         reference: Décret 91-91 du 23/01/1991
@@ -11,6 +51,26 @@ remise_forfaitaire_mensuelle_cotisation_salariale:
     '1995-09-01':
       metadata:
         reference: Loi 95-882 du 04/08/1995, art. 5
+      value: null
+    '2004-07-01':
+      metadata:
+        reference: Décret 2004-858 du 24/08/2004, art. 1
+      value: null
+    '2006-01-01':
+      metadata:
+        reference: Décret 2005-1657 du 26/12/2005
+      value: null
+    '2012-11-01':
+      metadata:
+        reference: Décret 2012-847 du 02/07/2012, art. 5
+      value: null
+    '2014-01-01':
+      metadata:
+        reference: Décret 2013-1290 du 27/12/2013
+      value: null
+    '2015-01-01':
+      metadata:
+        reference: Décret 2014-1531 du 17/12/2014, art. 4
       value: null
 salaire_sous_plafond:
   description: Salaire sous plafond
@@ -91,10 +151,6 @@ salaire_sous_plafond:
         metadata:
           reference: Décret 2014-1531 du 17/12/2014, art. 4
         value: 0.0855
-      '2017-01-01':
-        metadata:
-          reference: Décret 2014-1531 du 17/12/2014, art. 4
-        value: 0.0855
   salaries:
     description: Salariés
     metadata:
@@ -172,10 +228,6 @@ salaire_sous_plafond:
         metadata:
           reference: Décret 2014-1531 du 17/12/2014, art. 4
         value: 0.069
-      '2017-01-01':
-        metadata:
-          reference: Décret 2014-1531 du 17/12/2014, art. 4
-        value: 0.069
 tout_salaire:
   description: Sur tout salaire
   employeurs:
@@ -183,6 +235,46 @@ tout_salaire:
     metadata:
       unit: /1
     values:
+      '1967-10-01':
+        metadata:
+          reference: Décret 67-803 du 20/09/1967
+        value: null
+      '1970-08-01':
+        metadata:
+          reference: Décret 70-680 du 30/07/1970
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Décret 73-1209 du 29/12/1973
+        value: null
+      '1976-01-01':
+        metadata:
+          reference: Décret 75-1273 du 29/12/1975
+        value: null
+      '1976-10-01':
+        metadata:
+          reference: Décret 76-894 du 29/09/1976
+        value: null
+      '1979-01-01':
+        metadata:
+          reference: Décret 78-1213 du 26/12/1978
+        value: null
+      '1984-01-01':
+        metadata:
+          reference: Décret 83-1198 du 30/12/1983
+        value: null
+      '1986-08-01':
+        metadata:
+          reference: Décret 86-876 du 29/07/1986
+        value: null
+      '1987-07-01':
+        metadata:
+          reference: Décret 87-453 du 29/06/1987
+        value: null
+      '1989-01-01':
+        metadata:
+          reference: Décret 88-1234 du 30/12/1988
+        value: null
       '1991-02-01':
         metadata:
           reference: Décret 91-91 du 23/01/1991
@@ -224,6 +316,54 @@ tout_salaire:
     metadata:
       unit: /1
     values:
+      '1967-10-01':
+        metadata:
+          reference: Décret 67-803 du 20/09/1967
+        value: null
+      '1970-08-01':
+        metadata:
+          reference: Décret 70-680 du 30/07/1970
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Décret 73-1209 du 29/12/1973
+        value: null
+      '1976-01-01':
+        metadata:
+          reference: Décret 75-1273 du 29/12/1975
+        value: null
+      '1976-10-01':
+        metadata:
+          reference: Décret 76-894 du 29/09/1976
+        value: null
+      '1979-01-01':
+        metadata:
+          reference: Décret 78-1213 du 26/12/1978
+        value: null
+      '1984-01-01':
+        metadata:
+          reference: Décret 83-1198 du 30/12/1983
+        value: null
+      '1986-08-01':
+        metadata:
+          reference: Décret 86-876 du 29/07/1986
+        value: null
+      '1987-07-01':
+        metadata:
+          reference: Décret 87-453 du 29/06/1987
+        value: null
+      '1989-01-01':
+        metadata:
+          reference: Décret 88-1234 du 30/12/1988
+        value: null
+      '1991-02-01':
+        metadata:
+          reference: Décret 91-91 du 23/01/1991
+        value: null
+      '1995-09-01':
+        metadata:
+          reference: Loi 95-882 du 04/08/1995, art. 5
+        value: null
       '2004-07-01':
         metadata:
           reference: Décret 2004-858 du 24/08/2004, art. 1

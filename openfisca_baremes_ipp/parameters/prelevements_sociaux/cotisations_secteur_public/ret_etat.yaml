@@ -5,6 +5,9 @@ taux_employeur_explicite:
     metadata:
       unit: /1
     values:
+      '1995-01-01':
+        metadata: {}
+        value: null
       '2006-01-01':
         metadata:
           reference: Décret 2006-23 du 05/01/2006
@@ -55,6 +58,9 @@ taux_employeur_explicite:
     metadata:
       unit: /1
     values:
+      '1995-01-01':
+        metadata: {}
+        value: null
       '2006-01-01':
         metadata:
           reference: Décret 2006-23 du 05/01/2006
@@ -104,6 +110,9 @@ taux_employeur_explicite:
     metadata:
       unit: /1
     values:
+      '1995-01-01':
+        metadata: {}
+        value: null
       '2006-01-01':
         metadata:
           reference: Décret 2006-23 du 05/01/2006
@@ -162,9 +171,6 @@ taux_implicite:
     '1997-01-01':
       metadata: {}
       value: 0.474
-    '1998-01-01':
-      metadata: {}
-      value: 0.474
     '1999-01-01':
       metadata: {}
       value: 0.486
@@ -189,4 +195,44 @@ taux_implicite:
     '2006-01-01':
       metadata:
         reference: Décret 2006-23 du 05/01/2006
+      value: null
+    '2007-01-01':
+      metadata:
+        reference: Décret 2006-1798 du 23/12/2006
+      value: null
+    '2008-01-01':
+      metadata:
+        reference: Décret 2008-53 du 15/01/2008
+      value: null
+    '2009-01-01':
+      metadata:
+        reference: Décret 2008-1534 du 22/12/2008
+      value: null
+    '2009-12-01':
+      metadata:
+        reference: Décret 2009-1599 du 18/12/2009
+      value: null
+    '2010-01-01':
+      metadata:
+        reference: Décret 2010-53 du 14/01/2010
+      value: null
+    '2011-01-01':
+      metadata:
+        reference: Décret 2011-11 du 04/01/2011
+      value: null
+    '2012-01-01':
+      metadata:
+        reference: Décret 2011-2037 du 29/12/2011
+      value: null
+    '2013-01-01':
+      metadata:
+        reference: Décret 2012-1507 du 27/12/2012
+      value: null
+    '2013-12-01':
+      metadata:
+        reference: Décret 2013-1064 du 25/11/2013
+      value: null
+    '2014-01-01':
+      metadata:
+        reference: Décret 2012-1507 du 27/12/2012
       value: null

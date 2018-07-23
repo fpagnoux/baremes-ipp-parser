@@ -58,10 +58,6 @@ regime_prevoyance:
         metadata:
           reference: Décret 2014-1531 du 17/12/2014, art. 10
         value: 0.096
-      '2017-01-01':
-        metadata:
-          reference: Décret 2014-1531 du 17/12/2014, art. 10
-        value: 0.096
       '2017-05-01':
         metadata:
           reference: Décret 2014-1531 du 17/12/2014, art. 10 (taux employés). Décret
@@ -71,6 +67,10 @@ regime_prevoyance:
         metadata:
           reference: Décret 2014-1531 du 17/12/2014, art. 10 (taux employés). Décret
             2017-691 du 2/05/2017 (taux employeur T2).
+        value: null
+      '2019-01-01':
+        metadata:
+          reference: Décret 2014-1531 du 17/12/2014, art. 10 (taux employés).
         value: null
   salaries:
     description: Salariés
@@ -129,10 +129,6 @@ regime_prevoyance:
         metadata:
           reference: Décret 2014-1531 du 17/12/2014, art. 10
         value: 0.0015
-      '2017-01-01':
-        metadata:
-          reference: Décret 2014-1531 du 17/12/2014, art. 10
-        value: 0.0015
       '2017-05-01':
         metadata:
           reference: Décret 2014-1531 du 17/12/2014, art. 10 (taux employés). Décret
@@ -142,6 +138,10 @@ regime_prevoyance:
         metadata:
           reference: Décret 2014-1531 du 17/12/2014, art. 10 (taux employés). Décret
             2017-691 du 2/05/2017 (taux employeur T2).
+        value: null
+      '2019-01-01':
+        metadata:
+          reference: Décret 2014-1531 du 17/12/2014, art. 10 (taux employés).
         value: null
 regime_retraite:
   cotisations_employes:
@@ -321,6 +321,10 @@ regime_retraite:
             reference: Décret 2014-1531 du 17/12/2014, art. 10 (taux employés). Décret
               2017-691 du 2/05/2017 (taux employeur T2).
           value: null
+        '2019-01-01':
+          metadata:
+            reference: Décret 2014-1531 du 17/12/2014, art. 10 (taux employés).
+          value: null
     t2:
       description: T2
       metadata:
@@ -384,11 +388,6 @@ regime_retraite:
             reference: Décret 2014-1531 du 17/12/2014, art. 10
           value: 0.1185
         '2017-05-01':
-          metadata:
-            reference: Décret 2014-1531 du 17/12/2014, art. 10 (taux employés). Décret
-              2017-691 du 2/05/2017 (taux employeur T2).
-          value: 0.1385
-        '2018-01-01':
           metadata:
             reference: Décret 2014-1531 du 17/12/2014, art. 10 (taux employés). Décret
               2017-691 du 2/05/2017 (taux employeur T2).

@@ -90,6 +90,10 @@ tranche_c:
     metadata:
       unit: /1
     values:
+      '2001-04-01':
+        metadata:
+          reference: Accord Arrco-Agirc du 10/02/2001 (ch. III) et du 12/11/2003
+        value: null
       '2016-01-01':
         metadata:
           reference: Accord Arrco-Agirc du 30/10/2015 (art.3)
@@ -99,6 +103,10 @@ tranche_c:
     metadata:
       unit: /1
     values:
+      '2001-04-01':
+        metadata:
+          reference: Accord Arrco-Agirc du 10/02/2001 (ch. III) et du 12/11/2003
+        value: null
       '2016-01-01':
         metadata:
           reference: Accord Arrco-Agirc du 30/10/2015 (art.3)

@@ -3,11 +3,31 @@ bourg_en_bresse:
   metadata:
     unit: /1
   values:
-    '1983-07-01':
+    '1971-09-01':
+      metadata:
+        reference: Loi 71-559 du 12/07/1971; Décret 71-710 du 30/08/1971
+      value: null
+    '1974-01-01':
+      metadata:
+        reference: Loi 73-640 du 11/07/1973, art. 1; décret 74-66 du 29/01/1974
+      value: null
+    '1975-01-01':
+      metadata:
+        reference: Décret 74-933 du 07/11/1974
+      value: null
+    '1975-07-01':
+      metadata:
+        reference: Décret 75-533 du 27/06/1975
+      value: null
+    '1975-08-01':
+      metadata:
+        reference: Loi 75-580 du 5/07/1975; Décret 75-784 du 22/08/1975
+      value: null
+    '1977-01-01':
       metadata:
         reference: Référence manquante
-      value: 0.005
-    '1986-04-01':
+      value: null
+    '1983-07-01':
       metadata:
         reference: Référence manquante
       value: 0.005
@@ -16,10 +36,6 @@ bourg_en_bresse:
         reference: Loi 88-1193 du 29/12/1988 - art. 45
       value: 0.005
     '1989-09-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.005
-    '1991-04-01':
       metadata:
         reference: Référence manquante
       value: 0.005
@@ -51,10 +67,6 @@ bourg_en_bresse:
       metadata:
         reference: Référence manquante
       value: 0.005
-    '2001-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.005
     '2003-01-01':
       metadata:
         reference: Lettre circulaire URSSAF 2002-218
@@ -76,10 +88,6 @@ bourg_en_bresse:
       metadata:
         reference: Référence manquante
       value: 0.006
-    '2011-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.006
     '2011-07-01':
       metadata:
         reference: Lettre circulaire ACOSS 2011-0000075
@@ -96,10 +104,6 @@ bourg_en_bresse:
       metadata: {}
       value: 0.0075
     '2015-07-01':
-      metadata:
-        reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
-      value: 0.0075
-    '2016-01-01':
       metadata:
         reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
       value: 0.0075
@@ -121,6 +125,22 @@ essonne:
   metadata:
     unit: /1
   values:
+    '1971-09-01':
+      metadata:
+        reference: Loi 71-559 du 12/07/1971; Décret 71-710 du 30/08/1971
+      value: null
+    '1974-01-01':
+      metadata:
+        reference: Loi 73-640 du 11/07/1973, art. 1; décret 74-66 du 29/01/1974
+      value: null
+    '1975-01-01':
+      metadata:
+        reference: Décret 74-933 du 07/11/1974
+      value: null
+    '1975-07-01':
+      metadata:
+        reference: Décret 75-533 du 27/06/1975
+      value: null
     '1975-08-01':
       metadata:
         reference: Loi 75-580 du 5/07/1975; Décret 75-784 du 22/08/1975
@@ -133,23 +153,11 @@ essonne:
       metadata:
         reference: Référence manquante
       value: 0.012
-    '1983-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.012
-    '1986-04-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.012
     '1989-01-01':
       metadata:
         reference: Loi 88-1193 du 29/12/1988 - art. 45
       value: 0.015
     '1989-09-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.015
-    '1991-04-01':
       metadata:
         reference: Référence manquante
       value: 0.015
@@ -181,10 +189,6 @@ essonne:
       metadata:
         reference: Référence manquante
       value: 0.013
-    '2001-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.013
     '2003-01-01':
       metadata:
         reference: Lettre circulaire URSSAF 2002-218
@@ -206,10 +210,6 @@ essonne:
       metadata:
         reference: Référence manquante
       value: 0.014
-    '2011-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.014
     '2011-07-01':
       metadata:
         reference: Lettre circulaire ACOSS 2011-0000075
@@ -226,10 +226,6 @@ essonne:
       metadata: {}
       value: 0.017
     '2015-07-01':
-      metadata:
-        reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
-      value: 0.0191
-    '2016-01-01':
       metadata:
         reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
       value: 0.0191
@@ -278,23 +274,11 @@ hauts_seine:
       metadata:
         reference: Référence manquante
       value: 0.02
-    '1983-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.02
-    '1986-04-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.02
     '1989-01-01':
       metadata:
         reference: Loi 88-1193 du 29/12/1988 - art. 45
       value: 0.022
     '1989-09-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.022
-    '1991-04-01':
       metadata:
         reference: Référence manquante
       value: 0.022
@@ -326,10 +310,6 @@ hauts_seine:
       metadata:
         reference: Référence manquante
       value: 0.025
-    '2001-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.025
     '2003-01-01':
       metadata:
         reference: Lettre circulaire URSSAF 2002-218
@@ -348,10 +328,6 @@ hauts_seine:
         reference: Lettre circulaire URSSAF 2006-106
       value: 0.026
     '2008-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.026
-    '2011-01-01':
       metadata:
         reference: Référence manquante
       value: 0.026
@@ -374,10 +350,6 @@ hauts_seine:
       metadata:
         reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
       value: 0.0285
-    '2016-01-01':
-      metadata:
-        reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
-      value: 0.0285
     '2017-01-01':
       metadata:
         reference: Loi 2016-1917 du 29/12/2016 (LF pour 2017), art. 91
@@ -395,6 +367,10 @@ lyon:
   metadata:
     unit: /1
   values:
+    '1971-09-01':
+      metadata:
+        reference: Loi 71-559 du 12/07/1971; Décret 71-710 du 30/08/1971
+      value: null
     '1974-01-01':
       metadata:
         reference: Loi 73-640 du 11/07/1973, art. 1; décret 74-66 du 29/01/1974
@@ -415,27 +391,11 @@ lyon:
       metadata:
         reference: Référence manquante
       value: 0.015
-    '1979-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.015
-    '1983-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.015
-    '1986-04-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.015
     '1989-01-01':
       metadata:
         reference: Loi 88-1193 du 29/12/1988 - art. 45
       value: 0.015
     '1989-09-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.0175
-    '1991-04-01':
       metadata:
         reference: Référence manquante
       value: 0.0175
@@ -467,10 +427,6 @@ lyon:
       metadata:
         reference: Référence manquante
       value: 0.0163
-    '2001-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.0163
     '2003-01-01':
       metadata:
         reference: Lettre circulaire URSSAF 2002-218
@@ -489,10 +445,6 @@ lyon:
         reference: Lettre circulaire URSSAF 2006-106
       value: 0.0175
     '2008-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.0175
-    '2011-01-01':
       metadata:
         reference: Référence manquante
       value: 0.0175
@@ -536,6 +488,10 @@ marseille:
   metadata:
     unit: /1
   values:
+    '1971-09-01':
+      metadata:
+        reference: Loi 71-559 du 12/07/1971; Décret 71-710 du 30/08/1971
+      value: null
     '1974-01-01':
       metadata:
         reference: Loi 73-640 du 11/07/1973, art. 1; décret 74-66 du 29/01/1974
@@ -556,27 +512,11 @@ marseille:
       metadata:
         reference: Référence manquante
       value: 0.015
-    '1979-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.015
-    '1983-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.015
-    '1986-04-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.015
     '1989-01-01':
       metadata:
         reference: Loi 88-1193 du 29/12/1988 - art. 45
       value: 0.0175
     '1989-09-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.0175
-    '1991-04-01':
       metadata:
         reference: Référence manquante
       value: 0.0175
@@ -605,10 +545,6 @@ marseille:
         reference: Décret 96-17 du 10/01/1996
       value: 0.0175
     '2001-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.018
-    '2001-07-01':
       metadata:
         reference: Référence manquante
       value: 0.018
@@ -653,10 +589,6 @@ marseille:
       metadata: {}
       value: 0.02
     '2015-07-01':
-      metadata:
-        reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
-      value: 0.02
-    '2016-01-01':
       metadata:
         reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
       value: 0.02
@@ -705,23 +637,11 @@ paris:
       metadata:
         reference: Référence manquante
       value: 0.02
-    '1983-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.02
-    '1986-04-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.02
     '1989-01-01':
       metadata:
         reference: Loi 88-1193 du 29/12/1988 - art. 45
       value: 0.022
     '1989-09-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.022
-    '1991-04-01':
       metadata:
         reference: Référence manquante
       value: 0.022
@@ -753,10 +673,6 @@ paris:
       metadata:
         reference: Référence manquante
       value: 0.025
-    '2001-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.025
     '2003-01-01':
       metadata:
         reference: Lettre circulaire URSSAF 2002-218
@@ -778,10 +694,6 @@ paris:
       metadata:
         reference: Référence manquante
       value: 0.026
-    '2011-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.026
     '2011-07-01':
       metadata:
         reference: Lettre circulaire ACOSS 2011-0000075
@@ -798,10 +710,6 @@ paris:
       metadata: {}
       value: 0.027
     '2015-07-01':
-      metadata:
-        reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
-      value: 0.0285
-    '2016-01-01':
       metadata:
         reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
       value: 0.0285
@@ -850,23 +758,11 @@ seine_saint_denis:
       metadata:
         reference: Référence manquante
       value: 0.02
-    '1983-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.02
-    '1986-04-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.02
     '1989-01-01':
       metadata:
         reference: Loi 88-1193 du 29/12/1988 - art. 45
       value: 0.018
     '1989-09-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.018
-    '1991-04-01':
       metadata:
         reference: Référence manquante
       value: 0.018
@@ -898,10 +794,6 @@ seine_saint_denis:
       metadata:
         reference: Référence manquante
       value: 0.016
-    '2001-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.016
     '2003-01-01':
       metadata:
         reference: Lettre circulaire URSSAF 2002-218
@@ -920,10 +812,6 @@ seine_saint_denis:
         reference: Lettre circulaire URSSAF 2006-106
       value: 0.017
     '2008-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.017
-    '2011-01-01':
       metadata:
         reference: Référence manquante
       value: 0.017
@@ -946,10 +834,6 @@ seine_saint_denis:
       metadata:
         reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
       value: 0.0191
-    '2016-01-01':
-      metadata:
-        reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
-      value: 0.0191
     '2017-01-01':
       metadata:
         reference: Loi 2016-1917 du 29/12/2016 (LF pour 2017), art. 91
@@ -969,6 +853,10 @@ taux_maximal_hors_ile_france:
     metadata:
       unit: /1
     values:
+      '1971-09-01':
+        metadata:
+          reference: Loi 71-559 du 12/07/1971; Décret 71-710 du 30/08/1971
+        value: null
       '1974-01-01':
         metadata:
           reference: Loi 73-640 du 11/07/1973, art. 1; décret 74-66 du 29/01/1974
@@ -989,27 +877,11 @@ taux_maximal_hors_ile_france:
         metadata:
           reference: Référence manquante
         value: 0.015
-      '1979-01-01':
-        metadata:
-          reference: Référence manquante
-        value: 0.015
-      '1983-07-01':
-        metadata:
-          reference: Référence manquante
-        value: 0.015
-      '1986-04-01':
-        metadata:
-          reference: Référence manquante
-        value: 0.015
       '1989-01-01':
         metadata:
           reference: Loi 88-1193 du 29/12/1988 - art. 45
         value: 0.015
       '1989-09-01':
-        metadata:
-          reference: Référence manquante
-        value: 0.0175
-      '1991-04-01':
         metadata:
           reference: Référence manquante
         value: 0.0175
@@ -1025,11 +897,119 @@ taux_maximal_hors_ile_france:
         metadata:
           reference: Loi 92-1376 du 30/12/1992, art. 115
         value: null
+      '1994-01-01':
+        metadata:
+          reference: Référence manquante
+        value: null
+      '1996-01-01':
+        metadata:
+          reference: Loi 95-1346 - art. 96 du 30/12/1995
+        value: null
+      '1996-02-01':
+        metadata:
+          reference: Décret 96-17 du 10/01/1996
+        value: null
+      '2001-01-01':
+        metadata:
+          reference: Référence manquante
+        value: null
+      '2003-01-01':
+        metadata:
+          reference: Lettre circulaire URSSAF 2002-218
+        value: null
+      '2004-01-01':
+        metadata:
+          reference: "Loi 2003-1311 du 30/12/2003 (LF pour 2004), art. 132 ; \nDécret\
+            \ 2003-1385 du 31/12/2003"
+        value: null
+      '2004-07-01':
+        metadata:
+          reference: Lettre circulaire URSSAF 2004-102
+        value: null
+      '2007-01-01':
+        metadata:
+          reference: Lettre circulaire URSSAF 2006-106
+        value: null
+      '2008-01-01':
+        metadata:
+          reference: Référence manquante
+        value: null
+      '2011-07-01':
+        metadata:
+          reference: Lettre circulaire ACOSS 2011-0000075
+        value: null
+      '2013-01-01':
+        metadata:
+          reference: Loi 2012-1509 du 29/12/2012 - art. 84
+        value: null
+      '2013-07-01':
+        metadata:
+          reference: Lettre circulaire ACOSS n° 2013 - 0000046 du 30/05/2013
+        value: null
+      '2014-07-01':
+        metadata: {}
+        value: null
+      '2015-07-01':
+        metadata:
+          reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
+        value: null
+      '2017-01-01':
+        metadata:
+          reference: Loi 2016-1917 du 29/12/2016 (LF pour 2017), art. 91
+        value: null
+      '2017-07-01':
+        metadata:
+          reference: Lettre circulaire ACOSS 2016­0000014 du 24/05/2016
+        value: null
+      '2018-01-01':
+        metadata:
+          reference: Loi 2017-1837 du 30/12/2017 (LF pour 2018), art. 99
+        value: null
   tout_salaire:
     description: Tout salaire
     metadata:
       unit: /1
     values:
+      '1971-09-01':
+        metadata:
+          reference: Loi 71-559 du 12/07/1971; Décret 71-710 du 30/08/1971
+        value: null
+      '1974-01-01':
+        metadata:
+          reference: Loi 73-640 du 11/07/1973, art. 1; décret 74-66 du 29/01/1974
+        value: null
+      '1975-01-01':
+        metadata:
+          reference: Décret 74-933 du 07/11/1974
+        value: null
+      '1975-07-01':
+        metadata:
+          reference: Décret 75-533 du 27/06/1975
+        value: null
+      '1975-08-01':
+        metadata:
+          reference: Loi 75-580 du 5/07/1975; Décret 75-784 du 22/08/1975
+        value: null
+      '1977-01-01':
+        metadata:
+          reference: Référence manquante
+        value: null
+      '1989-01-01':
+        metadata:
+          reference: Loi 88-1193 du 29/12/1988 - art. 45
+        value: null
+      '1989-09-01':
+        metadata:
+          reference: Référence manquante
+        value: null
+      '1991-07-19':
+        metadata:
+          reference: Loi 91-662 du 13/07/1991 - art. 36
+        value: null
+      '1993-01-01':
+        metadata:
+          reference: Loi 92-1376 du 30/12/1992 (LF pour 1993), art. 115
+        value: null
       '1993-04-01':
         metadata:
           reference: Loi 92-1376 du 30/12/1992, art. 115
@@ -1047,10 +1027,6 @@ taux_maximal_hors_ile_france:
           reference: Décret 96-17 du 10/01/1996
         value: 0.0163
       '2001-01-01':
-        metadata:
-          reference: Référence manquante
-        value: 0.0163
-      '2001-07-01':
         metadata:
           reference: Référence manquante
         value: 0.0163
@@ -1075,10 +1051,6 @@ taux_maximal_hors_ile_france:
         metadata:
           reference: Référence manquante
         value: 0.0175
-      '2011-01-01':
-        metadata:
-          reference: Référence manquante
-        value: 0.0175
       '2011-07-01':
         metadata:
           reference: Lettre circulaire ACOSS 2011-0000075
@@ -1095,10 +1067,6 @@ taux_maximal_hors_ile_france:
         metadata: {}
         value: 0.0175
       '2015-07-01':
-        metadata:
-          reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
-        value: 0.0175
-      '2016-01-01':
         metadata:
           reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
         value: 0.0175
@@ -1119,6 +1087,10 @@ toulouse:
   metadata:
     unit: /1
   values:
+    '1971-09-01':
+      metadata:
+        reference: Loi 71-559 du 12/07/1971; Décret 71-710 du 30/08/1971
+      value: null
     '1974-01-01':
       metadata:
         reference: Loi 73-640 du 11/07/1973, art. 1; décret 74-66 du 29/01/1974
@@ -1136,14 +1108,6 @@ toulouse:
         reference: Loi 75-580 du 5/07/1975; Décret 75-784 du 22/08/1975
       value: 0.01
     '1977-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.01
-    '1979-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.01
-    '1983-07-01':
       metadata:
         reference: Référence manquante
       value: 0.01
@@ -1191,10 +1155,6 @@ toulouse:
       metadata:
         reference: Référence manquante
       value: 0.0175
-    '2001-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.0175
     '2003-01-01':
       metadata:
         reference: Lettre circulaire URSSAF 2002-218
@@ -1216,10 +1176,6 @@ toulouse:
       metadata:
         reference: Référence manquante
       value: 0.018
-    '2011-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.018
     '2011-07-01':
       metadata:
         reference: Lettre circulaire ACOSS 2011-0000075
@@ -1236,10 +1192,6 @@ toulouse:
       metadata: {}
       value: 0.02
     '2015-07-01':
-      metadata:
-        reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
-      value: 0.02
-    '2016-01-01':
       metadata:
         reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
       value: 0.02
@@ -1288,23 +1240,11 @@ val_marne:
       metadata:
         reference: Référence manquante
       value: 0.02
-    '1983-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.02
-    '1986-04-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.02
     '1989-01-01':
       metadata:
         reference: Loi 88-1193 du 29/12/1988 - art. 45
       value: 0.018
     '1989-09-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.018
-    '1991-04-01':
       metadata:
         reference: Référence manquante
       value: 0.018
@@ -1336,10 +1276,6 @@ val_marne:
       metadata:
         reference: Référence manquante
       value: 0.016
-    '2001-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.016
     '2003-01-01':
       metadata:
         reference: Lettre circulaire URSSAF 2002-218
@@ -1361,10 +1297,6 @@ val_marne:
       metadata:
         reference: Référence manquante
       value: 0.017
-    '2011-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.017
     '2011-07-01':
       metadata:
         reference: Lettre circulaire ACOSS 2011-0000075
@@ -1381,10 +1313,6 @@ val_marne:
       metadata: {}
       value: 0.018
     '2015-07-01':
-      metadata:
-        reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
-      value: 0.0191
-    '2016-01-01':
       metadata:
         reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
       value: 0.0191
@@ -1405,6 +1333,22 @@ val_oise:
   metadata:
     unit: /1
   values:
+    '1971-09-01':
+      metadata:
+        reference: Loi 71-559 du 12/07/1971; Décret 71-710 du 30/08/1971
+      value: null
+    '1974-01-01':
+      metadata:
+        reference: Loi 73-640 du 11/07/1973, art. 1; décret 74-66 du 29/01/1974
+      value: null
+    '1975-01-01':
+      metadata:
+        reference: Décret 74-933 du 07/11/1974
+      value: null
+    '1975-07-01':
+      metadata:
+        reference: Décret 75-533 du 27/06/1975
+      value: null
     '1975-08-01':
       metadata:
         reference: Loi 75-580 du 5/07/1975; Décret 75-784 du 22/08/1975
@@ -1417,23 +1361,11 @@ val_oise:
       metadata:
         reference: Référence manquante
       value: 0.012
-    '1983-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.012
-    '1986-04-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.012
     '1989-01-01':
       metadata:
         reference: Loi 88-1193 du 29/12/1988 - art. 45
       value: 0.015
     '1989-09-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.015
-    '1991-04-01':
       metadata:
         reference: Référence manquante
       value: 0.015
@@ -1465,10 +1397,6 @@ val_oise:
       metadata:
         reference: Référence manquante
       value: 0.013
-    '2001-07-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.013
     '2003-01-01':
       metadata:
         reference: Lettre circulaire URSSAF 2002-218
@@ -1490,10 +1418,6 @@ val_oise:
       metadata:
         reference: Référence manquante
       value: 0.014
-    '2011-01-01':
-      metadata:
-        reference: Référence manquante
-      value: 0.014
     '2011-07-01':
       metadata:
         reference: Lettre circulaire ACOSS 2011-0000075
@@ -1510,10 +1434,6 @@ val_oise:
       metadata: {}
       value: 0.017
     '2015-07-01':
-      metadata:
-        reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
-      value: 0.0191
-    '2016-01-01':
       metadata:
         reference: Lettre circulaire ACOSS 2015-0000024 du 07/05/2015
       value: 0.0191

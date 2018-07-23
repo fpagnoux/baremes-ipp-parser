@@ -5,6 +5,36 @@ artisans:
     metadata:
       unit: /1
     values:
+      '1978-01-01':
+        metadata:
+          reference: Décret 78-351 du 14/03/1978
+        value: null
+      '1985-01-01':
+        metadata:
+          reference: Décret 84-1064 du 30/11/1984
+        value: null
+      '1997-01-01':
+        metadata:
+          reference: Décret 97-166 du 24/02/1997 - art. 2
+        value: null
+      '2003-01-01':
+        metadata:
+          reference: Décret 2003-1025 du 28/10/2003 - art. 1
+        value: null
+      '2004-01-01':
+        metadata:
+          reference: Loi 2003-775 du 21/08/2003 - art. 88; Décret 2004-848 du 23/08/2004
+            - art. 1
+        value: null
+      '2004-07-01':
+        metadata:
+          reference: Décret 2004-848 du 23/08/2004 - art. 1
+        value: null
+      '2005-01-01':
+        metadata:
+          reference: Decret 2005-272 du 23/03/2005; Décret 2004-848 du 23/08/2004
+            - art. 1
+        value: null
       '2008-01-01':
         metadata:
           reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V); Décret 2008-22 du
@@ -18,23 +48,52 @@ artisans:
         metadata:
           reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
         value: 0.076
-      '2011-01-01':
-        metadata:
-          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
-        value: 0.076
-      '2012-01-01':
-        metadata:
-          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
-        value: 0.076
       '2013-01-01':
         metadata:
           reference: Décret 2012-443 du 03/04/2012 ; Circulaire RSI 2013-004 du 17/01/2013
+        value: null
+      '2014-01-01':
+        metadata:
+          reference: Décret 2012-139 du 30/01/2012
+        value: null
+      '2016-01-01':
+        metadata: {}
         value: null
   sous_1_pss:
     description: Sous 1 PSS
     metadata:
       unit: /1
     values:
+      '1978-01-01':
+        metadata:
+          reference: Décret 78-351 du 14/03/1978
+        value: null
+      '1985-01-01':
+        metadata:
+          reference: Décret 84-1064 du 30/11/1984
+        value: null
+      '1997-01-01':
+        metadata:
+          reference: Décret 97-166 du 24/02/1997 - art. 2
+        value: null
+      '2003-01-01':
+        metadata:
+          reference: Décret 2003-1025 du 28/10/2003 - art. 1
+        value: null
+      '2004-01-01':
+        metadata:
+          reference: Loi 2003-775 du 21/08/2003 - art. 88; Décret 2004-848 du 23/08/2004
+            - art. 1
+        value: null
+      '2004-07-01':
+        metadata:
+          reference: Décret 2004-848 du 23/08/2004 - art. 1
+        value: null
+      '2005-01-01':
+        metadata:
+          reference: Decret 2005-272 du 23/03/2005; Décret 2004-848 du 23/08/2004
+            - art. 1
+        value: null
       '2008-01-01':
         metadata:
           reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V); Décret 2008-22 du
@@ -48,17 +107,16 @@ artisans:
         metadata:
           reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
         value: 0.072
-      '2011-01-01':
-        metadata:
-          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
-        value: 0.072
-      '2012-01-01':
-        metadata:
-          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
-        value: 0.072
       '2013-01-01':
         metadata:
           reference: Décret 2012-443 du 03/04/2012 ; Circulaire RSI 2013-004 du 17/01/2013
+        value: null
+      '2014-01-01':
+        metadata:
+          reference: Décret 2012-139 du 30/01/2012
+        value: null
+      '2016-01-01':
+        metadata: {}
         value: null
   sous_3_pss:
     description: Sous 3 PSS
@@ -81,11 +139,61 @@ artisans:
         metadata:
           reference: Décret 97-166 du 24/02/1997 - art. 2
         value: null
+      '2003-01-01':
+        metadata:
+          reference: Décret 2003-1025 du 28/10/2003 - art. 1
+        value: null
+      '2004-01-01':
+        metadata:
+          reference: Loi 2003-775 du 21/08/2003 - art. 88; Décret 2004-848 du 23/08/2004
+            - art. 1
+        value: null
+      '2004-07-01':
+        metadata:
+          reference: Décret 2004-848 du 23/08/2004 - art. 1
+        value: null
+      '2005-01-01':
+        metadata:
+          reference: Decret 2005-272 du 23/03/2005; Décret 2004-848 du 23/08/2004
+            - art. 1
+        value: null
+      '2008-01-01':
+        metadata:
+          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V); Décret 2008-22 du
+            7/01/2008
+        value: null
+      '2009-01-01':
+        metadata:
+          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
+        value: null
+      '2013-01-01':
+        metadata:
+          reference: Décret 2012-443 du 03/04/2012 ; Circulaire RSI 2013-004 du 17/01/2013
+        value: null
+      '2014-01-01':
+        metadata:
+          reference: Décret 2012-139 du 30/01/2012
+        value: null
+      '2016-01-01':
+        metadata: {}
+        value: null
   sous_4_pss:
     description: Sous 4 PSS
     metadata:
       unit: /1
     values:
+      '1978-01-01':
+        metadata:
+          reference: Décret 78-351 du 14/03/1978
+        value: null
+      '1985-01-01':
+        metadata:
+          reference: Décret 84-1064 du 30/11/1984
+        value: null
+      '1997-01-01':
+        metadata:
+          reference: Décret 97-166 du 24/02/1997 - art. 2
+        value: null
       '1998-01-01':
         metadata:
           reference: Décret 97-166 du 24/02/1997 - art. 2
@@ -121,6 +229,21 @@ artisans:
           reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V); Décret 2008-22 du
             7/01/2008
         value: null
+      '2009-01-01':
+        metadata:
+          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
+        value: null
+      '2013-01-01':
+        metadata:
+          reference: Décret 2012-443 du 03/04/2012 ; Circulaire RSI 2013-004 du 17/01/2013
+        value: null
+      '2014-01-01':
+        metadata:
+          reference: Décret 2012-139 du 30/01/2012
+        value: null
+      '2016-01-01':
+        metadata: {}
+        value: null
 artisans_industriels_commercants:
   description: Artisans-industriels-commerçants
   entre_1_plafond_rci_4_plafonds_pss:
@@ -128,6 +251,45 @@ artisans_industriels_commercants:
     metadata:
       unit: /1
     values:
+      '1978-01-01':
+        metadata:
+          reference: Décret 78-351 du 14/03/1978
+        value: null
+      '1985-01-01':
+        metadata:
+          reference: Décret 84-1064 du 30/11/1984
+        value: null
+      '1997-01-01':
+        metadata:
+          reference: Décret 97-166 du 24/02/1997 - art. 2
+        value: null
+      '2003-01-01':
+        metadata:
+          reference: Décret 2003-1025 du 28/10/2003 - art. 1
+        value: null
+      '2004-01-01':
+        metadata:
+          reference: Loi 2003-775 du 21/08/2003 - art. 88; Décret 2004-848 du 23/08/2004
+            - art. 1
+        value: null
+      '2004-07-01':
+        metadata:
+          reference: Décret 2004-848 du 23/08/2004 - art. 1
+        value: null
+      '2005-01-01':
+        metadata:
+          reference: Decret 2005-272 du 23/03/2005; Décret 2004-848 du 23/08/2004
+            - art. 1
+        value: null
+      '2008-01-01':
+        metadata:
+          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V); Décret 2008-22 du
+            7/01/2008
+        value: null
+      '2009-01-01':
+        metadata:
+          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
+        value: null
       '2013-01-01':
         metadata:
           reference: Décret 2012-443 du 03/04/2012 ; Circulaire RSI 2013-004 du 17/01/2013
@@ -144,6 +306,45 @@ artisans_industriels_commercants:
     metadata:
       unit: currency-EUR
     values:
+      '1978-01-01':
+        metadata:
+          reference: Décret 78-351 du 14/03/1978
+        value: null
+      '1985-01-01':
+        metadata:
+          reference: Décret 84-1064 du 30/11/1984
+        value: null
+      '1997-01-01':
+        metadata:
+          reference: Décret 97-166 du 24/02/1997 - art. 2
+        value: null
+      '2003-01-01':
+        metadata:
+          reference: Décret 2003-1025 du 28/10/2003 - art. 1
+        value: null
+      '2004-01-01':
+        metadata:
+          reference: Loi 2003-775 du 21/08/2003 - art. 88; Décret 2004-848 du 23/08/2004
+            - art. 1
+        value: null
+      '2004-07-01':
+        metadata:
+          reference: Décret 2004-848 du 23/08/2004 - art. 1
+        value: null
+      '2005-01-01':
+        metadata:
+          reference: Decret 2005-272 du 23/03/2005; Décret 2004-848 du 23/08/2004
+            - art. 1
+        value: null
+      '2008-01-01':
+        metadata:
+          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V); Décret 2008-22 du
+            7/01/2008
+        value: null
+      '2009-01-01':
+        metadata:
+          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
+        value: null
       '2013-01-01':
         metadata:
           reference: Décret 2012-443 du 03/04/2012 ; Circulaire RSI 2013-004 du 17/01/2013
@@ -160,6 +361,45 @@ artisans_industriels_commercants:
     metadata:
       unit: /1
     values:
+      '1978-01-01':
+        metadata:
+          reference: Décret 78-351 du 14/03/1978
+        value: null
+      '1985-01-01':
+        metadata:
+          reference: Décret 84-1064 du 30/11/1984
+        value: null
+      '1997-01-01':
+        metadata:
+          reference: Décret 97-166 du 24/02/1997 - art. 2
+        value: null
+      '2003-01-01':
+        metadata:
+          reference: Décret 2003-1025 du 28/10/2003 - art. 1
+        value: null
+      '2004-01-01':
+        metadata:
+          reference: Loi 2003-775 du 21/08/2003 - art. 88; Décret 2004-848 du 23/08/2004
+            - art. 1
+        value: null
+      '2004-07-01':
+        metadata:
+          reference: Décret 2004-848 du 23/08/2004 - art. 1
+        value: null
+      '2005-01-01':
+        metadata:
+          reference: Decret 2005-272 du 23/03/2005; Décret 2004-848 du 23/08/2004
+            - art. 1
+        value: null
+      '2008-01-01':
+        metadata:
+          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V); Décret 2008-22 du
+            7/01/2008
+        value: null
+      '2009-01-01':
+        metadata:
+          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
+        value: null
       '2013-01-01':
         metadata:
           reference: Décret 2012-443 du 03/04/2012 ; Circulaire RSI 2013-004 du 17/01/2013
@@ -179,6 +419,22 @@ industriels_commercants:
     metadata:
       unit: /1
     values:
+      '1978-01-01':
+        metadata:
+          reference: Décret 78-351 du 14/03/1978
+        value: null
+      '1985-01-01':
+        metadata:
+          reference: Décret 84-1064 du 30/11/1984
+        value: null
+      '1997-01-01':
+        metadata:
+          reference: Décret 97-166 du 24/02/1997 - art. 2
+        value: null
+      '2003-01-01':
+        metadata:
+          reference: Décret 2003-1025 du 28/10/2003 - art. 1
+        value: null
       '2004-01-01':
         metadata:
           reference: Loi 2003-775 du 21/08/2003 - art. 88; Décret 2004-848 du 23/08/2004
@@ -202,19 +458,14 @@ industriels_commercants:
         metadata:
           reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
         value: 0.065
-      '2010-01-01':
-        metadata:
-          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
-        value: 0.065
-      '2011-01-01':
-        metadata:
-          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
-        value: 0.065
-      '2012-01-01':
-        metadata:
-          reference: Décret 2007-1900 du 26/12/2007 - art. 1 (V)
-        value: 0.065
       '2013-01-01':
         metadata:
           reference: Décret 2012-443 du 03/04/2012 ; Circulaire RSI 2013-004 du 17/01/2013
+        value: null
+      '2014-01-01':
+        metadata:
+          reference: Décret 2012-139 du 30/01/2012
+        value: null
+      '2016-01-01':
+        metadata: {}
         value: null

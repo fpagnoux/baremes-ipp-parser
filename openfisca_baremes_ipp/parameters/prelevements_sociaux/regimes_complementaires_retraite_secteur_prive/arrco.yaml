@@ -7,12 +7,6 @@ taux_appel:
     '1962-01-01':
       metadata: {}
       value: 1.0
-    '1967-01-01':
-      metadata: {}
-      value: 1.0
-    '1970-01-01':
-      metadata: {}
-      value: 1.0
     '1971-01-01':
       metadata: {}
       value: 1.025
@@ -70,31 +64,7 @@ taux_appel:
       metadata:
         reference: Accord ARRCO du 25/04/1996, art. 26
       value: 1.25
-    '1999-01-01':
-      metadata:
-        reference: Accord ARRCO du 25/04/1996, art. 26
-      value: 1.25
-    '2000-01-01':
-      metadata:
-        reference: Accord ARRCO du 25/04/1996, art. 26
-      value: 1.25
-    '2002-01-01':
-      metadata:
-        reference: Accord ARRCO du 25/04/1996, art. 26
-      value: 1.25
-    '2004-01-01':
-      metadata:
-        reference: Accord ARRCO du 25/04/1996, art. 26
-      value: 1.25
-    '2005-01-01':
-      metadata:
-        reference: Accord ARRCO du 25/04/1996, art. 26
-      value: 1.25
     '2014-01-01':
-      metadata:
-        reference: Accord AGIRC-ARRCO du 13/03/2013
-      value: 1.25
-    '2015-01-01':
       metadata:
         reference: Accord AGIRC-ARRCO du 13/03/2013
       value: 1.25
@@ -109,21 +79,6 @@ taux_contractuels:
         metadata: {}
         value: 0.025
       '1967-01-01':
-        metadata: {}
-        value: 0.04
-      '1970-01-01':
-        metadata: {}
-        value: 0.04
-      '1971-01-01':
-        metadata: {}
-        value: 0.04
-      '1972-01-01':
-        metadata: {}
-        value: 0.04
-      '1973-01-01':
-        metadata: {}
-        value: 0.04
-      '1974-01-01':
         metadata: {}
         value: 0.04
       '1982-01-01':
@@ -141,18 +96,10 @@ taux_contractuels:
         metadata:
           reference: Accords ARRCO du 12/11/86
         value: 0.04
-      '1988-01-01':
-        metadata:
-          reference: Accords ARRCO du 12/11/86
-        value: 0.04
       '1990-01-01':
         metadata: {}
         value: 0.04
       '1991-01-01':
-        metadata:
-          reference: Accords ARRCO du 12/11/86 et du 01/12/89
-        value: 0.04
-      '1992-01-01':
         metadata:
           reference: Accords ARRCO du 12/11/86 et du 01/12/89
         value: 0.04
@@ -175,22 +122,6 @@ taux_contractuels:
         metadata:
           reference: Accord ARRCO du 25/04/1996, art. 26
         value: 0.06
-      '2000-01-01':
-        metadata:
-          reference: Accord ARRCO du 25/04/1996, art. 26
-        value: 0.06
-      '2002-01-01':
-        metadata:
-          reference: Accord ARRCO du 25/04/1996, art. 26
-        value: 0.06
-      '2004-01-01':
-        metadata:
-          reference: Accord ARRCO du 25/04/1996, art. 26
-        value: 0.06
-      '2005-01-01':
-        metadata:
-          reference: Accord ARRCO du 25/04/1996, art. 26
-        value: 0.06
       '2014-01-01':
         metadata:
           reference: Accord AGIRC-ARRCO du 13/03/2013
@@ -206,6 +137,38 @@ taux_contractuels:
       metadata:
         unit: /1
       values:
+        '1962-01-01':
+          metadata: {}
+          value: null
+        '1982-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: Lettre-circulaire ARRCO 82-28 du 09/07/82
+          value: null
+        '1986-01-01':
+          metadata: {}
+          value: null
+        '1987-01-01':
+          metadata:
+            reference: Accords ARRCO du 12/11/86
+          value: null
+        '1990-01-01':
+          metadata: {}
+          value: null
+        '1991-01-01':
+          metadata:
+            reference: Accords ARRCO du 12/11/86 et du 01/12/89
+          value: null
+        '1995-01-01':
+          metadata: {}
+          value: null
+        '1996-01-01':
+          metadata:
+            reference: Accord ARRCO du 10/02/1993
+          value: null
         '1997-01-01':
           metadata:
             reference: Accords du 9/02/94 et du 25/04/1996
@@ -222,18 +185,6 @@ taux_contractuels:
           metadata:
             reference: Accord ARRCO du 25/04/1996, art. 26
           value: 0.16
-        '2002-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.16
-        '2004-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.16
-        '2005-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.16
         '2014-01-01':
           metadata:
             reference: Accord AGIRC-ARRCO du 13/03/2013
@@ -247,6 +198,34 @@ taux_contractuels:
       metadata:
         unit: /1
       values:
+        '1962-01-01':
+          metadata: {}
+          value: null
+        '1982-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: Lettre-circulaire ARRCO 82-28 du 09/07/82
+          value: null
+        '1986-01-01':
+          metadata: {}
+          value: null
+        '1987-01-01':
+          metadata:
+            reference: Accords ARRCO du 12/11/86
+          value: null
+        '1990-01-01':
+          metadata: {}
+          value: null
+        '1991-01-01':
+          metadata:
+            reference: Accords ARRCO du 12/11/86 et du 01/12/89
+          value: null
+        '1995-01-01':
+          metadata: {}
+          value: null
         '1996-01-01':
           metadata:
             reference: Accord ARRCO du 10/02/1993
@@ -298,9 +277,6 @@ taux_effectifs:
         metadata: {}
         value: 0.025
       '1967-01-01':
-        metadata: {}
-        value: 0.04
-      '1970-01-01':
         metadata: {}
         value: 0.04
       '1971-01-01':
@@ -364,22 +340,6 @@ taux_effectifs:
         metadata:
           reference: Accord ARRCO du 25/04/1996, art. 26
         value: 0.075
-      '2000-01-01':
-        metadata:
-          reference: Accord ARRCO du 25/04/1996, art. 26
-        value: 0.075
-      '2002-01-01':
-        metadata:
-          reference: Accord ARRCO du 25/04/1996, art. 26
-        value: 0.075
-      '2004-01-01':
-        metadata:
-          reference: Accord ARRCO du 25/04/1996, art. 26
-        value: 0.075
-      '2005-01-01':
-        metadata:
-          reference: Accord ARRCO du 25/04/1996, art. 26
-        value: 0.075
       '2014-01-01':
         metadata:
           reference: Accord AGIRC-ARRCO du 13/03/2013
@@ -395,6 +355,38 @@ taux_effectifs:
       metadata:
         unit: /1
       values:
+        '1962-01-01':
+          metadata: {}
+          value: null
+        '1982-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: Lettre-circulaire ARRCO 82-28 du 09/07/82
+          value: null
+        '1986-01-01':
+          metadata: {}
+          value: null
+        '1987-01-01':
+          metadata:
+            reference: Accords ARRCO du 12/11/86
+          value: null
+        '1990-01-01':
+          metadata: {}
+          value: null
+        '1991-01-01':
+          metadata:
+            reference: Accords ARRCO du 12/11/86 et du 01/12/89
+          value: null
+        '1995-01-01':
+          metadata: {}
+          value: null
+        '1996-01-01':
+          metadata:
+            reference: Accord ARRCO du 10/02/1993
+          value: null
         '1997-01-01':
           metadata:
             reference: Accords du 9/02/94 et du 25/04/1996
@@ -411,18 +403,6 @@ taux_effectifs:
           metadata:
             reference: Accord ARRCO du 25/04/1996, art. 26
           value: 0.2
-        '2002-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.2
-        '2004-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.2
-        '2005-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.2
         '2014-01-01':
           metadata:
             reference: Accord AGIRC-ARRCO du 13/03/2013
@@ -436,6 +416,34 @@ taux_effectifs:
       metadata:
         unit: /1
       values:
+        '1962-01-01':
+          metadata: {}
+          value: null
+        '1982-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: Lettre-circulaire ARRCO 82-28 du 09/07/82
+          value: null
+        '1986-01-01':
+          metadata: {}
+          value: null
+        '1987-01-01':
+          metadata:
+            reference: Accords ARRCO du 12/11/86
+          value: null
+        '1990-01-01':
+          metadata: {}
+          value: null
+        '1991-01-01':
+          metadata:
+            reference: Accords ARRCO du 12/11/86 et du 01/12/89
+          value: null
+        '1995-01-01':
+          metadata: {}
+          value: null
         '1996-01-01':
           metadata:
             reference: Accord ARRCO du 10/02/1993
@@ -489,9 +497,6 @@ taux_effectifs_salaries_employeurs:
           metadata: {}
           value: 0.015
         '1967-01-01':
-          metadata: {}
-          value: 0.024
-        '1970-01-01':
           metadata: {}
           value: 0.024
         '1971-01-01':
@@ -555,22 +560,6 @@ taux_effectifs_salaries_employeurs:
           metadata:
             reference: Accord ARRCO du 25/04/1996, art. 26
           value: 0.045
-        '2000-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.045
-        '2002-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.045
-        '2004-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.045
-        '2005-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.045
         '2014-01-01':
           metadata:
             reference: Accord AGIRC-ARRCO du 13/03/2013
@@ -588,9 +577,6 @@ taux_effectifs_salaries_employeurs:
           metadata: {}
           value: 0.010000000000000002
         '1967-01-01':
-          metadata: {}
-          value: 0.016
-        '1970-01-01':
           metadata: {}
           value: 0.016
         '1971-01-01':
@@ -654,22 +640,6 @@ taux_effectifs_salaries_employeurs:
           metadata:
             reference: Accord ARRCO du 25/04/1996, art. 26
           value: 0.03
-        '2000-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.03
-        '2002-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.03
-        '2004-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.03
-        '2005-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.03
         '2014-01-01':
           metadata:
             reference: Accord AGIRC-ARRCO du 13/03/2013
@@ -685,6 +655,38 @@ taux_effectifs_salaries_employeurs:
       metadata:
         unit: /1
       values:
+        '1962-01-01':
+          metadata: {}
+          value: null
+        '1982-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: Lettre-circulaire ARRCO 82-28 du 09/07/82
+          value: null
+        '1986-01-01':
+          metadata: {}
+          value: null
+        '1987-01-01':
+          metadata:
+            reference: Accords ARRCO du 12/11/86
+          value: null
+        '1990-01-01':
+          metadata: {}
+          value: null
+        '1991-01-01':
+          metadata:
+            reference: Accords ARRCO du 12/11/86 et du 01/12/89
+          value: null
+        '1995-01-01':
+          metadata: {}
+          value: null
+        '1996-01-01':
+          metadata:
+            reference: Accord ARRCO du 10/02/1993
+          value: null
         '1997-01-01':
           metadata:
             reference: Accords du 9/02/94 et du 25/04/1996
@@ -701,18 +703,6 @@ taux_effectifs_salaries_employeurs:
           metadata:
             reference: Accord ARRCO du 25/04/1996, art. 26
           value: 0.12
-        '2002-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.12
-        '2004-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.12
-        '2005-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.12
         '2014-01-01':
           metadata:
             reference: Accord AGIRC-ARRCO du 13/03/2013
@@ -722,6 +712,38 @@ taux_effectifs_salaries_employeurs:
       metadata:
         unit: /1
       values:
+        '1962-01-01':
+          metadata: {}
+          value: null
+        '1982-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: Lettre-circulaire ARRCO 82-28 du 09/07/82
+          value: null
+        '1986-01-01':
+          metadata: {}
+          value: null
+        '1987-01-01':
+          metadata:
+            reference: Accords ARRCO du 12/11/86
+          value: null
+        '1990-01-01':
+          metadata: {}
+          value: null
+        '1991-01-01':
+          metadata:
+            reference: Accords ARRCO du 12/11/86 et du 01/12/89
+          value: null
+        '1995-01-01':
+          metadata: {}
+          value: null
+        '1996-01-01':
+          metadata:
+            reference: Accord ARRCO du 10/02/1993
+          value: null
         '1997-01-01':
           metadata:
             reference: Accords du 9/02/94 et du 25/04/1996
@@ -735,18 +757,6 @@ taux_effectifs_salaries_employeurs:
             reference: Accord ARRCO du 25/04/1996, art. 26
           value: 0.07500000000000001
         '2000-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.08000000000000002
-        '2002-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.08000000000000002
-        '2004-01-01':
-          metadata:
-            reference: Accord ARRCO du 25/04/1996, art. 26
-          value: 0.08000000000000002
-        '2005-01-01':
           metadata:
             reference: Accord ARRCO du 25/04/1996, art. 26
           value: 0.08000000000000002
@@ -765,9 +775,6 @@ taux_effectifs_salaries_employeurs:
           metadata: {}
           value: 0.015
         '1967-01-01':
-          metadata: {}
-          value: 0.024
-        '1970-01-01':
           metadata: {}
           value: 0.024
         '1971-01-01':
@@ -864,9 +871,6 @@ taux_effectifs_salaries_employeurs:
           metadata: {}
           value: 0.010000000000000002
         '1967-01-01':
-          metadata: {}
-          value: 0.016
-        '1970-01-01':
           metadata: {}
           value: 0.016
         '1971-01-01':

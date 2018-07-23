@@ -1,7 +1,7 @@
 cotisation_forfaitaire_annuelle_en_euros:
   description: Cotisation forfaitaire annuelle (en euros)
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
     '1989-01-01':
       metadata:
@@ -127,7 +127,7 @@ cotisation_forfaitaire_mensuelle_en_euros:
   cotisation_totale:
     description: Cotisation totale
     metadata:
-      unit: currency-EUR
+      unit: currency-FRF
     values:
       '1989-01-01':
         metadata:
@@ -253,7 +253,7 @@ cotisation_forfaitaire_mensuelle_en_euros:
   part_patronale:
     description: Part patronale
     metadata:
-      unit: currency-EUR
+      unit: currency-FRF
     values:
       '1989-01-01':
         metadata:
@@ -378,7 +378,7 @@ cotisation_forfaitaire_mensuelle_en_euros:
   part_salariale:
     description: Part salariale
     metadata:
-      unit: currency-EUR
+      unit: currency-FRF
     values:
       '1989-01-01':
         metadata:
@@ -504,7 +504,7 @@ description: Cotisations pour la Garantie Minimale de Points (GMP) - cadres
 salaire_charniere_annuel:
   description: Salaire charnière annuel
   metadata:
-    unit: currency-EUR
+    unit: currency-FRF
   values:
     '1989-01-01':
       metadata:

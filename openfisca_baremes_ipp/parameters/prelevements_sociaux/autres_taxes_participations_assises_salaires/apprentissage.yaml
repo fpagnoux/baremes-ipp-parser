@@ -4,6 +4,54 @@ cas_entreprises_2000_salaries_alternants_representent_1_effectif_i_i_i:
     metadata:
       unit: /1
     values:
+      '1972-07-01':
+        metadata:
+          reference: Loi 71-576 et loi 71-578 (art. 3) du 16/07/1971
+        value: null
+      '1973-07-01':
+        metadata:
+          reference: Décret 72-1208 du 27/12/1972
+        value: null
+      '1977-01-01':
+        metadata:
+          reference: Loi 77-704 du 05/07/1977
+        value: null
+      '1978-01-01':
+        metadata:
+          reference: Loi 78-653 du 22/06/1978 (LFR pour 1978)
+        value: null
+      '1979-01-01':
+        metadata:
+          reference: Loi 78-1239 du 29/12/1978
+        value: null
+      '1980-01-01':
+        metadata:
+          reference: Loi 80-30 du 18/01/80 (LF pour 1980), art. 21
+        value: null
+      '1993-01-01':
+        metadata:
+          reference: Loi 93-121 du 27/01/1993, art. 92
+        value: null
+      '1995-01-01':
+        metadata:
+          reference: Référence législative manquante
+        value: null
+      '1997-01-01':
+        metadata:
+          reference: Décret 97-222 du 1997-03-13 art. 2 I, II
+        value: null
+      '2004-01-01':
+        metadata:
+          reference: Loi 2004-1484 du 30/12/2005 (LF pour 2005), art. 37
+        value: null
+      '2007-01-01':
+        metadata:
+          reference: Décret 2008-244 du 07/03/2008
+        value: null
+      '2010-01-01':
+        metadata:
+          reference: Loi 2009-1437 du 24/11/2009, art. 27
+        value: null
       '2011-01-01':
         metadata:
           reference: Loi 2011-900 du 29/07/2011 (LFR pour 2011), art. 23
@@ -25,6 +73,42 @@ employeur_tout_salaire:
     metadata:
       unit: /1
     values:
+      '1972-07-01':
+        metadata:
+          reference: Loi 71-576 et loi 71-578 (art. 3) du 16/07/1971
+        value: null
+      '1973-07-01':
+        metadata:
+          reference: Décret 72-1208 du 27/12/1972
+        value: null
+      '1977-01-01':
+        metadata:
+          reference: Loi 77-704 du 05/07/1977
+        value: null
+      '1978-01-01':
+        metadata:
+          reference: Loi 78-653 du 22/06/1978 (LFR pour 1978)
+        value: null
+      '1979-01-01':
+        metadata:
+          reference: Loi 78-1239 du 29/12/1978
+        value: null
+      '1980-01-01':
+        metadata:
+          reference: Loi 80-30 du 18/01/80 (LF pour 1980), art. 21
+        value: null
+      '1993-01-01':
+        metadata:
+          reference: Loi 93-121 du 27/01/1993, art. 92
+        value: null
+      '1995-01-01':
+        metadata:
+          reference: Référence législative manquante
+        value: null
+      '1997-01-01':
+        metadata:
+          reference: Décret 97-222 du 1997-03-13 art. 2 I, II
+        value: null
       '2004-01-01':
         metadata:
           reference: Loi 2004-1484 du 30/12/2005 (LF pour 2005), art. 37
@@ -62,6 +146,14 @@ employeur_tout_salaire:
     metadata:
       unit: /1
     values:
+      '1972-07-01':
+        metadata:
+          reference: Loi 71-576 et loi 71-578 (art. 3) du 16/07/1971
+        value: null
+      '1973-07-01':
+        metadata:
+          reference: Décret 72-1208 du 27/12/1972
+        value: null
       '1977-01-01':
         metadata:
           reference: Loi 77-704 du 05/07/1977
@@ -81,6 +173,38 @@ employeur_tout_salaire:
       '1993-01-01':
         metadata:
           reference: Loi 93-121 du 27/01/1993, art. 92
+        value: null
+      '1995-01-01':
+        metadata:
+          reference: Référence législative manquante
+        value: null
+      '1997-01-01':
+        metadata:
+          reference: Décret 97-222 du 1997-03-13 art. 2 I, II
+        value: null
+      '2004-01-01':
+        metadata:
+          reference: Loi 2004-1484 du 30/12/2005 (LF pour 2005), art. 37
+        value: null
+      '2007-01-01':
+        metadata:
+          reference: Décret 2008-244 du 07/03/2008
+        value: null
+      '2010-01-01':
+        metadata:
+          reference: Loi 2009-1437 du 24/11/2009, art. 27
+        value: null
+      '2011-01-01':
+        metadata:
+          reference: Loi 2011-900 du 29/07/2011 (LFR pour 2011), art. 23
+        value: null
+      '2012-01-01':
+        metadata:
+          reference: Loi 2012-354 du 14/12/2012 (LFR pour 2012), art. 22
+        value: null
+      '2014-01-01':
+        metadata:
+          reference: Loi 2013-1279 du 29/12/2013 (LFR pour 2013), art. 60
         value: null
   description: 'Employeur: tout salaire'
   taxe_apprentissage:
@@ -128,14 +252,6 @@ employeur_tout_salaire:
         metadata:
           reference: Loi 2004-1484 du 30/12/2005 (LF pour 2005), art. 37
         value: 0.005
-      '2005-01-01':
-        metadata:
-          reference: Loi 2004-1484 du 30/12/2005 (LF pour 2005), art. 37
-        value: 0.005
-      '2006-01-01':
-        metadata:
-          reference: Loi 2004-1484 du 30/12/2005 (LF pour 2005), art. 37
-        value: 0.005
       '2007-01-01':
         metadata:
           reference: Décret 2008-244 du 07/03/2008
@@ -161,6 +277,22 @@ employeur_tout_salaire:
     metadata:
       unit: /1
     values:
+      '1972-07-01':
+        metadata:
+          reference: Loi 71-576 et loi 71-578 (art. 3) du 16/07/1971
+        value: null
+      '1973-07-01':
+        metadata:
+          reference: Décret 72-1208 du 27/12/1972
+        value: null
+      '1977-01-01':
+        metadata:
+          reference: Loi 77-704 du 05/07/1977
+        value: null
+      '1978-01-01':
+        metadata:
+          reference: Loi 78-653 du 22/06/1978 (LFR pour 1978)
+        value: null
       '1979-01-01':
         metadata:
           reference: Loi 78-1239 du 29/12/1978
@@ -182,14 +314,6 @@ employeur_tout_salaire:
           reference: Décret 97-222 du 1997-03-13 art. 2 I, II
         value: 0.002
       '2004-01-01':
-        metadata:
-          reference: Loi 2004-1484 du 30/12/2005 (LF pour 2005), art. 37
-        value: 0.002
-      '2005-01-01':
-        metadata:
-          reference: Loi 2004-1484 du 30/12/2005 (LF pour 2005), art. 37
-        value: 0.002
-      '2006-01-01':
         metadata:
           reference: Loi 2004-1484 du 30/12/2005 (LF pour 2005), art. 37
         value: 0.002
@@ -219,6 +343,50 @@ entreprises_250_salaries_plus:
     metadata:
       unit: /1
     values:
+      '1972-07-01':
+        metadata:
+          reference: Loi 71-576 et loi 71-578 (art. 3) du 16/07/1971
+        value: null
+      '1973-07-01':
+        metadata:
+          reference: Décret 72-1208 du 27/12/1972
+        value: null
+      '1977-01-01':
+        metadata:
+          reference: Loi 77-704 du 05/07/1977
+        value: null
+      '1978-01-01':
+        metadata:
+          reference: Loi 78-653 du 22/06/1978 (LFR pour 1978)
+        value: null
+      '1979-01-01':
+        metadata:
+          reference: Loi 78-1239 du 29/12/1978
+        value: null
+      '1980-01-01':
+        metadata:
+          reference: Loi 80-30 du 18/01/80 (LF pour 1980), art. 21
+        value: null
+      '1993-01-01':
+        metadata:
+          reference: Loi 93-121 du 27/01/1993, art. 92
+        value: null
+      '1995-01-01':
+        metadata:
+          reference: Référence législative manquante
+        value: null
+      '1997-01-01':
+        metadata:
+          reference: Décret 97-222 du 1997-03-13 art. 2 I, II
+        value: null
+      '2004-01-01':
+        metadata:
+          reference: Loi 2004-1484 du 30/12/2005 (LF pour 2005), art. 37
+        value: null
+      '2007-01-01':
+        metadata:
+          reference: Décret 2008-244 du 07/03/2008
+        value: null
       '2010-01-01':
         metadata:
           reference: Loi 2009-1437 du 24/11/2009, art. 27
@@ -226,5 +394,13 @@ entreprises_250_salaries_plus:
       '2011-01-01':
         metadata:
           reference: Loi 2011-900 du 29/07/2011 (LFR pour 2011), art. 23
+        value: null
+      '2012-01-01':
+        metadata:
+          reference: Loi 2012-354 du 14/12/2012 (LFR pour 2012), art. 22
+        value: null
+      '2014-01-01':
+        metadata:
+          reference: Loi 2013-1279 du 29/12/2013 (LFR pour 2013), art. 60
         value: null
   description: Entreprises de 250 salariés et plus

@@ -6,6 +6,18 @@ sous_4_pss:
     metadata:
       unit: /1
     values:
+      '1967-01-01':
+        metadata:
+          reference: Convention APEC du 18/11/1966, art. 3
+        value: null
+      '1971-01-01':
+        metadata:
+          reference: Avenant n° 2 du 09/06/1969
+        value: null
+      '1975-01-01':
+        metadata:
+          reference: Avenant A 56 du 05/02/1974 ; avenant n°5 du 17/11/1975
+        value: null
       '2011-01-01':
         metadata:
           reference: Circulaire AGIRC 2010-5-DF du 29/07/2010
@@ -15,6 +27,18 @@ sous_4_pss:
     metadata:
       unit: /1
     values:
+      '1967-01-01':
+        metadata:
+          reference: Convention APEC du 18/11/1966, art. 3
+        value: null
+      '1971-01-01':
+        metadata:
+          reference: Avenant n° 2 du 09/06/1969
+        value: null
+      '1975-01-01':
+        metadata:
+          reference: Avenant A 56 du 05/02/1974 ; avenant n°5 du 17/11/1975
+        value: null
       '2011-01-01':
         metadata:
           reference: Circulaire AGIRC 2010-5-DF du 29/07/2010
@@ -26,6 +50,10 @@ tranche_b_1_4_pss:
     metadata:
       unit: /1
     values:
+      '1967-01-01':
+        metadata:
+          reference: Convention APEC du 18/11/1966, art. 3
+        value: null
       '1971-01-01':
         metadata:
           reference: Avenant n° 2 du 09/06/1969
@@ -43,6 +71,10 @@ tranche_b_1_4_pss:
     metadata:
       unit: /1
     values:
+      '1967-01-01':
+        metadata:
+          reference: Convention APEC du 18/11/1966, art. 3
+        value: null
       '1971-01-01':
         metadata:
           reference: Avenant n° 2 du 09/06/1969

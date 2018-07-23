@@ -32,10 +32,6 @@ taux_appel:
       metadata:
         reference: Référence non trouvée
       value: 1.0
-    '1976-01-01':
-      metadata:
-        reference: Référence non trouvée
-      value: 1.0
     '1979-01-01':
       metadata:
         reference: Référence non trouvée
@@ -80,19 +76,7 @@ taux_appel:
       metadata:
         reference: Accord AGIRC du 09/02/1994
       value: 1.25
-    '1996-01-01':
-      metadata:
-        reference: Accord AGIRC du 09/02/1994
-      value: 1.25
     '1997-01-01':
-      metadata:
-        reference: Accord AGIRC-ARRCO du 25/04/1996
-      value: 1.25
-    '1998-01-01':
-      metadata:
-        reference: Accord AGIRC-ARRCO du 25/04/1996
-      value: 1.25
-    '1999-01-01':
       metadata:
         reference: Accord AGIRC-ARRCO du 25/04/1996
       value: 1.25
@@ -125,6 +109,14 @@ taux_contractuels:
       metadata:
         unit: /1
       values:
+        '1948-01-01':
+          metadata:
+            reference: Convention AGIRC du 14/03/1947
+          value: null
+        '1952-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
         '1981-01-01':
           metadata:
             reference: Avenant A75 du 26/06/1978 (non agréé).
@@ -141,27 +133,11 @@ taux_contractuels:
           metadata:
             reference: Référence non trouvée
           value: 0.12
-        '1987-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.12
-        '1989-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.12
-        '1990-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.12
         '1991-01-01':
           metadata:
             reference: Accord du 24/03/1988
           value: 0.12
         '1994-01-01':
-          metadata:
-            reference: Accord AGIRC du 09/02/1994
-          value: 0.12
-        '1995-01-01':
           metadata:
             reference: Accord AGIRC du 09/02/1994
           value: 0.12
@@ -214,34 +190,6 @@ taux_contractuels:
           metadata:
             reference: Référence non trouvée
           value: 0.08
-        '1953-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.08
-        '1955-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.08
-        '1961-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.08
-        '1965-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.08
-        '1966-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.08
-        '1976-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.08
-        '1979-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.08
         '1981-01-01':
           metadata:
             reference: Avenant A75 du 26/06/1978 (non agréé).
@@ -255,18 +203,6 @@ taux_contractuels:
             reference: Avenant A99 du 15/06/1983 agréé par l'arrêté du 14/03/1987.
           value: 0.08
         '1986-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.08
-        '1987-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.08
-        '1989-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.08
-        '1990-01-01':
           metadata:
             reference: Référence non trouvée
           value: 0.08
@@ -325,15 +261,35 @@ taux_contractuels:
       metadata:
         unit: /1
       values:
+        '1948-01-01':
+          metadata:
+            reference: Convention AGIRC du 14/03/1947
+          value: null
+        '1952-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
+        '1981-01-01':
+          metadata:
+            reference: Avenant A75 du 26/06/1978 (non agréé).
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1984-01-01':
+          metadata:
+            reference: Avenant A99 du 15/06/1983 agréé par l'arrêté du 14/03/1987.
+          value: null
+        '1986-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
         '1991-01-01':
           metadata:
             reference: Accord du 24/03/1988
           value: 0.08
         '1994-01-01':
-          metadata:
-            reference: Accord AGIRC du 09/02/1994
-          value: 0.12
-        '1995-01-01':
           metadata:
             reference: Accord AGIRC du 09/02/1994
           value: 0.12
@@ -378,6 +334,30 @@ taux_contractuels:
       metadata:
         unit: /1
       values:
+        '1948-01-01':
+          metadata:
+            reference: Convention AGIRC du 14/03/1947
+          value: null
+        '1952-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
+        '1981-01-01':
+          metadata:
+            reference: Avenant A75 du 26/06/1978 (non agréé).
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1984-01-01':
+          metadata:
+            reference: Avenant A99 du 15/06/1983 agréé par l'arrêté du 14/03/1987.
+          value: null
+        '1986-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
         '1991-01-01':
           metadata:
             reference: Accord du 24/03/1988
@@ -435,6 +415,14 @@ taux_effectifs:
       metadata:
         unit: /1
       values:
+        '1948-01-01':
+          metadata:
+            reference: Convention AGIRC du 14/03/1947
+          value: null
+        '1952-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
         '1981-01-01':
           metadata:
             reference: Avenant A75 du 26/06/1978 (non agréé).
@@ -544,10 +532,6 @@ taux_effectifs:
           metadata:
             reference: Référence non trouvée
           value: 0.08
-        '1976-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.08
         '1979-01-01':
           metadata:
             reference: Référence non trouvée
@@ -635,6 +619,30 @@ taux_effectifs:
       metadata:
         unit: /1
       values:
+        '1948-01-01':
+          metadata:
+            reference: Convention AGIRC du 14/03/1947
+          value: null
+        '1952-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
+        '1981-01-01':
+          metadata:
+            reference: Avenant A75 du 26/06/1978 (non agréé).
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1984-01-01':
+          metadata:
+            reference: Avenant A99 du 15/06/1983 agréé par l'arrêté du 14/03/1987.
+          value: null
+        '1986-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
         '1991-01-01':
           metadata:
             reference: Accord du 24/03/1988
@@ -688,6 +696,30 @@ taux_effectifs:
       metadata:
         unit: /1
       values:
+        '1948-01-01':
+          metadata:
+            reference: Convention AGIRC du 14/03/1947
+          value: null
+        '1952-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
+        '1981-01-01':
+          metadata:
+            reference: Avenant A75 du 26/06/1978 (non agréé).
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1984-01-01':
+          metadata:
+            reference: Avenant A99 du 15/06/1983 agréé par l'arrêté du 14/03/1987.
+          value: null
+        '1986-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
         '1991-01-01':
           metadata:
             reference: Accord du 24/03/1988
@@ -770,10 +802,6 @@ taux_effectifs_salaries_employeurs:
             reference: Référence non trouvée
           value: 0.056999999999999995
         '1966-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.06
-        '1976-01-01':
           metadata:
             reference: Référence non trouvée
           value: 0.06
@@ -890,10 +918,6 @@ taux_effectifs_salaries_employeurs:
           metadata:
             reference: Référence non trouvée
           value: 0.02
-        '1976-01-01':
-          metadata:
-            reference: Référence non trouvée
-          value: 0.02
         '1979-01-01':
           metadata:
             reference: Référence non trouvée
@@ -981,6 +1005,14 @@ taux_effectifs_salaries_employeurs:
       metadata:
         unit: /1
       values:
+        '1948-01-01':
+          metadata:
+            reference: Convention AGIRC du 14/03/1947
+          value: null
+        '1952-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
         '1981-01-01':
           metadata:
             reference: Avenant A75 du 26/06/1978 (non agréé).
@@ -1025,11 +1057,43 @@ taux_effectifs_salaries_employeurs:
           metadata:
             reference: Accord AGIRC du 09/02/1994
           value: null
+        '1997-01-01':
+          metadata:
+            reference: Accord AGIRC-ARRCO du 25/04/1996
+          value: null
+        '2006-01-01':
+          metadata:
+            reference: Accord AGIRC-ARRCO du 13/11/2003
+          value: null
+        '2014-01-01':
+          metadata:
+            reference: AGIRC-ARRCO Circulaire 2013-16-DRJ
+          value: null
+        '2015-01-01':
+          metadata:
+            reference: AGIRC-ARRCO Circulaire 2014-16-DRJ du 18/12/2014
+          value: null
+        '2016-01-01':
+          metadata:
+            reference: AGIRC-ARRCO Circulaire 2015-15-DRJ du 28/12/2015
+          value: null
+        '2017-01-01':
+          metadata:
+            reference: AGIRC-ARRCO Circulaire 2016-11-DRJ du 16/12/2016
+          value: null
     salarie:
       description: Salarié
       metadata:
         unit: /1
       values:
+        '1948-01-01':
+          metadata:
+            reference: Convention AGIRC du 14/03/1947
+          value: null
+        '1952-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
         '1981-01-01':
           metadata:
             reference: Avenant A75 du 26/06/1978 (non agréé).
@@ -1074,6 +1138,30 @@ taux_effectifs_salaries_employeurs:
           metadata:
             reference: Accord AGIRC du 09/02/1994
           value: null
+        '1997-01-01':
+          metadata:
+            reference: Accord AGIRC-ARRCO du 25/04/1996
+          value: null
+        '2006-01-01':
+          metadata:
+            reference: Accord AGIRC-ARRCO du 13/11/2003
+          value: null
+        '2014-01-01':
+          metadata:
+            reference: AGIRC-ARRCO Circulaire 2013-16-DRJ
+          value: null
+        '2015-01-01':
+          metadata:
+            reference: AGIRC-ARRCO Circulaire 2014-16-DRJ du 18/12/2014
+          value: null
+        '2016-01-01':
+          metadata:
+            reference: AGIRC-ARRCO Circulaire 2015-15-DRJ du 28/12/2015
+          value: null
+        '2017-01-01':
+          metadata:
+            reference: AGIRC-ARRCO Circulaire 2016-11-DRJ du 16/12/2016
+          value: null
   tranche_c_apres_81:
     description: Tranche C (après 81)
     employeur:
@@ -1081,6 +1169,30 @@ taux_effectifs_salaries_employeurs:
       metadata:
         unit: /1
       values:
+        '1948-01-01':
+          metadata:
+            reference: Convention AGIRC du 14/03/1947
+          value: null
+        '1952-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
+        '1981-01-01':
+          metadata:
+            reference: Avenant A75 du 26/06/1978 (non agréé).
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1984-01-01':
+          metadata:
+            reference: Avenant A99 du 15/06/1983 agréé par l'arrêté du 14/03/1987.
+          value: null
+        '1986-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
         '1991-01-01':
           metadata:
             reference: Accord du 24/03/1988
@@ -1134,6 +1246,30 @@ taux_effectifs_salaries_employeurs:
       metadata:
         unit: /1
       values:
+        '1948-01-01':
+          metadata:
+            reference: Convention AGIRC du 14/03/1947
+          value: null
+        '1952-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
+        '1981-01-01':
+          metadata:
+            reference: Avenant A75 du 26/06/1978 (non agréé).
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1984-01-01':
+          metadata:
+            reference: Avenant A99 du 15/06/1983 agréé par l'arrêté du 14/03/1987.
+          value: null
+        '1986-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
         '1991-01-01':
           metadata:
             reference: Accord du 24/03/1988
@@ -1189,6 +1325,30 @@ taux_effectifs_salaries_employeurs:
       metadata:
         unit: /1
       values:
+        '1948-01-01':
+          metadata:
+            reference: Convention AGIRC du 14/03/1947
+          value: null
+        '1952-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
+        '1981-01-01':
+          metadata:
+            reference: Avenant A75 du 26/06/1978 (non agréé).
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1984-01-01':
+          metadata:
+            reference: Avenant A99 du 15/06/1983 agréé par l'arrêté du 14/03/1987.
+          value: null
+        '1986-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
         '1991-01-01':
           metadata:
             reference: Accord du 24/03/1988
@@ -1242,6 +1402,30 @@ taux_effectifs_salaries_employeurs:
       metadata:
         unit: /1
       values:
+        '1948-01-01':
+          metadata:
+            reference: Convention AGIRC du 14/03/1947
+          value: null
+        '1952-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
+        '1981-01-01':
+          metadata:
+            reference: Avenant A75 du 26/06/1978 (non agréé).
+          value: null
+        '1983-01-01':
+          metadata:
+            reference: (pas de référence)
+          value: null
+        '1984-01-01':
+          metadata:
+            reference: Avenant A99 du 15/06/1983 agréé par l'arrêté du 14/03/1987.
+          value: null
+        '1986-01-01':
+          metadata:
+            reference: Référence non trouvée
+          value: null
         '1991-01-01':
           metadata:
             reference: Accord du 24/03/1988

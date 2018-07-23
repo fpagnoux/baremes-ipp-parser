@@ -54,6 +54,10 @@ seuil_exoneration_rfr_1_part_qf_en_n_2:
   metadata:
     unit: currency-EUR
   values:
+    '2013-04-01':
+      metadata:
+        reference: Loi 2012-1404 du 03/12/2012 (LFSS pour 2013), art. 17
+      value: null
     '2015-01-01':
       metadata:
         reference: Loi 2014-1554 du 22/12/2014 (LFSS pour 2015), art. 7

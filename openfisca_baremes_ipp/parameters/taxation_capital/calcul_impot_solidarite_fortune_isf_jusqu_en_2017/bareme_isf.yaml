@@ -3,7 +3,7 @@ seuils_tranches_bareme_isf:
   1ere_tranche:
     description: 1ère tranche
     metadata:
-      unit: currency-EUR
+      unit: currency-FRF
     values:
       '1982-01-01':
         metadata:
@@ -111,10 +111,15 @@ seuils_tranches_bareme_isf:
         metadata:
           reference: Loi 2012-1509 du 29/12/2012, art. 13 (LF pour 2013)
         value: 800000.0
+      '2018-01-01':
+        metadata:
+          reference: Loi 2017-1837 du 30/12/2017, art. 31 (LF pour 2018) (abroge art.
+            885 U du CGI)
+        value: null
   2eme_tranche:
     description: 2ème tranche
     metadata:
-      unit: currency-EUR
+      unit: currency-FRF
     values:
       '1982-01-01':
         metadata:
@@ -222,10 +227,15 @@ seuils_tranches_bareme_isf:
         metadata:
           reference: Loi 2012-1509 du 29/12/2012, art. 13 (LF pour 2013)
         value: 1300000.0
+      '2018-01-01':
+        metadata:
+          reference: Loi 2017-1837 du 30/12/2017, art. 31 (LF pour 2018) (abroge art.
+            885 U du CGI)
+        value: null
   3eme_tranche:
     description: 3ème tranche
     metadata:
-      unit: currency-EUR
+      unit: currency-FRF
     values:
       '1982-01-01':
         metadata:
@@ -333,11 +343,28 @@ seuils_tranches_bareme_isf:
         metadata:
           reference: Loi 2012-1509 du 29/12/2012, art. 13 (LF pour 2013)
         value: 2570000.0
+      '2018-01-01':
+        metadata:
+          reference: Loi 2017-1837 du 30/12/2017, art. 31 (LF pour 2018) (abroge art.
+            885 U du CGI)
+        value: null
   4eme_tranche:
     description: 4ème tranche
     metadata:
-      unit: currency-EUR
+      unit: currency-FRF
     values:
+      '1982-01-01':
+        metadata:
+          reference: Loi 81-1160 du 30/12/1981, art. 2 à 11 (LF pour 1982)
+        value: null
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 16 (LF pour 1983)
+        value: null
+      '1984-01-01':
+        metadata:
+          reference: Loi 83-1179 du 29/12/1983, art. 19 (LF pour 1984)
+        value: null
       '1985-01-01':
         metadata:
           reference: Loi 84-1208 du 29/12/1984, art. 26 (LF pour 1985)
@@ -432,11 +459,44 @@ seuils_tranches_bareme_isf:
         metadata:
           reference: Loi 2012-1509 du 29/12/2012, art. 13 (LF pour 2013)
         value: 5000000.0
+      '2018-01-01':
+        metadata:
+          reference: Loi 2017-1837 du 30/12/2017, art. 31 (LF pour 2018) (abroge art.
+            885 U du CGI)
+        value: null
   5eme_tranche:
     description: 5ème  tranche
     metadata:
-      unit: currency-EUR
+      unit: currency-FRF
     values:
+      '1982-01-01':
+        metadata:
+          reference: Loi 81-1160 du 30/12/1981, art. 2 à 11 (LF pour 1982)
+        value: null
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 16 (LF pour 1983)
+        value: null
+      '1984-01-01':
+        metadata:
+          reference: Loi 83-1179 du 29/12/1983, art. 19 (LF pour 1984)
+        value: null
+      '1985-01-01':
+        metadata:
+          reference: Loi 84-1208 du 29/12/1984, art. 26 (LF pour 1985)
+        value: null
+      '1986-01-01':
+        metadata:
+          reference: Loi 85-1403 du 30/12/1985, art. 19 (LF pour 1986)
+        value: null
+      '1987-01-01':
+        metadata:
+          reference: Loi 86-824 du 11/07/1986, art. 24 (LFR pour 1986)
+        value: null
+      '1989-01-01':
+        metadata:
+          reference: Loi 88-1149 du 23/12/1988, art. 26 (LF  pour 1989)
+        value: null
       '1990-01-01':
         metadata:
           reference: Loi 89-935 du 29/12/1989, art. 10 (LF pour 1990)
@@ -523,8 +583,64 @@ seuils_tranches_bareme_isf:
   6eme_tranche:
     description: 6ème tranche
     metadata:
-      unit: currency-EUR
+      unit: currency-FRF
     values:
+      '1982-01-01':
+        metadata:
+          reference: Loi 81-1160 du 30/12/1981, art. 2 à 11 (LF pour 1982)
+        value: null
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 16 (LF pour 1983)
+        value: null
+      '1984-01-01':
+        metadata:
+          reference: Loi 83-1179 du 29/12/1983, art. 19 (LF pour 1984)
+        value: null
+      '1985-01-01':
+        metadata:
+          reference: Loi 84-1208 du 29/12/1984, art. 26 (LF pour 1985)
+        value: null
+      '1986-01-01':
+        metadata:
+          reference: Loi 85-1403 du 30/12/1985, art. 19 (LF pour 1986)
+        value: null
+      '1987-01-01':
+        metadata:
+          reference: Loi 86-824 du 11/07/1986, art. 24 (LFR pour 1986)
+        value: null
+      '1989-01-01':
+        metadata:
+          reference: Loi 88-1149 du 23/12/1988, art. 26 (LF  pour 1989)
+        value: null
+      '1990-01-01':
+        metadata:
+          reference: Loi 89-935 du 29/12/1989, art. 10 (LF pour 1990)
+        value: null
+      '1991-01-01':
+        metadata:
+          reference: Loi 90-1168 du 29/12/1990, art. 16 (LF pour 1991)
+        value: null
+      '1992-01-01':
+        metadata:
+          reference: Loi 91-1322 du 30/12/1991, art. 37 (LF pour 1992)
+        value: null
+      '1994-01-01':
+        metadata:
+          reference: Loi 93-1352 du 30/12/1993, art. 7 (LF pour 1994)
+        value: null
+      '1995-01-01':
+        metadata:
+          reference: Loi 94-1162 du 29/12/1994, art. 4 (LF pour 1995)
+        value: null
+      '1996-01-01':
+        metadata:
+          reference: Loi 95-1346 du 30/12/1995, art. 6 (LF pour 1996)
+        value: null
+      '1997-01-01':
+        metadata:
+          reference: Loi 96-1181 du 30/12/1996, art. 25 (LF pour 1997)
+        value: null
       '1999-01-01':
         metadata:
           reference: Loi 98-1266 du 30/12/1998, art. 13 (LF pour 1999)
@@ -574,6 +690,11 @@ seuils_tranches_bareme_isf:
       '2013-01-01':
         metadata:
           reference: Loi 2012-1509 du 29/12/2012, art. 13 (LF pour 2013)
+        value: null
+      '2018-01-01':
+        metadata:
+          reference: Loi 2017-1837 du 30/12/2017, art. 31 (LF pour 2018) (abroge art.
+            885 U du CGI)
         value: null
   description: Seuils des tranches du barème de l'ISF
 taux_marginaux_tranches_bareme_isf:
@@ -688,6 +809,11 @@ taux_marginaux_tranches_bareme_isf:
         metadata:
           reference: Loi 2012-1509 du 29/12/2012, art. 13 (LF pour 2013)
         value: 0.005
+      '2018-01-01':
+        metadata:
+          reference: Loi 2017-1837 du 30/12/2017, art. 31 (LF pour 2018) (abroge art.
+            885 U du CGI)
+        value: null
   2eme_tranche:
     description: 2ème tranche
     metadata:
@@ -799,6 +925,11 @@ taux_marginaux_tranches_bareme_isf:
         metadata:
           reference: Loi 2012-1509 du 29/12/2012, art. 13 (LF pour 2013)
         value: 0.007
+      '2018-01-01':
+        metadata:
+          reference: Loi 2017-1837 du 30/12/2017, art. 31 (LF pour 2018) (abroge art.
+            885 U du CGI)
+        value: null
   3eme_tranche:
     description: 3ème tranche
     metadata:
@@ -910,11 +1041,28 @@ taux_marginaux_tranches_bareme_isf:
         metadata:
           reference: Loi 2012-1509 du 29/12/2012, art. 13 (LF pour 2013)
         value: 0.01
+      '2018-01-01':
+        metadata:
+          reference: Loi 2017-1837 du 30/12/2017, art. 31 (LF pour 2018) (abroge art.
+            885 U du CGI)
+        value: null
   4eme_tranche:
     description: 4ème tranche
     metadata:
       unit: /1
     values:
+      '1982-01-01':
+        metadata:
+          reference: Loi 81-1160 du 30/12/1981, art. 2 à 11 (LF pour 1982)
+        value: null
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 16 (LF pour 1983)
+        value: null
+      '1984-01-01':
+        metadata:
+          reference: Loi 83-1179 du 29/12/1983, art. 19 (LF pour 1984)
+        value: null
       '1985-01-01':
         metadata:
           reference: Loi 84-1208 du 29/12/1984, art. 26 (LF pour 1985)
@@ -1009,11 +1157,44 @@ taux_marginaux_tranches_bareme_isf:
         metadata:
           reference: Loi 2012-1509 du 29/12/2012, art. 13 (LF pour 2013)
         value: 0.0125
+      '2018-01-01':
+        metadata:
+          reference: Loi 2017-1837 du 30/12/2017, art. 31 (LF pour 2018) (abroge art.
+            885 U du CGI)
+        value: null
   5eme_tranche:
     description: 5ème  tranche
     metadata:
       unit: /1
     values:
+      '1982-01-01':
+        metadata:
+          reference: Loi 81-1160 du 30/12/1981, art. 2 à 11 (LF pour 1982)
+        value: null
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 16 (LF pour 1983)
+        value: null
+      '1984-01-01':
+        metadata:
+          reference: Loi 83-1179 du 29/12/1983, art. 19 (LF pour 1984)
+        value: null
+      '1985-01-01':
+        metadata:
+          reference: Loi 84-1208 du 29/12/1984, art. 26 (LF pour 1985)
+        value: null
+      '1986-01-01':
+        metadata:
+          reference: Loi 85-1403 du 30/12/1985, art. 19 (LF pour 1986)
+        value: null
+      '1987-01-01':
+        metadata:
+          reference: Loi 86-824 du 11/07/1986, art. 24 (LFR pour 1986)
+        value: null
+      '1989-01-01':
+        metadata:
+          reference: Loi 88-1149 du 23/12/1988, art. 26 (LF  pour 1989)
+        value: null
       '1990-01-01':
         metadata:
           reference: Loi 89-935 du 29/12/1989, art. 10 (LF pour 1990)
@@ -1102,6 +1283,62 @@ taux_marginaux_tranches_bareme_isf:
     metadata:
       unit: /1
     values:
+      '1982-01-01':
+        metadata:
+          reference: Loi 81-1160 du 30/12/1981, art. 2 à 11 (LF pour 1982)
+        value: null
+      '1983-01-01':
+        metadata:
+          reference: Loi 82-1126 du 29/12/1982, art. 16 (LF pour 1983)
+        value: null
+      '1984-01-01':
+        metadata:
+          reference: Loi 83-1179 du 29/12/1983, art. 19 (LF pour 1984)
+        value: null
+      '1985-01-01':
+        metadata:
+          reference: Loi 84-1208 du 29/12/1984, art. 26 (LF pour 1985)
+        value: null
+      '1986-01-01':
+        metadata:
+          reference: Loi 85-1403 du 30/12/1985, art. 19 (LF pour 1986)
+        value: null
+      '1987-01-01':
+        metadata:
+          reference: Loi 86-824 du 11/07/1986, art. 24 (LFR pour 1986)
+        value: null
+      '1989-01-01':
+        metadata:
+          reference: Loi 88-1149 du 23/12/1988, art. 26 (LF  pour 1989)
+        value: null
+      '1990-01-01':
+        metadata:
+          reference: Loi 89-935 du 29/12/1989, art. 10 (LF pour 1990)
+        value: null
+      '1991-01-01':
+        metadata:
+          reference: Loi 90-1168 du 29/12/1990, art. 16 (LF pour 1991)
+        value: null
+      '1992-01-01':
+        metadata:
+          reference: Loi 91-1322 du 30/12/1991, art. 37 (LF pour 1992)
+        value: null
+      '1994-01-01':
+        metadata:
+          reference: Loi 93-1352 du 30/12/1993, art. 7 (LF pour 1994)
+        value: null
+      '1995-01-01':
+        metadata:
+          reference: Loi 94-1162 du 29/12/1994, art. 4 (LF pour 1995)
+        value: null
+      '1996-01-01':
+        metadata:
+          reference: Loi 95-1346 du 30/12/1995, art. 6 (LF pour 1996)
+        value: null
+      '1997-01-01':
+        metadata:
+          reference: Loi 96-1181 du 30/12/1996, art. 25 (LF pour 1997)
+        value: null
       '1999-01-01':
         metadata:
           reference: Loi 98-1266 du 30/12/1998, art. 13 (LF pour 1999)
@@ -1151,6 +1388,11 @@ taux_marginaux_tranches_bareme_isf:
       '2013-01-01':
         metadata:
           reference: Loi 2012-1509 du 29/12/2012, art. 13 (LF pour 2013)
+        value: null
+      '2018-01-01':
+        metadata:
+          reference: Loi 2017-1837 du 30/12/2017, art. 31 (LF pour 2018) (abroge art.
+            885 U du CGI)
         value: null
   description: Taux marginaux des tranches du barème de l'ISF
   nombre_tranches_bareme:
@@ -1263,3 +1505,8 @@ taux_marginaux_tranches_bareme_isf:
         metadata:
           reference: Loi 2012-1509 du 29/12/2012, art. 13 (LF pour 2013)
         value: 5.0
+      '2018-01-01':
+        metadata:
+          reference: Loi 2017-1837 du 30/12/2017, art. 31 (LF pour 2018) (abroge art.
+            885 U du CGI)
+        value: null
