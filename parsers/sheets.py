@@ -104,13 +104,18 @@ class SheetParser(object):
       references.append(cell.internal_value.strip() if cell.internal_value else None)
     self.references = references
 
-  def build_description(self, column):
-    description_cells = column[1:self.first_data_row -1]
-    return "; ".join([
-      cell.internal_value.strip()
-      for cell in description_cells
-      if cell.internal_value is not None
-      ])
+  def parse_column_headers(self, column):
+    path = ''
+    descriptions_cells = column[1:self.first_data_row - 1]
+    for cell in descriptions_cells:
+      if cell.internal_value is None:
+        continue
+      description = cell.internal_value.strip()
+      key = slugify(description, stopwords = True)
+      path = '/'.join([path, key]) if path else key
+      dpath.util.new(self.sheet_data, '/'.join([path, 'description']), description)
+
+    return path
 
   def parse_cell(self, cell):
     value = cell.internal_value
@@ -124,36 +129,50 @@ class SheetParser(object):
         return value
     return value
 
-  def parse_column(self, column):
-    path = ''
-    descriptions_cells = column[1:self.first_data_row - 1]
-    for cell in descriptions_cells:
-      if cell.internal_value is None:
-        continue
-      description = cell.internal_value.strip()
-      key = slugify(description, stopwords = True)
-      path = '/'.join([path, key]) if path else key
-      dpath.util.new(self.sheet_data, '/'.join([path, 'description']), description)
+  def parse_unit(self, cell):
+    if cell.internal_value is None:
+      return
+    if '%' in cell.number_format:
+      return '/1'
+    elif '€' in cell.number_format:
+      return 'currency-EUR'
+    elif 'FRF' in cell.number_format:
+      return 'currency-FRF'
+    elif cell.number_format in ['General', '0.0']:
+      return
+    else:
+      print("Warning: Unknown unit encountered in cell {} in sheet {}".format(cell.coordinate, self.sheet.title))
 
+  def parse_column(self, column):
+
+    path = self.parse_column_headers(column)
     if not path:
       # If there is no path, there is no description, and the column doesn't contain data
       return
+    parameter = dpath.util.get(self.sheet_data, path)
+    parameter['metadata'] = {}
+
     values = {}
+    unit = None
 
     for index, cell in enumerate(column[self.first_data_row - 1:self.last_data_row]):
       date = self.dates[index]
       value = self.parse_cell(cell)
-      item = {'value': value}
+      item = {'value': value, 'metadata': {}}
+
+      cell_unit = self.parse_unit(cell)
+      if unit is None and cell_unit is not None:
+        parameter['metadata']['unit'] = cell_unit
+
       if self.references is not None and self.references[index] is not None:
-        item['reference'] = self.references[index]
+        item['metadata']['reference'] = self.references[index]
       values[date] = item
 
     clean_none_values(values)
 
-    values_path = '/'.join([path, 'values'])
-    if dpath.util.search(self.sheet_data, values_path):
+    if parameter.get('values') is not None:
       raise SheetParsingError("Name collision: column '{}' alredy exists.".format(path))
-    dpath.util.new(self.sheet_data, values_path, values)
+    parameter['values'] = values
 
 
   def parse(self):

@@ -29,8 +29,6 @@ def main():
     shutil.rmtree(directory)
   os.makedirs(directory)
   parse_workbook(wb, directory)
-  # parse_data_sheet(wb, directory)
-  # parse_summary(wb, directory)
 
 if __name__ == "__main__":
     main()
