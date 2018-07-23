@@ -150,7 +150,7 @@ class SheetParser(object):
       # If there is no path, there is no description, and the column doesn't contain data
       return
     parameter = dpath.util.get(self.sheet_data, path)
-    parameter['metadata'] = {}
+    metadata = {}
 
     values = {}
     units = {}
@@ -174,11 +174,13 @@ class SheetParser(object):
       if len(units) == 1:
         units = list(units.values())[0]
       if units is not None:
-        parameter['metadata']['unit'] = units
+        metadata['unit'] = units
 
     if parameter.get('values') is not None:
       raise SheetParsingError("Name collision: column '{}' alredy exists.".format(path))
     parameter['values'] = values
+    if metadata:
+      parameter['metadata'] = metadata
 
   def parse(self):
     self.unmerge_cells()

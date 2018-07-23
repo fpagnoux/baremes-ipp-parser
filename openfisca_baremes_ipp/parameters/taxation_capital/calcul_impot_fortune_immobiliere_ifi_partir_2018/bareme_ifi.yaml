@@ -105,7 +105,6 @@ taux_marginaux_tranches_bareme_ifi:
   description: Taux marginaux des tranches du barème de l'IFI
   nombre_tranches_bareme:
     description: Nombre de tranches du barème
-    metadata: {}
     values:
       '2018-01-01':
         metadata:

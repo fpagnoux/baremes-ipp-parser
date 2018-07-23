@@ -1,7 +1,6 @@
 description: Cotisations au Fonds de solidarité (FDS)
 indice_majore_reference:
   description: Indice majoré de référence
-  metadata: {}
   values:
     '1982-11-01':
       metadata: {}

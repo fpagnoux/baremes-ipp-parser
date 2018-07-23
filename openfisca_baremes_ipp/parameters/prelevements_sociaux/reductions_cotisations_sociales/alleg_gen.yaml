@@ -97,7 +97,6 @@ ristournes_juppe_i_ii_iii_1995_2003:
   description: Ristournes Juppé (I, II et III) (1995-2003)
   plafond_en_nombre_smic:
     description: Plafond (en  nombre de SMIC)
-    metadata: {}
     values:
       '1993-07-01':
         metadata:
@@ -125,7 +124,6 @@ ristournes_juppe_i_ii_iii_1995_2003:
         value: null
   taux:
     description: Taux
-    metadata: {}
     values:
       '1993-07-01':
         metadata:
@@ -153,7 +151,6 @@ ristournes_juppe_i_ii_iii_1995_2003:
         value: null
   taux_max_smic:
     description: Taux max (au SMIC)
-    metadata: {}
     values:
       '1993-07-01':
         metadata:
