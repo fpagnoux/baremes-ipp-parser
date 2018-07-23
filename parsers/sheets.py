@@ -163,6 +163,7 @@ class SheetParser(object):
       cell_unit = self.parse_unit(cell)
       if unit is None and cell_unit is not None:
         parameter['metadata']['unit'] = cell_unit
+        unit = cell_unit  # For the moment, take the unit of the first value as the param unit. TODO: Handle currency/unit change.
 
       if self.references is not None and self.references[index] is not None:
         item['metadata']['reference'] = self.references[index]

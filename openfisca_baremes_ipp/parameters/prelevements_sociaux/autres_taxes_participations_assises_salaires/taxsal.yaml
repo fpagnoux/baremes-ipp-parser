@@ -295,7 +295,7 @@ majoration_3:
 plafond1:
   description: Plafond1
   metadata:
-    unit: currency-FRF
+    unit: currency-EUR
   values:
     '1968-11-01':
       metadata:
@@ -426,7 +426,7 @@ plafond1:
 plafond2:
   description: Plafond2
   metadata:
-    unit: currency-FRF
+    unit: currency-EUR
   values:
     '1968-11-01':
       metadata:

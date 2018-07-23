@@ -126,7 +126,7 @@ commercants_industriels:
   deces:
     description: Décès
     metadata:
-      unit: currency-FRF
+      unit: /1
     values:
       '1975-01-01':
         metadata:
@@ -245,7 +245,7 @@ commercants_industriels:
   invalidite:
     description: Invalidité
     metadata:
-      unit: currency-FRF
+      unit: /1
     values:
       '1975-01-01':
         metadata:

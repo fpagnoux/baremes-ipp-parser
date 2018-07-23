@@ -2,7 +2,7 @@ description: Plafond de la Sécurité Sociale (1930-2017)
 plafond_securite_sociale_annuel:
   description: Plafond de la Sécurité sociale (annuel)
   metadata:
-    unit: currency-FRF
+    unit: currency-EUR
   values:
     '1930-07-01':
       metadata:
@@ -391,7 +391,7 @@ plafond_securite_sociale_annuel:
 plafond_securite_sociale_mensuel:
   description: Plafond de la Sécurité sociale (mensuel)
   metadata:
-    unit: currency-FRF
+    unit: currency-EUR
   values:
     '1946-07-01':
       metadata:

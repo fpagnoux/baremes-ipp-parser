@@ -32,7 +32,7 @@ description: Réductions et abattements de l'ISF
 reduction_isf_enfant_charge:
   description: Réduction ISF enfant à charge
   metadata:
-    unit: currency-FRF
+    unit: currency-EUR
   values:
     '1989-01-01':
       metadata:

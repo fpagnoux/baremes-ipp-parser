@@ -204,7 +204,7 @@ indice_majore_reference:
 seuil_assujettissement:
   description: Seuil d'assujettissement
   metadata:
-    unit: currency-FRF
+    unit: currency-EUR
   values:
     '1982-11-01':
       metadata: {}
@@ -718,7 +718,7 @@ taux:
 traitement_brut_annuel:
   description: Traitement brut annuel
   metadata:
-    unit: currency-FRF
+    unit: currency-EUR
   values:
     '1989-09-01':
       metadata:
@@ -921,7 +921,7 @@ traitement_brut_annuel:
 valeur_annuelle_point_fp:
   description: Valeur annuelle point FP
   metadata:
-    unit: currency-FRF
+    unit: currency-EUR
   values:
     '1989-09-01':
       metadata:
