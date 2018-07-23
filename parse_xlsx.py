@@ -12,7 +12,6 @@ import glob
 from parsers.workbook import parse_workbook
 
 
-THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 NODE_MAP = {
   'baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx': 'prelevements_sociaux',
   # 'baremes-ipp-impot-revenu-income-tax.xlsx': 'impot_revenu',
@@ -23,6 +22,7 @@ NODE_MAP = {
 def main():
   argparser = argparse.ArgumentParser()
   argparser.add_argument('xlsx_path', help = 'XLSX file or directory to convert to YAML parameters')
+  argparser.add_argument('output_dir', help = 'Output directory')
   argparser.add_argument("-v", "--verbose", help="increase output verbosity", action="store_true")
   args = argparser.parse_args()
 
@@ -40,7 +40,7 @@ def main():
     if file_name not in NODE_MAP:
       continue
     wb = openpyxl.load_workbook(file_path, data_only = True)
-    directory = os.path.join(THIS_DIR, 'openfisca_baremes_ipp', 'parameters', NODE_MAP[file_name])
+    directory = os.path.join(args.output_dir, NODE_MAP[file_name])
     if os.path.isdir(directory):
       shutil.rmtree(directory)
     os.makedirs(directory)
