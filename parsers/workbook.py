@@ -16,6 +16,7 @@ def create_directories(sections, directory):
     os.mkdir(dir_path)
     export_yaml(section_data, meta_file_path)
 
+
 def parse_workbook(wb, directory):
   summary_parser = SummaryParser(wb['Sommaire (FR)'])
   summary_parser.parse()
@@ -41,6 +42,3 @@ def parse_workbook(wb, directory):
     except SheetParsingError as e:
       print('Error parsing sheet "{}": "{}". Ignoring it.'
         .format(title, e.args[0]))
-
-def parse_data_sheet(wb, directory):
-      parser.save_as_yaml(u'{}/{}.yaml'.format(directory, slugify(title, separator='_')))

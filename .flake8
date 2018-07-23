@@ -1,0 +1,8 @@
+[flake8]
+hang-closing = true
+; E128 continuation line under-indented for visual indent
+; E251: We prefer `function(x = 1)` over `function(x=1)`
+; E501: We do not enforce a maximum line length
+; W503: We break lines before binary operators
+ignore = E128,E251,F405,E501,W503,E111,E121,E114
+max-line-length = 120

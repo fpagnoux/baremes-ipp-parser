@@ -4,7 +4,6 @@ from builtins import range
 from builtins import object
 import dpath
 import datetime
-from pprint import pprint
 
 from .commons import slugify
 
@@ -21,6 +20,7 @@ def clean_none_values(values):
       first_none_found = True
     elif value is not None and not first_value_found:
       first_value_found = True
+
 
 class SheetParsingError(Exception):
   pass
@@ -56,7 +56,7 @@ class SheetParser(object):
       elif key == 'reference':
         self.reference_column = cell.column
       elif key == 'date_parution_jo' or key == 'notes':
-        pass # Ignore those columns for the moment
+        pass  # Ignore those columns for the moment
       elif key or any(cell.internal_value for cell in self.sheet[cell.column]):
         self.data_columns.append(cell.column)
       else:
@@ -73,7 +73,7 @@ class SheetParser(object):
     for cell in self.sheet[self.date_column][2:]:
 
       if cell.internal_value is None or not isinstance(cell.internal_value, (datetime.date, int)):
-        if not visited_a_date: # We are still in the header
+        if not visited_a_date:  # We are still in the header
           continue
         else:
           # Once you reach a blank cell in the date column, stop
@@ -174,7 +174,6 @@ class SheetParser(object):
     if parameter.get('values') is not None:
       raise SheetParsingError("Name collision: column '{}' alredy exists.".format(path))
     parameter['values'] = values
-
 
   def parse(self):
     self.unmerge_cells()

@@ -15,4 +15,3 @@ class CountryTaxBenefitSystem(TaxBenefitSystem):
         super(CountryTaxBenefitSystem, self).__init__(entities.entities)
         param_path = os.path.join(COUNTRY_DIR, 'parameters')
         self.load_parameters(param_path)
-

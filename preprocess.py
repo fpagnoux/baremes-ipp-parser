@@ -3,7 +3,6 @@
 
 import openpyxl
 import argparse
-import os
 
 MAP = {
   "Références législatives": "reference",
@@ -11,7 +10,8 @@ MAP = {
   "Notes": "notes",
   "Note": "notes",
   "Date d'effet": "date",
-}
+  }
+
 
 def main():
   argparser = argparse.ArgumentParser()
@@ -26,7 +26,7 @@ def main():
   for sheet_name in wb.sheetnames:
     sheet = wb[sheet_name]
     for cell in sheet[2]:
-      up_cell = cell.offset(-1,0)
+      up_cell = cell.offset(-1, 0)
       if cell.internal_value in list(MAP.keys()):
         up_cell.set_explicit_value(MAP[cell.internal_value])
 

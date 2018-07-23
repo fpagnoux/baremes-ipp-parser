@@ -14,7 +14,8 @@ NODE_MAP = {
   'baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx': 'prelevements_sociaux',
   'baremes-ipp-impot-revenu-income-tax.xlsx': 'impot_revenu',
   'baremes-ipp-taxation-capital.xlsx': 'taxation_capital'
-}
+  }
+
 
 def main():
   argparser = argparse.ArgumentParser()
@@ -29,6 +30,7 @@ def main():
     shutil.rmtree(directory)
   os.makedirs(directory)
   parse_workbook(wb, directory)
+
 
 if __name__ == "__main__":
     main()

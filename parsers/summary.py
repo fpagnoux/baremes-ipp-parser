@@ -3,6 +3,7 @@
 from .commons import slugify
 from .sheets import SheetParsingError
 
+
 class SummaryParser(object):
 
   def __init__(self, sheet):
@@ -19,8 +20,8 @@ class SummaryParser(object):
   def parse(self):
     current_path = ''
     rows = list(self.sheet.rows)
-    first_row = next(row[0].row for row in  rows if self.is_first_row(row))
-    for row in rows[first_row -1:]:
+    first_row = next(row[0].row for row in rows if self.is_first_row(row))
+    for row in rows[first_row - 1:]:
       if row[3].internal_value is not None:
         cell = row[3]
         description = cell.internal_value
