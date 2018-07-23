@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 
 import os
+import logging
 
 from .sheets import SheetParser, SheetParsingError
 from .summary import SummaryParser
 from .commons import export_yaml, slugify
 
 SHEETS_TO_IGNORE = ['Sommaire (FR)', 'Outline (EN)', 'Abréviations', 'CNRACL', 'IRCANTEC', 'FILLON']
+
+log = logging.getLogger(__name__)
 
 
 def create_directories(sections, directory):
@@ -25,7 +28,7 @@ def parse_workbook(wb, directory):
   for title in wb.sheetnames:
     if title in SHEETS_TO_IGNORE:
       continue
-    # print('Parsing sheet "{}"'.format(title))
+    log.info('Parsing sheet "{}"'.format(title))
     parser = SheetParser(wb[title])
     key = slugify(title)
     try:
@@ -34,11 +37,11 @@ def parse_workbook(wb, directory):
       data.update(parser.sheet_data)
       sheets_metadata = summary_parser.sheets_data.get(key)
       if sheets_metadata is None:
-        print("Warning: Sheet {} does not seem to be included in the summary. Ignoring it.".format(title))
+        log.warning("Sheet {} does not seem to be included in the summary. Ignoring it.".format(title))
         continue
       data.update({'description': sheets_metadata['description']})
       path = os.path.join(directory, sheets_metadata['path'], "{}.yaml".format(key))
       export_yaml(data, path)
     except SheetParsingError as e:
-      print('Error parsing sheet "{}": "{}". Ignoring it.'
+      log.warning('Error parsing sheet "{}":\n  "{}".\nThis sheet will be ignored.'
         .format(title, e.args[0]))

@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 
+import logging
+
 from .commons import slugify
 from .sheets import SheetParsingError
+
+log = logging.getLogger(__name__)
 
 
 class SummaryParser(object):
@@ -26,7 +30,7 @@ class SummaryParser(object):
         cell = row[3]
         description = cell.internal_value
         if cell.hyperlink is None:
-          print("Warning: summary cell {} is not a link. Ignoring it.".format(cell.coordinate))
+          log.warning("Summary cell {} is not a link. Ignoring it.".format(cell.coordinate))
           continue
         key = slugify(cell.hyperlink.location.split('!')[0])
         self.sheets_data[key] = {'description': description, 'path': current_path}

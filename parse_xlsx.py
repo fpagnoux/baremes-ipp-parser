@@ -6,8 +6,10 @@ import openpyxl
 import argparse
 import os
 import shutil
+import logging
 
 from parsers.workbook import parse_workbook
+
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 NODE_MAP = {
@@ -20,7 +22,10 @@ NODE_MAP = {
 def main():
   argparser = argparse.ArgumentParser()
   argparser.add_argument('xlsx_file', help = 'XLSX file to convert to YAML parameters')
+  argparser.add_argument("-v", "--verbose", help="increase output verbosity", action="store_true")
   args = argparser.parse_args()
+
+  logging.basicConfig(level = logging.DEBUG if args.verbose else logging.WARNING)
 
   file_path = args.xlsx_file
   file_name = os.path.basename(file_path)

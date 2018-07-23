@@ -4,8 +4,11 @@ from builtins import range
 from builtins import object
 import dpath
 import datetime
+import logging
 
 from .commons import slugify
+
+log = logging.getLogger(__name__)
 
 
 def clean_none_values(values):
@@ -125,7 +128,7 @@ class SheetParser(object):
       try:
         return float(value)
       except ValueError:
-        print("Warning, unable to interpret cell {} in sheet {}.".format(cell.coordinate, self.sheet.title))
+        log.warning("Unable to interpret cell {} in sheet {}.".format(cell.coordinate, self.sheet.title))
         return value
     return value
 
@@ -141,7 +144,7 @@ class SheetParser(object):
     elif cell.number_format in ['General', '0.0']:
       return
     else:
-      print("Warning: Unknown unit encountered in cell {} in sheet {}".format(cell.coordinate, self.sheet.title))
+      log.warning("Unknown unit encountered in cell {} in sheet {}".format(cell.coordinate, self.sheet.title))
 
   def parse_column(self, column):
 
