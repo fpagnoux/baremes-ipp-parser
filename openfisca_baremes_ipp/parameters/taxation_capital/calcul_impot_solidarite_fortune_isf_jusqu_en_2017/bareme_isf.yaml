@@ -3,7 +3,9 @@ seuils_tranches_bareme_isf:
   1ere_tranche:
     description: 1ère tranche
     metadata:
-      unit: currency-FRF
+      unit:
+        '1982-01-01': currency-FRF
+        '2002-01-01': currency-EUR
     values:
       '1982-01-01':
         metadata:
@@ -119,7 +121,9 @@ seuils_tranches_bareme_isf:
   2eme_tranche:
     description: 2ème tranche
     metadata:
-      unit: currency-FRF
+      unit:
+        '1982-01-01': currency-FRF
+        '2002-01-01': currency-EUR
     values:
       '1982-01-01':
         metadata:
@@ -235,7 +239,9 @@ seuils_tranches_bareme_isf:
   3eme_tranche:
     description: 3ème tranche
     metadata:
-      unit: currency-FRF
+      unit:
+        '1982-01-01': currency-FRF
+        '2002-01-01': currency-EUR
     values:
       '1982-01-01':
         metadata:
@@ -351,7 +357,9 @@ seuils_tranches_bareme_isf:
   4eme_tranche:
     description: 4ème tranche
     metadata:
-      unit: currency-FRF
+      unit:
+        '1985-01-01': currency-FRF
+        '2002-01-01': currency-EUR
     values:
       '1982-01-01':
         metadata:
@@ -467,7 +475,9 @@ seuils_tranches_bareme_isf:
   5eme_tranche:
     description: 5ème  tranche
     metadata:
-      unit: currency-FRF
+      unit:
+        '1990-01-01': currency-FRF
+        '2002-01-01': currency-EUR
     values:
       '1982-01-01':
         metadata:
@@ -583,7 +593,9 @@ seuils_tranches_bareme_isf:
   6eme_tranche:
     description: 6ème tranche
     metadata:
-      unit: currency-FRF
+      unit:
+        '1999-01-01': currency-FRF
+        '2002-01-01': currency-EUR
     values:
       '1982-01-01':
         metadata:

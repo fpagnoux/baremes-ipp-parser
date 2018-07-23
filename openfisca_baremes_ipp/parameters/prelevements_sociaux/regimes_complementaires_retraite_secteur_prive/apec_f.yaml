@@ -5,7 +5,9 @@ forfait_annuel:
   employeur:
     description: Employeur
     metadata:
-      unit: currency-FRF
+      unit:
+        '1976-03-01': currency-FRF
+        '2002-03-01': currency-EUR
     values:
       '1976-03-01':
         metadata:
@@ -125,7 +127,9 @@ forfait_annuel:
   salarie:
     description: Salarié
     metadata:
-      unit: currency-FRF
+      unit:
+        '1976-03-01': currency-FRF
+        '2002-03-01': currency-EUR
     values:
       '1976-03-01':
         metadata:

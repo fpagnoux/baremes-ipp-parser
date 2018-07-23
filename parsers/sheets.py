@@ -153,23 +153,28 @@ class SheetParser(object):
     parameter['metadata'] = {}
 
     values = {}
-    unit = None
+    units = {}
 
     for index, cell in enumerate(column[self.first_data_row - 1:self.last_data_row]):
       date = self.dates[index]
       value = self.parse_cell(cell)
       item = {'value': value, 'metadata': {}}
 
-      cell_unit = self.parse_unit(cell)
-      if unit is None and cell_unit is not None:
-        parameter['metadata']['unit'] = cell_unit
-        unit = cell_unit  # For the moment, take the unit of the first value as the param unit. TODO: Handle currency/unit change.
+      if value is not None:
+        cell_unit = self.parse_unit(cell)
+        units[date] = cell_unit
 
       if self.references is not None and self.references[index] is not None:
         item['metadata']['reference'] = self.references[index]
       values[date] = item
 
     values = contract(values)
+    if units:
+      units = contract(units)
+      if len(units) == 1:
+        units = list(units.values())[0]
+      if units is not None:
+        parameter['metadata']['unit'] = units
 
     if parameter.get('values') is not None:
       raise SheetParsingError("Name collision: column '{}' alredy exists.".format(path))
