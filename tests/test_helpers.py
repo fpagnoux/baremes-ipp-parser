@@ -2,7 +2,7 @@
 
 from nose.tools import assert_equal
 
-from parsers.sheets import contract
+from bareme_ipp_parsers.sheets import contract
 
 def test_contract():
   values = {

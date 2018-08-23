@@ -9,7 +9,7 @@ import shutil
 import logging
 import glob
 
-from parsers.workbook import parse_workbook
+from bareme_ipp_parsers.workbook import parse_workbook
 
 
 NODE_MAP = {

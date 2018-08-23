@@ -100,7 +100,7 @@ class SheetParser(object):
     if not self.reference_column:
       return
     references = []
-    for cell in self.sheet[self.reference_column][self.first_data_row - 1:self.last_data_row]:
+    for cell in self.sheet[self.reference_column][self.first_data_row - 1: self.last_data_row]:
       references.append(cell.internal_value.strip() if cell.internal_value else None)
     self.references = references
 
