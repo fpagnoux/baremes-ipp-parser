@@ -1,6 +1,6 @@
 # Prérequis
 
-Python, pip.
+Python 3, pip.
 
 # Installation
 
@@ -10,7 +10,7 @@ pip install -r requirements.txt
 
 # Utilisation
 
-- Récupérer un fichier XLSX de barème IPP, par exemple [celui-ci](https://www.ipp.eu/wp-content/uploads/2018/01/baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx)
+- Récupérer les [fichiers des barèmes IPP au format XSLX](https://framagit.org/french-tax-and-benefit-tables/ipp-tax-and-benefit-tables-xlsx)
 
 - Facultatif: Préprocésser le fichier pour tenter d'ajouter les headers manquants:
 ```sh
@@ -22,10 +22,8 @@ pip install -r requirements.txt
 - Parser le fichier:
 
 ```sh
-./parse_xlsx.py preprocessed_baremes.xlsx
+./parse_xlsx.py path/to/xslx/file/or/directory path/to/output/
 ```
-
-Les paramètres au format YAML OpenFisca sont produits dans un répertoire `parameters` situé dans le même répertoire que le script.
 
 # Format normalisé d'une feuille de paramètres
 
