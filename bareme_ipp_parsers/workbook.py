@@ -40,6 +40,7 @@ def parse_workbook(wb, directory):
         log.warning("Sheet {} does not seem to be included in the summary. Ignoring it.".format(title))
         continue
       data.update({'description': sheets_metadata['description']})
+      data.update({'metadata': {'rank': sheets_metadata['rank']}})
       path = os.path.join(directory, sheets_metadata['path'], "{}.yaml".format(key))
       export_yaml(data, path)
     except SheetParsingError as e:

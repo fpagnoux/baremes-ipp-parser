@@ -25,20 +25,36 @@ class SummaryParser(object):
     current_path = ''
     rows = list(self.sheet.rows)
     first_row = next(row[0].row for row in rows if self.is_first_row(row))
+    section_index = 1
+    sheet_index = 1
     for row in rows[first_row - 1:]:
       if row[3].internal_value is not None:
-        cell = row[3]
-        description = cell.internal_value
-        if cell.hyperlink is None:
-          log.warning("Summary cell {} is not a link. Ignoring it.".format(cell.coordinate))
-          continue
-        key = slugify(cell.hyperlink.location.split('!')[0])
-        self.sheets_data[key] = {'description': description, 'path': current_path}
+        self.parse_sheet_title(row[3], current_path, sheet_index)
+        sheet_index += 1
       elif row[1].internal_value is not None:
-        cell = row[1]
-        description = ''.join(cell.internal_value.split('.')[1:]).strip()
-        key = slugify(description, stopwords = True)
-        if self.sections.get(key):
-          raise SheetParsingError("Name collision: sheet '{}' alredy exists.".format(key))
-        self.sections[key] = {'description': description}
-        current_path = key
+        current_path = self.parse_section_title(row[1], section_index)
+        section_index += 1
+        sheet_index = 0
+
+  def parse_section_title(self, cell, index):
+    description = ''.join(cell.internal_value.split('.')[1:]).strip()
+    key = slugify(description, stopwords = True)
+    if self.sections.get(key):
+      raise SheetParsingError("Name collision: section '{}' alredy exists.".format(key))
+    self.sections[key] = {
+      'description': description,
+      'metadata': {
+        'rank': index
+        }
+      }
+    return key
+
+  def parse_sheet_title(self, cell, path, index):
+    description = cell.internal_value
+    if cell.hyperlink is None:
+      log.warning("Summary cell {} is not a link. Ignoring it.".format(cell.coordinate))
+      return
+    key = slugify(cell.hyperlink.location.split('!')[0])
+    if self.sheets_data.get(key):
+      raise SheetParsingError("Name collision: sheet '{}' alredy exists.".format(key))
+    self.sheets_data[key] = {'description': description, 'path': path, 'rank': index}
