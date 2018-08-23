@@ -1,2 +1,2 @@
 openpyxl
-openfisca_core
+python-slugify
