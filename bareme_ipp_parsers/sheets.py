@@ -171,6 +171,8 @@ class SheetParser(object):
 
       if self.references is not None and self.references[index] is not None:
         item['metadata']['reference'] = self.references[index]
+      if not item['metadata']:
+        del item['metadata']
       values[date] = item
 
     values = contract(values)

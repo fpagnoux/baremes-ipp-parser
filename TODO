@@ -1,10 +1,6 @@
-- Open PR on Openfisca core
-- Mail Mahdi
-  - Ordre?
-
 -------------------------------------
 
-Cas particuliers:
+Cas particuliers (à intégrer dans la config):
 
 
 - Feuille avec plusieurs références:
@@ -16,3 +12,13 @@ Cas particuliers:
 
 - Champs non-numérique
   - FILLON
+
+
+
+------------------------------------
+
+Il faut différencier les colonnes metadata des data
+- Récupérer les notes en bas de page
+- Rendre l'ordre facilement modifiable dans la conf
+- Préserver l'ordre dans une colonne
+- Stocker les références au niveau du node plutôt que les répéter?
