@@ -7,7 +7,8 @@ from .sheets import SheetParser, SheetParsingError
 from .summary import SummaryParser
 from .commons import export_yaml, slugify
 
-SHEETS_TO_IGNORE = ['Sommaire (FR)', 'Outline (EN)', 'Abréviations', 'CNRACL', 'IRCANTEC', 'FILLON']
+SHEETS_TO_IGNORE = ['Sommaire (FR)', 'Outline (EN)', 'Abréviations']
+# SHEETS_TO_IGNORE = ['Sommaire (FR)', 'Outline (EN)', 'Abréviations', ]
 
 log = logging.getLogger(__name__)
 
@@ -20,15 +21,16 @@ def create_directories(sections, directory):
     export_yaml(section_data, meta_file_path)
 
 
-def parse_workbook(wb, directory):
+def parse_workbook(wb, directory, config = None):
   summary_sheet = next(sheet for sheet in wb.sheetnames if 'sommaire' in sheet.lower())
   summary_parser = SummaryParser(wb[summary_sheet])
   summary_parser.parse()
   create_directories(summary_parser.sections, directory)
 
   for title in wb.sheetnames:
-    if title in SHEETS_TO_IGNORE:
+    if config and title in config['ignore']:
       continue
+
     log.info('Parsing sheet "{}"'.format(title))
     parser = SheetParser(wb[title])
     key = slugify(title)

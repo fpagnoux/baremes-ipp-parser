@@ -11,13 +11,7 @@ import glob
 
 from bareme_ipp_parsers.workbook import parse_workbook
 
-
-NODE_MAP = {
-  'baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx': 'prelevements_sociaux',
-  # 'baremes-ipp-impot-revenu-income-tax.xlsx': 'impot_revenu',
-  'baremes-ipp-taxation-capital.xlsx': 'taxation_capital',
-  'baremes-ipp-chomage-unemployment.xlsx': 'chomage',
-  }
+from config import sheets
 
 
 def main():
@@ -38,14 +32,14 @@ def main():
 
   for file_path in xlsx_files:
     file_name = os.path.basename(file_path)
-    if file_name not in NODE_MAP:
+    if file_name not in sheets:
       continue
     wb = openpyxl.load_workbook(file_path, data_only = True)
-    directory = os.path.join(args.output_dir, NODE_MAP[file_name])
+    directory = os.path.join(args.output_dir, sheets[file_name]['name'])
     if os.path.isdir(directory):
       shutil.rmtree(directory)
     os.makedirs(directory)
-    parse_workbook(wb, directory)
+    parse_workbook(wb, directory, config = sheets[file_name])
 
 
 if __name__ == "__main__":
