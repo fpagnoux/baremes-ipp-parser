@@ -135,14 +135,18 @@ class SheetParser(object):
       return
     if '%' in cell.number_format:
       return '/1'
-    elif '€' in cell.number_format:
+    if '€' in cell.number_format:
       return 'currency-EUR'
-    elif 'FRF' in cell.number_format:
+    if 'AFRF' in cell.number_format:
+      return 'currency-AFRF'
+    if 'FRF' in cell.number_format:
       return 'currency-FRF'
-    elif cell.number_format == 'General' or re.match ('0.(0)+',cell.number_format):
+    if cell.number_format == 'General' or re.match('0.?(0)*',cell.number_format):
       return
-    else:
-      log.warning("Unknown unit encountered in cell {} in sheet {}".format(cell.coordinate, self.sheet.title))
+    match = re.search(r'\[\$((?:.)*)\]', cell.number_format)  # Handle custom units
+    if match:
+      return match.group(1)
+    log.warning("Unknown unit encountered in cell {} in sheet {}".format(cell.coordinate, self.sheet.title))
 
   def parse_column(self, column):
 
