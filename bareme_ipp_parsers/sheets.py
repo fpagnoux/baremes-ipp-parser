@@ -5,6 +5,7 @@ from builtins import object
 import dpath
 import datetime
 import logging
+import re
 
 from .commons import slugify
 
@@ -110,7 +111,7 @@ class SheetParser(object):
     for cell in descriptions_cells:
       if cell.internal_value is None:
         continue
-      description = cell.internal_value.strip()
+      description = str(cell.internal_value).strip()
       key = slugify(description, stopwords = True)
       path = '/'.join([path, key]) if path else key
       dpath.util.new(self.sheet_data, '/'.join([path, 'description']), description)
@@ -138,7 +139,7 @@ class SheetParser(object):
       return 'currency-EUR'
     elif 'FRF' in cell.number_format:
       return 'currency-FRF'
-    elif cell.number_format in ['General', '0.0']:
+    elif cell.number_format == 'General' or re.match ('0.(0)+',cell.number_format):
       return
     else:
       log.warning("Unknown unit encountered in cell {} in sheet {}".format(cell.coordinate, self.sheet.title))
