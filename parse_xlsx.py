@@ -15,7 +15,8 @@ from bareme_ipp_parsers.workbook import parse_workbook
 NODE_MAP = {
   'baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx': 'prelevements_sociaux',
   # 'baremes-ipp-impot-revenu-income-tax.xlsx': 'impot_revenu',
-  'baremes-ipp-taxation-capital.xlsx': 'taxation_capital'
+  'baremes-ipp-taxation-capital.xlsx': 'taxation_capital',
+  'baremes-ipp-chomage-unemployment.xlsx': 'chomage',
   }
 
 
@@ -23,7 +24,7 @@ def main():
   argparser = argparse.ArgumentParser()
   argparser.add_argument('xlsx_path', help = 'XLSX file or directory to convert to YAML parameters')
   argparser.add_argument('output_dir', help = 'Output directory')
-  argparser.add_argument("-v", "--verbose", help="increase output verbosity", action="store_true")
+  argparser.add_argument("-v", "--verbose", help = "increase output verbosity", action = "store_true")
   args = argparser.parse_args()
 
   logging.basicConfig(level = logging.DEBUG if args.verbose else logging.WARNING)
