@@ -27,6 +27,8 @@ pip install -r requirements.txt
 
 # Format normalisé d'une feuille de paramètres
 
+- La feuille contenant le sommaire du fichier doit contenir le mot clé "sommaire"
+
 - La première ligne (cachée à la visialisation) doit être un header qui contient:
   - Soit un des mots clés suivant: `date`, `reference`, `notes`, `date_parution_jo`
   - Soit le nom du paramètre de la colonne.

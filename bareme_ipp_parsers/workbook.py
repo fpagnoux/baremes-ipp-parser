@@ -21,7 +21,8 @@ def create_directories(sections, directory):
 
 
 def parse_workbook(wb, directory):
-  summary_parser = SummaryParser(wb['Sommaire (FR)'])
+  summary_sheet = next(sheet for sheet in wb.sheetnames if 'sommaire' in sheet.lower())
+  summary_parser = SummaryParser(wb[summary_sheet])
   summary_parser.parse()
   create_directories(summary_parser.sections, directory)
 
