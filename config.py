@@ -23,4 +23,11 @@ sheets = {
             "RAM",  # 2 colonnes '1948' qui contiennent des valeurs différentes
         ],
     },
+    "baremes-ipp-marche-du-travail-labour-market.xlsx": {
+        "name": "marche_travail",
+        "ignore": [
+            "Sommaire (FR)",
+            "Outline (EN)",
+            ]
+    }
 }

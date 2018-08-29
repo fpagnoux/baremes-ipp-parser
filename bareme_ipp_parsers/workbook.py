@@ -28,7 +28,7 @@ def parse_workbook(wb, directory, config = None):
   create_directories(summary_parser.sections, directory)
 
   for title in wb.sheetnames:
-    if config and title in config['ignore']:
+    if config and config.get('ignore') and title in config['ignore']:
       continue
 
     log.info('Parsing sheet "{}"'.format(title))
