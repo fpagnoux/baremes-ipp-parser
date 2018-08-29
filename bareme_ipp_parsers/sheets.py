@@ -123,7 +123,7 @@ class SheetParser(object):
     if isinstance(value, int):
       return float(value)
     if isinstance(value, str):
-      if value == "Valeur inconnue":
+      if value == "nc":
         # TODO: handle placeholder
         return
       try:
