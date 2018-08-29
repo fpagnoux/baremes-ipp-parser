@@ -37,6 +37,8 @@ class SummaryParser(object):
         sheet_index = 0
 
   def parse_section_title(self, cell, index):
+    if not isinstance(cell.internal_value, str):
+      raise SheetParsingError("Enable to parse summary: Unexpected value in cell '{}'".format(cell.coordinate))
     description = ''.join(cell.internal_value.split('.')[1:]).strip()
     key = slugify(description, stopwords = True)
     if self.sections.get(key):

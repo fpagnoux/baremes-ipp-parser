@@ -10,8 +10,11 @@ import logging
 import glob
 
 from bareme_ipp_parsers.workbook import parse_workbook
+from bareme_ipp_parsers.sheets import SheetParsingError
 
 from config import sheets
+
+log = logging.getLogger(__name__)
 
 
 def main():
@@ -39,8 +42,12 @@ def main():
     if os.path.isdir(directory):
       shutil.rmtree(directory)
     os.makedirs(directory)
-    parse_workbook(wb, directory, config = sheets[file_name])
-
+    log.info('Parsing file {}'.format(file_name))
+    try:
+      parse_workbook(wb, directory, config = sheets[file_name])
+    except SheetParsingError as e:
+      log.error('Error parsing workbook "{}":\n  "{}".\n  This workbook will be ignored.'
+        .format(file_name, e.args[0]))
 
 if __name__ == "__main__":
     main()

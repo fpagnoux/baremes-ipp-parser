@@ -22,4 +22,5 @@ Il faut différencier les colonnes metadata des data
 - Rendre l'ordre facilement modifiable dans la conf
 - Préserver l'ordre dans une colonne
 - Stocker les références au niveau du node plutôt que les répéter?
-- Formatter les anciens francs correctement
+- Formatter les anciens francs correctement dans les views
+- Plusieurs niveaux dans le sommaire (I.A.1) dans le fichiers retraite

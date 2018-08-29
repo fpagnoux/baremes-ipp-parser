@@ -129,7 +129,7 @@ class SheetParser(object):
       try:
         return float(value)
       except ValueError:
-        log.warning("Unable to interpret cell {} in sheet {}.".format(cell.coordinate, self.sheet.title))
+        log.warning("Unable to interpret cell '{}' in sheet '{}'. Content: '{}'".format(cell.coordinate, self.sheet.title, cell.internal_value))
         return value
     return value
 

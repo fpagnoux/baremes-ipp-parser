@@ -1,10 +1,32 @@
 sheets = {
     "baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx": {
         "name": "prelevements_sociaux",
-        "ignore": ["CNRACL", "IRCANTEC", "FILLON"],
+        "ignore": [
+            "Sommaire (FR)",
+            "Outline (EN)",
+            "Abréviations",
+            "CNRACL",
+            "IRCANTEC",
+            "FILLON",
+            "CSG-REMPLACEMENT",
+            "ASSIETTE_PU",
+            "AUBRYI",
+            ],
     },
-    "baremes-ipp-taxation-capital.xlsx": {"name": "taxation_capital"},
-    "baremes-ipp-chomage-unemployment.xlsx": {"name": "chomage"},
+    "baremes-ipp-taxation-capital.xlsx": {
+        "name": "taxation_capital",
+        "ignore": [
+            "Sommaire (FR)",
+            "Outline (EN)",
+            ]
+        },
+    "baremes-ipp-chomage-unemployment.xlsx": {
+        "name": "chomage",
+        "ignore": [
+            "Sommaire FR",
+            "Outline EN",
+            ]
+        },
     "baremes-ipp-retraites-pensions.xlsx": {
         "name": "retraites",
         "ignore": [
@@ -37,4 +59,12 @@ sheets = {
             "Outline (EN)",
             ]
     },
+    # "baremes-ipp-taxation-indirecte.xlsx": {
+    #     "name": "taxation_indirecte",
+    #     "ignore": [
+    #         "Sommaire (FR)",
+    #         "Outline (EN)",
+    #         "TVA par produit", # valeurs en fonction du produit, pas de la date
+    #         ]
+    # },
 }
