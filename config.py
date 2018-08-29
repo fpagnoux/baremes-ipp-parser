@@ -59,12 +59,12 @@ sheets = {
             "Outline (EN)",
             ]
     },
-    # "baremes-ipp-taxation-indirecte.xlsx": {
-    #     "name": "taxation_indirecte",
-    #     "ignore": [
-    #         "Sommaire (FR)",
-    #         "Outline (EN)",
-    #         "TVA par produit", # valeurs en fonction du produit, pas de la date
-    #         ]
-    # },
+    "baremes-ipp-taxation-indirecte.xlsx": {
+        "name": "taxation_indirecte",
+        "ignore": [
+            "Sommaire (FR)",
+            "Outline (EN)",
+            "TVA par produit", # valeurs en fonction du produit, pas de la date
+            ]
+    },
 }
