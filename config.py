@@ -29,5 +29,12 @@ sheets = {
             "Sommaire (FR)",
             "Outline (EN)",
             ]
-    }
+    },
+    "baremes-ipp-tarification-energie-logement.xlsx": {
+        "name": "tarifs_energie",
+        "ignore": [
+            "Sommaire (FR)",
+            "Outline (EN)",
+            ]
+    },
 }
