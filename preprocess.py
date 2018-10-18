@@ -30,7 +30,21 @@ def main():
       up_cell = cell.offset(-1, 0)
       if cell.internal_value in list(MAP.keys()):
         up_cell.set_explicit_value(MAP[cell.internal_value])
-
+    # Preprocessing spécifique aux impots revenu
+    for cell in sheet[1]:
+      if cell.internal_value == "date_ir":
+        cell.set_explicit_value("date")
+    for row in sheet.rows:
+      for cell in row:
+        if isinstance(cell.internal_value, str) and cell.internal_value.endswith(' FRF'):
+          try:
+            clean_value = float(cell.internal_value.replace(' FRF', '').replace(' ', ''))
+            cell.set_explicit_value(clean_value)
+            cell.data_type = "n"
+            cell.number_format = '#,##0\\ [$FRF]'
+            print(f"Value cleaning: Edited cell {cell.coordinate} in sheet {sheet_name}")
+          except ValueError:
+            print(f"Value cleaning: Ignoring cell {cell.coordinate} in sheet {sheet_name}")
   wb.save(output_file)
 
 
