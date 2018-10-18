@@ -56,7 +56,7 @@ class SheetParser(object):
         self.date_column = cell.column
       elif key in ('reference', 'metadata/reference'):
         self.reference_column = cell.column
-      elif key in ('date_parution_jo', 'notes', 'metadata/date_parution_jo', 'metadata/notes'):
+      elif key in ('date_parution_jo', 'notes') or isinstance(key, str) and key.startswith('metadata/'):
         pass  # Ignore those columns for the moment
       elif key or any(cell.internal_value for cell in self.sheet[cell.column]):
         self.data_columns.append(cell.column)
