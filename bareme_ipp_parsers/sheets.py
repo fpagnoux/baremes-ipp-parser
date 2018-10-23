@@ -29,7 +29,7 @@ class SheetParsingError(Exception):
 
 class SheetParser(object):
 
-  def __init__(self, sheet):
+  def __init__(self, sheet, columns_to_ignore = None):
     self.sheet = sheet
     self.date_column = None
     self.reference_column = None
@@ -39,6 +39,7 @@ class SheetParser(object):
     self.first_data_row = None
     self.last_data_row = None
     self.sheet_data = {}
+    self.columns_to_ignore = columns_to_ignore or []
 
   def unmerge_cells(self):
     merged_ranges = self.sheet.merged_cells.ranges.copy()
@@ -56,7 +57,7 @@ class SheetParser(object):
         self.date_column = cell.column
       elif key in ('reference', 'metadata/reference'):
         self.reference_column = cell.column
-      elif key in ('date_parution_jo', 'notes') or isinstance(key, str) and key.startswith('metadata/'):
+      elif key in ('date_parution_jo', 'notes') or isinstance(key, str) and key.startswith('metadata/') or cell.column in self.columns_to_ignore:
         pass  # Ignore those columns for the moment
       elif key or any(cell.internal_value for cell in self.sheet[cell.column]):
         self.data_columns.append(cell.column)
@@ -102,7 +103,7 @@ class SheetParser(object):
       return
     references = []
     for cell in self.sheet[self.reference_column][self.first_data_row - 1: self.last_data_row]:
-      references.append(cell.internal_value.strip() if cell.internal_value else None)
+      references.append(str(cell.internal_value).strip() if cell.internal_value else None)
     self.references = references
 
   def parse_column_headers(self, column):

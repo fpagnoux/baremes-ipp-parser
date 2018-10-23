@@ -6,6 +6,7 @@ import argparse
 
 MAP = {
   "Références législatives": "metadata/reference",
+  "Références BOI": "metadata/reference_boi",
   "Parution au JO": "metadata/date_parution_jo",
   "Notes": "metadata/notes",
   "Note": "metadata/notes",
@@ -29,10 +30,14 @@ def main():
     for cell in sheet[2]:
       up_cell = cell.offset(-1, 0)
       if cell.internal_value in list(MAP.keys()):
-        up_cell.set_explicit_value(MAP[cell.internal_value])
+        header = MAP[cell.internal_value]
+        if up_cell.internal_value != header:
+          up_cell.set_explicit_value(header)
+          print(f"Applying header {header} to cell {cell.coordinate} as lower cell contains '{cell.internal_value}' in sheet {sheet_name}")
     # Preprocessing spécifique aux impots revenu
     for cell in sheet[1]:
       if cell.internal_value == "date_ir":
+        print(f"Applying header 'date_ir' to cell {cell.coordinate} in sheet {sheet_name}")
         cell.set_explicit_value("date")
     for row in sheet.rows:
       for cell in row:

@@ -2,17 +2,19 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function
-import openpyxl
 import argparse
+import glob
+import logging
+import openpyxl
 import os
 import shutil
-import logging
-import glob
+import yaml
 
 from bareme_ipp_parsers.workbook import parse_workbook
 from bareme_ipp_parsers.sheets import SheetParsingError
 
-from config import sheets
+with open("config.yaml") as yaml_file:
+  sheets = yaml.load(yaml_file)
 
 log = logging.getLogger(__name__)
 
