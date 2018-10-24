@@ -15,15 +15,18 @@ def create_directories(sections, directory):
   for section_key, section_data in sections.items():
     dir_path = os.path.join(directory, section_key)
     meta_file_path = os.path.join(dir_path, 'index.yaml')
+    section_metadata = {key: value for (key, value) in section_data.items() if key != 'subparams'}
     os.mkdir(dir_path)
-    export_yaml(section_data, meta_file_path)
+    export_yaml(section_metadata, meta_file_path)
+    if section_data.get('subparams'):
+      create_directories(section_data['subparams'], dir_path)
 
 
 def parse_workbook(wb, directory, config):
-  sheets_to_ignore = config.get('ignore_sheets')
-  columns_to_ignore = config.get('ignore_columns')
+  sheets_to_ignore = config.get('ignore_sheets') or []
+  columns_to_ignore = config.get('ignore_columns') or {}
   summary_sheet = next(sheet for sheet in wb.sheetnames if 'sommaire' in sheet.lower())
-  summary_parser = SummaryParser(wb[summary_sheet])
+  summary_parser = SummaryParser(wb[summary_sheet], config)
   summary_parser.parse()
   create_directories(summary_parser.sections, directory)
 
@@ -44,7 +47,8 @@ def parse_workbook(wb, directory, config):
         continue
       data.update({'description': sheets_metadata['description']})
       data.update({'metadata': {'rank': sheets_metadata['rank']}})
-      path = os.path.join(directory, sheets_metadata['path'], "{}.yaml".format(key))
+      fs_path = sheets_metadata['path'].replace('/subparams', '')
+      path = os.path.join(directory, fs_path, "{}.yaml".format(key))
       export_yaml(data, path)
     except SheetParsingError as e:
       log.error('Error parsing sheet "{}":\n  "{}".\nThis sheet will be ignored.'

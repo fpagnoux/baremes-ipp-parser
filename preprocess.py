@@ -14,6 +14,32 @@ MAP = {
   }
 
 
+def clean_numeric_value(cell):
+  value = cell.internal_value.replace('\xa0', ' ')
+  if value.endswith(' FRF'):
+    suffix = ' FRF'
+    unit = 'FRF'
+  elif value.endswith(' F'):
+    suffix = ' F'
+    unit = 'FRF'
+  elif value.endswith(' €'):
+    suffix = ' €'
+    unit = 'EUR'
+  elif value.endswith(' AF'):
+    suffix = ' AF'
+    unit = 'AFRF'
+  else:
+    return
+  try:
+    clean_value = float(value.replace(suffix, '').replace(' ', '').replace(',', '.'))
+    cell.set_explicit_value(clean_value)
+    cell.data_type = "n"
+    cell.number_format = f"#,##0\\ [${unit}]"
+    print(f"Value cleaning: Edited cell {cell.coordinate} in sheet {cell.parent.title}")
+  except ValueError:
+    print(f"Value cleaning: Ignoring cell {cell.coordinate} in sheet {cell.parent.title}")
+
+
 def main():
   argparser = argparse.ArgumentParser()
   argparser.add_argument('xlsx_file', help = 'XLSX file to convert to YAML parameters')
@@ -41,15 +67,9 @@ def main():
         cell.set_explicit_value("date")
     for row in sheet.rows:
       for cell in row:
-        if isinstance(cell.internal_value, str) and cell.internal_value.endswith(' FRF'):
-          try:
-            clean_value = float(cell.internal_value.replace(' FRF', '').replace(' ', ''))
-            cell.set_explicit_value(clean_value)
-            cell.data_type = "n"
-            cell.number_format = '#,##0\\ [$FRF]'
-            print(f"Value cleaning: Edited cell {cell.coordinate} in sheet {sheet_name}")
-          except ValueError:
-            print(f"Value cleaning: Ignoring cell {cell.coordinate} in sheet {sheet_name}")
+        if isinstance(cell.internal_value, str):
+          clean_numeric_value(cell)
+
   wb.save(output_file)
 
 

@@ -64,3 +64,18 @@ baremes-ipp-impot-revenu-income-tax.xlsx:
         abat: ['I', 'J']  # Empty columns
         charg_deduc: ['O']  # valeur "pas de limite" non parsable
         taxe_prop: ['J']  # valeur est une string (Voir S&EF...)
+baremes-ipp-prestations-sociales-social-benefits.xlsx:
+    name: prestations_sociales
+    summary_depth: 3
+    ignore_sheets:
+        - Sommaire (FR)
+        - Outline (EN)
+        - AA_plaf  # Pas de données, "Mêmes plafonds que pour l'APJE"
+        - API_FL  # Pas de données après 2007: "Même forfait logement que le RMI"
+    ignore_columns:
+        PAJE_CM2: ['D']  # Pas de données: "Mêmes conditions..."
+        AL_plaf_acc: ['Z']  # Pas de valeurs numériques, mais "Après le 30/09/2014"
+        AL_loc2: ['AF']  # Pas de données:  "Même loyers que les plafonds pour la zone 2"
+        ASI_cond:
+            - B  # "Mêmes paramètres que pour l'ASPA"
+            - C  # "Pas d'âge minimum"
