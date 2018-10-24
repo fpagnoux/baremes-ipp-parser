@@ -43,7 +43,7 @@ def main():
       for cell in row:
         if isinstance(cell.internal_value, str) and cell.internal_value.endswith(' FRF'):
           try:
-            clean_value = float(cell.internal_value.replace(' FRF', '').replace(' ', ''))
+            clean_value = float(cell.internal_value.replace(' FRF', '').replace(' ', '').replace(',', '.'))
             cell.set_explicit_value(clean_value)
             cell.data_type = "n"
             cell.number_format = '#,##0\\ [$FRF]'
