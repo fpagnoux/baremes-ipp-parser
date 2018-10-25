@@ -40,6 +40,29 @@ def clean_numeric_value(cell):
     print(f"Value cleaning: Ignoring cell {cell.coordinate} in sheet {cell.parent.title}")
 
 
+def preprocess_sheet(sheet):
+  if sheet['A1'].internal_value == 'date' and sheet['B1'].internal_value == 'date_rev':
+    sheet['A1'].set_explicit_value('date_ir')
+    sheet['B1'].set_explicit_value('date')
+    print(f"Permuting headers for IR dates for cells A1 and B1 in sheet {sheet.title}")
+
+  for cell in sheet[2]:
+    up_cell = cell.offset(-1, 0)
+    if cell.internal_value in list(MAP.keys()):
+      header = MAP[cell.internal_value]
+      if up_cell.internal_value != header:
+        up_cell.set_explicit_value(header)
+        print(f"Applying header {header} to cell {cell.coordinate} as lower cell contains '{cell.internal_value}' in sheet {sheet.title}")
+  # Preprocessing spécifique aux impots revenu
+  for cell in sheet[1]:
+    if cell.internal_value == "date_rev":
+      print(f"Applying header 'date' to cell {cell.coordinate} in sheet {sheet.title}")
+      cell.set_explicit_value("date")
+  for row in sheet.rows:
+    for cell in row:
+      if isinstance(cell.internal_value, str):
+        clean_numeric_value(cell)
+
 def main():
   argparser = argparse.ArgumentParser()
   argparser.add_argument('xlsx_file', help = 'XLSX file to convert to YAML parameters')
@@ -52,23 +75,7 @@ def main():
   wb = openpyxl.load_workbook(input_file)
 
   for sheet_name in wb.sheetnames:
-    sheet = wb[sheet_name]
-    for cell in sheet[2]:
-      up_cell = cell.offset(-1, 0)
-      if cell.internal_value in list(MAP.keys()):
-        header = MAP[cell.internal_value]
-        if up_cell.internal_value != header:
-          up_cell.set_explicit_value(header)
-          print(f"Applying header {header} to cell {cell.coordinate} as lower cell contains '{cell.internal_value}' in sheet {sheet_name}")
-    # Preprocessing spécifique aux impots revenu
-    for cell in sheet[1]:
-      if cell.internal_value == "date_ir":
-        print(f"Applying header 'date_ir' to cell {cell.coordinate} in sheet {sheet_name}")
-        cell.set_explicit_value("date")
-    for row in sheet.rows:
-      for cell in row:
-        if isinstance(cell.internal_value, str):
-          clean_numeric_value(cell)
+    preprocess_sheet(wb[sheet_name])
 
   wb.save(output_file)
 
