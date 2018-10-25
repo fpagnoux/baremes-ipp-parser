@@ -6,6 +6,8 @@ import dpath
 import datetime
 import logging
 import re
+from collections import defaultdict
+import datetime
 
 from .commons import slugify
 
@@ -23,8 +25,20 @@ def contract(values):
   return result
 
 
+def combine(x, y):
+  if x is None:
+    return y
+  if isinstance(x, list):
+    return x + [y]
+  return [x, y]
+
+
 class SheetParsingError(Exception):
   pass
+
+
+
+METADATA_COLUM = ['reference', 'date_parution_jo', 'notes']
 
 
 class SheetParser(object):
@@ -34,6 +48,7 @@ class SheetParser(object):
     self.date_column = None
     self.reference_column = None
     self.data_columns = []
+    self.metadata_columns = defaultdict(lambda: [])
     self.dates = None
     self.references = None
     self.first_data_row = None
@@ -55,10 +70,11 @@ class SheetParser(object):
       key = cell.internal_value
       if key == 'date':
         self.date_column = cell.column
-      elif key in ('reference', 'metadata/reference'):
-        self.reference_column = cell.column
-      elif key in ('date_parution_jo', 'notes') or isinstance(key, str) and key.startswith('metadata/') or cell.column in self.columns_to_ignore:
-        pass  # Ignore those columns for the moment
+      elif cell.column in self.columns_to_ignore:
+        pass
+      elif key in METADATA_COLUM or isinstance(key, str) and key.startswith('metadata/'):
+        key = key.replace('metadata/', '')
+        self.metadata_columns[key].append(cell.column)
       elif key or any(cell.internal_value for cell in self.sheet[cell.column]):
         self.data_columns.append(cell.column)
       else:
@@ -117,7 +133,7 @@ class SheetParser(object):
       parent_node = dpath.get(self.sheet_data, path) if path else self.sheet_data
       if parent_node.get('metadata') is None:
         parent_node['metadata'] = {'order': []}
-      if not parent_node['metadata']['order'] or parent_node['metadata']['order'][-1] != key:  # avoid duplication for merges cells
+      if not parent_node['metadata']['order'] or parent_node['metadata']['order'][-1] != key:  # avoid duplication for merged cells
         parent_node['metadata']['order'].append(key)
       path = f'{path}/{key}' if path else key
       dpath.util.new(self.sheet_data, f'{path}/description', description)
@@ -157,7 +173,7 @@ class SheetParser(object):
       return match.group(1)
     log.warning("Unknown unit encountered in cell {} in sheet {}".format(cell.coordinate, self.sheet.title))
 
-  def parse_column(self, column):
+  def parse_data_column(self, column):
 
     path = self.parse_column_headers(column)
     if not path:
@@ -198,6 +214,21 @@ class SheetParser(object):
     if metadata:
       parameter['metadata'] = metadata
 
+  def parse_metadata_column(self, field_id, column):
+    values = self.sheet_data['metadata'].get(field_id, {})
+    for index, cell in enumerate(column[self.first_data_row - 1:self.last_data_row]):
+      value = cell.internal_value
+      if isinstance(value, datetime.date):
+        value = value.strftime('%Y-%m-%d')
+      if isinstance(value, str):
+        value = value.strip()
+      if not value:
+        continue
+      date = self.dates[index]
+      values[date] = combine(values.get(date), value)
+    if values:
+      self.sheet_data['metadata'][field_id] = values
+
   def parse(self):
     self.unmerge_cells()
     self.parse_headers()
@@ -205,6 +236,10 @@ class SheetParser(object):
     self.parse_references()
 
     for column_name in self.data_columns:
-      self.parse_column(self.sheet[column_name])
+      self.parse_data_column(self.sheet[column_name])
+
+    for field_id, field_columns in self.metadata_columns.items():
+      for column_name in field_columns:
+        self.parse_metadata_column(field_id, self.sheet[column_name])
 
     return self.sheet_data

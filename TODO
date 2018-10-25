@@ -19,11 +19,7 @@ Cas particuliers (à intégrer dans la config):
 
 Il faut différencier les colonnes metadata des data
 - Récupérer les notes en bas de page
-- Rendre l'ordre facilement modifiable dans la conf
-- Préserver l'ordre dans une colonne
-- Stocker les références au niveau du node plutôt que les répéter?
 - Formatter les anciens francs correctement dans les views
-- Plusieurs niveaux dans le sommaire (I.A.1) dans le fichiers retraite
-
-
-- Ordre des colonnes (surtout Tranche 0 Tranche 1)
+- Récupérer les liens dans les fields de type metadata ?
+- Documenter tous les champs à problème
+- Afficher les métadonnées dans la vue

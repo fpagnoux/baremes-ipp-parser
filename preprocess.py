@@ -6,7 +6,7 @@ import argparse
 
 MAP = {
   "Références législatives": "metadata/reference",
-  "Références BOI": "metadata/reference_boi",
+  "Références BOI": "metadata/reference",
   "Parution au JO": "metadata/date_parution_jo",
   "Notes": "metadata/notes",
   "Note": "metadata/notes",
@@ -45,6 +45,11 @@ def preprocess_sheet(sheet):
     sheet['A1'].set_explicit_value('date_ir')
     sheet['B1'].set_explicit_value('date')
     print(f"Permuting headers for IR dates for cells A1 and B1 in sheet {sheet.title}")
+
+  for cell in sheet[1]:
+    if cell.internal_value == "metadata/reference_boi":
+      cell.set_explicit_value("metadata/reference")
+      print(f"Swithching from 'metadata/reference_boi' to 'metadata/reference' in cell '{cell.coordinate}' in sheet {sheet.title}")
 
   for cell in sheet[2]:
     up_cell = cell.offset(-1, 0)
