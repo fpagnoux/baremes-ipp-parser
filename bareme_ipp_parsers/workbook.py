@@ -12,16 +12,14 @@ log = logging.getLogger('Parser')
 
 
 def create_directories(sections, directory):
-  workbook_meta_file_path = os.path.join(directory, 'index.yaml')
-  export_yaml({'metadata': sections['metadata']}, workbook_meta_file_path)
-  for section_key, section_data in sections['subparams'].items():
+  meta_file_path = os.path.join(directory, 'index.yaml')
+  meta_file_path_content = {key: value for (key, value) in sections.items() if key != 'subparams'}
+  export_yaml(meta_file_path_content, meta_file_path)
+
+  for section_key, section_data in sections.get('subparams', {}).items():
     dir_path = os.path.join(directory, section_key)
-    meta_file_path = os.path.join(dir_path, 'index.yaml')
-    section_metadata = {key: value for (key, value) in section_data.items() if key != 'subparams'}
     os.mkdir(dir_path)
-    export_yaml(section_metadata, meta_file_path)
-    if section_data.get('subparams'):
-      create_directories(section_data, dir_path)
+    create_directories(section_data, dir_path)
 
 class WorkbookParser(object):
 
