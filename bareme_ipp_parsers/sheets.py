@@ -9,7 +9,7 @@ import re
 
 from .commons import slugify
 
-log = logging.getLogger(__name__)
+log = logging.getLogger('Parser')
 
 
 def contract(values):
@@ -114,8 +114,13 @@ class SheetParser(object):
         continue
       description = str(cell.internal_value).strip()
       key = slugify(description, stopwords = True)
-      path = '/'.join([path, key]) if path else key
-      dpath.util.new(self.sheet_data, '/'.join([path, 'description']), description)
+      parent_node = dpath.get(self.sheet_data, path) if path else self.sheet_data
+      if parent_node.get('metadata') is None:
+        parent_node['metadata'] = {'order': []}
+      if not parent_node['metadata']['order'] or parent_node['metadata']['order'][-1] != key:  # avoid duplication for merges cells
+        parent_node['metadata']['order'].append(key)
+      path = f'{path}/{key}' if path else key
+      dpath.util.new(self.sheet_data, f'{path}/description', description)
 
     return path
 
@@ -173,8 +178,8 @@ class SheetParser(object):
         cell_unit = self.parse_unit(cell)
         units[date] = cell_unit
 
-      if self.references is not None and self.references[index] is not None:
-        item['metadata']['reference'] = self.references[index]
+      # if self.references is not None and self.references[index] is not None:
+      #   item['metadata']['reference'] = self.references[index]
       if not item['metadata']:
         del item['metadata']
       values[date] = item
