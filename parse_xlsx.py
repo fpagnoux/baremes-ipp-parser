@@ -10,7 +10,7 @@ import os
 import shutil
 import yaml
 
-from bareme_ipp_parsers.workbook import parse_workbook
+from bareme_ipp_parsers.workbook import WorkbookParser
 from bareme_ipp_parsers.sheets import SheetParsingError
 
 with open("config.yaml") as yaml_file:
@@ -40,13 +40,10 @@ def main():
     if file_name not in sheets:
       continue
     wb = openpyxl.load_workbook(file_path, data_only = True)
-    directory = os.path.join(args.output_dir, sheets[file_name]['name'])
-    if os.path.isdir(directory):
-      shutil.rmtree(directory)
-    os.makedirs(directory)
+    parser = WorkbookParser(wb, sheets[file_name], args.output_dir)
     log.info('Parsing file {}'.format(file_name))
     try:
-      parse_workbook(wb, directory, config = sheets[file_name])
+      parser.parse()
     except SheetParsingError as e:
       log.error('Error parsing workbook "{}":\n  "{}".\n  This workbook will be ignored.'
         .format(file_name, e.args[0]))

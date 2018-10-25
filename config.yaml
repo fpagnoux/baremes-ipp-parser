@@ -10,6 +10,7 @@ baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx:
         - CSG-REMPLACEMENT
         - ASSIETTE_PU
         - AUBRYI
+        - CITS  # absent du sommaire
 baremes-ipp-taxation-capital.xlsx:
     name: taxation_capital
     ignore_sheets:
@@ -52,14 +53,16 @@ baremes-ipp-taxation-indirecte.xlsx:
         - Sommaire (FR)
         - Outline (EN)
         - TVA par produit # valeurs en fonction du produit, pas de la date
+        - Major régionale TICPE gazole  # absent du sommaire
+        - Major régionale TICPE super  # absent du sommaire
 baremes-ipp-impot-revenu-income-tax.xlsx:
     name: impot_revenu
     ignore_sheets:
         - Sommaire (FR)
         - Outline (EN)
         - Barème IGR  # Une ligne = une tranche, pas une date. TODO: Signaler erreur probable en J5
-        - reduc_exceptionnelle  # Feuille non présente dans le sommaire.
-        - abat  # Pas référencé dans le sommaire
+        - reduc_exceptionnelle  # absent du sommaire
+        - abat  # absent du sommaire
     ignore_columns:
         abat: ['I', 'J']  # Empty columns
         charg_deduc: ['O']  # valeur "pas de limite" non parsable
