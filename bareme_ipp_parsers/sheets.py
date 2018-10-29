@@ -246,7 +246,7 @@ class SheetParser(object):
           from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
         if not value.strip():
           continue
-        doc = '\n'.join((doc, value))
+        doc = doc + value + "\n"
         # if cell.font.u:
         #   if notes.get(cell.internal_value) is not None:
         #     from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
