@@ -84,32 +84,40 @@ class SheetParser(object):
     if self.date_column is None:
       raise SheetParsingError("Could not find a date column.")
 
+
+  def parse_date_cell(self, cell):
+      value = cell.internal_value
+      if value is None:
+        return
+      if isinstance(value, str) and not value.strip():
+        return
+      if isinstance(value, datetime.date):
+        return value.strftime('%Y-%m-%d')
+      if isinstance(value, int):
+        return "{}-01-01".format(value)
+
   def parse_dates(self):
+    date_column = self.sheet[self.date_column]
     dates = []
-    visited_a_date = False
 
-    for cell in self.sheet[self.date_column][2:]:
-
-      if cell.internal_value is None or not isinstance(cell.internal_value, (datetime.date, int)):
-        if not visited_a_date:  # We are still in the header
-          continue
-        else:
-          # Once you reach a blank cell in the date column, stop
-          self.last_data_row = cell.row - 1
-          break
-
-      if not visited_a_date:
-        visited_a_date = True
+    # Find the first data line
+    for cell in date_column[2:]:
+      if isinstance(cell.internal_value, (datetime.date, int)):
         self.first_data_row = cell.row
+        break
 
-      if isinstance(cell.internal_value, datetime.date):
-        date = cell.internal_value.strftime('%Y-%m-%d')
-      else:
-        date = "{}-01-01".format(cell.internal_value)
-      dates.append(date)
+    # Parse the values
+    for cell in date_column[self.first_data_row - 1:]:
+      value = self.parse_date_cell(cell)
+      if value is None:
+        break
+      dates.append(value)
 
-    if not self.last_data_row:
-      self.last_data_row = cell.row
+    self.last_data_row =  self.first_data_row + len(dates) - 1
+
+    for cell in date_column[self.last_data_row:]:
+      if self.parse_date_cell(cell):
+        log.warning(f'In sheet {self.sheet.title} cell {cell.coordinate} contains a date, but not precedent cell {date_column[self.last_data_row].coordinate}. There must be something wrong')
 
     self.dates = dates
     self.number_values = len(self.dates)
@@ -247,9 +255,6 @@ class SheetParser(object):
         if not value.strip():
           continue
         doc = doc + value + "\n"
-        # if cell.font.u:
-        #   if notes.get(cell.internal_value) is not None:
-        #     from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
 
     self.sheet_data['documentation'] = doc
 

@@ -14,13 +14,14 @@ baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx:
 baremes-ipp-taxation-capital.xlsx:
     name: taxation_capital
     ignore_sheets:
-        Sommaire (FR)
-        Outline (EN)
+        - Sommaire (FR)
+        - Outline (EN)
 baremes-ipp-chomage-unemployment.xlsx:
     name: chomage
     ignore_sheets:
-        Sommaire FR
-        Outline EN
+        - Sommaire FR
+        - Outline EN
+        - Alloc_Base  # Certaines valeurs n'ont pas de date
 baremes-ipp-retraites-pensions.xlsx:
     name: retraites
     summary_depth: 3
