@@ -7,16 +7,16 @@ import dpath
 from .commons import slugify
 from .sheets import SheetParsingError
 
-log = logging.getLogger('Parser')
-
 
 class SummaryParser(object):
 
-  def __init__(self, sheet, config):
+  def __init__(self, sheet, workbook_name, config):
     self.sheet = sheet
     self.sheets_data = {}
     self.sections = {'metadata': {'order': []}, 'subparams': {}}
     self.depth = config.get('summary_depth', 2)
+
+    self.log = logging.getLogger(workbook_name)
 
   def is_first_row(self, row):
     is_first_section = isinstance(row[1].internal_value, str) and row[1].internal_value.startswith('I. ')
@@ -32,10 +32,10 @@ class SummaryParser(object):
       if row[self.depth + 1].internal_value is not None:
         self.parse_sheet_title(row[self.depth + 1], current_path)
       elif row[1].internal_value is not None:
-        log.info(f"Parsing section title '{row[1].internal_value}'")
+        self.log.info(f"Parsing section title '{row[1].internal_value}'")
         current_path = self.parse_section_title(row[1])
       elif self.depth >= 3 and row[2].internal_value is not None:
-        log.info(f"Parsing section title '{row[2].internal_value}'")
+        self.log.info(f"Parsing section title '{row[2].internal_value}'")
         current_section = current_path.split('/')[1]
         current_path = self.parse_section_title(row[2], current_section)
 
@@ -61,7 +61,7 @@ class SummaryParser(object):
   def parse_sheet_title(self, cell, path):
     description = cell.internal_value
     if cell.hyperlink is None:
-      log.warning("Summary cell {} is not a link. Ignoring it.".format(cell.coordinate))
+      self.log.warning("Summary cell {} is not a link. Ignoring it.".format(cell.coordinate))
       return
     key = slugify(cell.hyperlink.location.split('!')[0])
     if self.sheets_data.get(key):

@@ -11,8 +11,6 @@ import datetime
 
 from .commons import slugify
 
-log = logging.getLogger('Parser')
-
 
 def contract(values):
   result = values.copy()
@@ -43,7 +41,7 @@ METADATA_COLUM = ['reference', 'date_parution_jo', 'notes']
 
 class SheetParser(object):
 
-  def __init__(self, sheet, columns_to_ignore = None):
+  def __init__(self, sheet, workbook_name = '', columns_to_ignore = None):
     self.sheet = sheet
     self.date_column = None
     self.reference_column = None
@@ -55,6 +53,8 @@ class SheetParser(object):
     self.last_data_row = None
     self.sheet_data = {}
     self.columns_to_ignore = columns_to_ignore or []
+
+    self.log = logging.getLogger(f'{workbook_name}:{sheet.title}')
 
   def unmerge_cells(self):
     merged_ranges = self.sheet.merged_cells.ranges.copy()
@@ -117,7 +117,7 @@ class SheetParser(object):
 
     for cell in date_column[self.last_data_row:]:
       if self.parse_date_cell(cell):
-        log.warning(f'In sheet {self.sheet.title} cell {cell.coordinate} contains a date, but not precedent cell {date_column[self.last_data_row].coordinate}. There must be something wrong')
+        self.log.warning(f'Cell {cell.coordinate} contains a date, but not precedent cell {date_column[self.last_data_row].coordinate}. There must be something wrong')
 
     self.dates = dates
     self.number_values = len(self.dates)
@@ -163,7 +163,7 @@ class SheetParser(object):
       try:
         return float(value)
       except ValueError:
-        log.warning("Unable to interpret cell '{}' in sheet '{}'. Content: '{}'".format(cell.coordinate, self.sheet.title, cell.internal_value))
+        self.log.warning("Unable to interpret cell '{}'. Content: '{}'".format(cell.coordinate, self.sheet.title, cell.internal_value))
         return value
     return value
 
@@ -183,7 +183,7 @@ class SheetParser(object):
     match = re.search(r'\[\$((?:.)*)\]', cell.number_format)  # Handle custom units
     if match:
       return match.group(1)
-    log.warning("Unknown unit encountered in cell {} in sheet {}".format(cell.coordinate, self.sheet.title))
+    self.log.warning("Unknown unit encountered in cell {cell.coordinate}")
 
   def parse_data_column(self, column):
 
@@ -251,7 +251,8 @@ class SheetParser(object):
         if isinstance(value, datetime.date):
           value = value.strftime('%Y-%m-%d')
         if not isinstance(value, str):
-          from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
+          self.log.warning(f'Found numeric values in footnotes in cell "{cell.coordinate}". That is strange.')
+          value = str(value)
         if not value.strip():
           continue
         doc = doc + value + "\n"

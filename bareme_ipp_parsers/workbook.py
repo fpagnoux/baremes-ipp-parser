@@ -8,8 +8,6 @@ from .sheets import SheetParser, SheetParsingError
 from .summary import SummaryParser
 from .commons import export_yaml, slugify
 
-log = logging.getLogger('Parser')
-
 
 def create_directories(sections, directory):
   meta_file_path = os.path.join(directory, 'index.yaml')
@@ -30,6 +28,7 @@ class WorkbookParser(object):
     self.columns_to_ignore = config.get('ignore_columns') or {}
     self.config = config
     self.output_dir = os.path.join(root_output_dir, self.name)
+    self.log = logging.getLogger(self.name)
 
     if os.path.isdir(self.output_dir):
       shutil.rmtree(self.output_dir)
@@ -37,7 +36,7 @@ class WorkbookParser(object):
 
   def parse(self):
     summary_sheet = next(sheet for sheet in self.workbook.sheetnames if 'sommaire' in sheet.lower())
-    summary_parser = SummaryParser(self.workbook[summary_sheet], self.config)
+    summary_parser = SummaryParser(self.workbook[summary_sheet], self.name, self.config)
     summary_parser.parse()
     create_directories(summary_parser.sections, self.output_dir)
 
@@ -45,15 +44,15 @@ class WorkbookParser(object):
       if self.sheets_to_ignore and title in self.sheets_to_ignore:
         continue
 
-      log.info(f'{self.name}: Parsing sheet "{title}"')
-      parser = SheetParser(self.workbook[title], self.columns_to_ignore.get(title))
+      self.log.info(f'Parsing sheet "{title}"')
+      parser = SheetParser(self.workbook[title], self.name, self.columns_to_ignore.get(title))
       key = slugify(title)
       try:
         parser.parse()
         data = {}
         sheets_metadata = summary_parser.sheets_data.get(key)
         if sheets_metadata is None:
-          log.warning(f"Sheet '{title}' does not seem to be included in the summary in '{self.name}'. Ignoring it.")
+          self.log.warning(f"Sheet '{title}' does not seem to be included in the summary'. Ignoring it.")
           continue
         data.update({'description': sheets_metadata['description']})
         data.update(parser.sheet_data)
@@ -61,4 +60,4 @@ class WorkbookParser(object):
         path = os.path.join(self.output_dir, fs_path, f"{key}.yaml")
         export_yaml(data, path)
       except SheetParsingError as e:
-        log.error(f'Error parsing sheet "{title}" in workbook "{self.name}":\n  "{e.args[0]}".\nThis sheet will be ignored.')
+        self.log.error(f'Error parsing sheet "{title}":\n  "{e.args[0]}".\nThis sheet will be ignored.')

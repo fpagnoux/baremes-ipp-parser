@@ -17,10 +17,8 @@ Cas particuliers (à intégrer dans la config):
 
 ------------------------------------
 
-Il faut différencier les colonnes metadata des data
-- Récupérer les notes en bas de page
 - Formatter les anciens francs correctement dans les views
 - Récupérer les liens dans les fields de type metadata ?
 - Documenter tous les champs à problème
 - Afficher les métadonnées dans la vue
-- Garder les liens?
+- Bug dans http://localhost:3000/prestations-sociales
