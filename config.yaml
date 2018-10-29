@@ -23,6 +23,7 @@ baremes-ipp-chomage-unemployment.xlsx:
         Outline EN
 baremes-ipp-retraites-pensions.xlsx:
     name: retraites
+    summary_depth: 3
     ignore_sheets:
         - Sommaire (FR)
         - Outline (EN)

@@ -16,7 +16,7 @@ from bareme_ipp_parsers.sheets import SheetParsingError
 with open("config.yaml") as yaml_file:
   sheets = yaml.load(yaml_file)
 
-log = logging.getLogger(__name__)
+log = logging.getLogger('Parser')
 
 
 def main():
