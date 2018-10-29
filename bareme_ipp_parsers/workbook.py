@@ -51,12 +51,12 @@ class WorkbookParser(object):
       try:
         parser.parse()
         data = {}
-        data.update(parser.sheet_data)
         sheets_metadata = summary_parser.sheets_data.get(key)
         if sheets_metadata is None:
           log.warning(f"Sheet '{title}' does not seem to be included in the summary in '{self.name}'. Ignoring it.")
           continue
         data.update({'description': sheets_metadata['description']})
+        data.update(parser.sheet_data)
         fs_path = sheets_metadata['path'].replace('subparams/', '')
         path = os.path.join(self.output_dir, fs_path, f"{key}.yaml")
         export_yaml(data, path)

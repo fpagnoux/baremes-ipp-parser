@@ -8,7 +8,8 @@ import logging
 import openpyxl
 import os
 import shutil
-import yaml
+from ruamel.yaml import YAML
+yaml=YAML(typ='safe')
 
 from bareme_ipp_parsers.workbook import WorkbookParser
 from bareme_ipp_parsers.sheets import SheetParsingError

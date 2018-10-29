@@ -108,6 +108,9 @@ class SheetParser(object):
         date = "{}-01-01".format(cell.internal_value)
       dates.append(date)
 
+    if not self.last_data_row:
+      self.last_data_row = cell.row
+
     self.dates = dates
     self.number_values = len(self.dates)
 
@@ -131,6 +134,7 @@ class SheetParser(object):
       description = str(cell.internal_value).strip()
       key = slugify(description, stopwords = True)
       parent_node = dpath.get(self.sheet_data, path) if path else self.sheet_data
+      parent_node[key] = {}
       if parent_node.get('metadata') is None:
         parent_node['metadata'] = {'order': []}
       if not parent_node['metadata']['order'] or parent_node['metadata']['order'][-1] != key:  # avoid duplication for merged cells
@@ -230,21 +234,24 @@ class SheetParser(object):
       self.sheet_data['metadata'][field_id] = values
 
   def parse_notes(self):
-    notes = {}
-    current_note_section = None
+    doc = ""
     for row in list(self.sheet.rows)[self.last_data_row:]:
       for cell in row:
-        if cell.internal_value is None or not cell.internal_value.strip():
+        if cell.internal_value is None:
           continue
-        if cell.font.u:
-          if notes.get(cell.internal_value) is not None:
-            from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
-          notes[cell.internal_value] = current_note_section = []
-        else:
-          if current_note_section is None:
-            from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
-          current_note_section.append(cell.internal_value)
-    self.sheet_data['metadata'].update(notes)
+        value = cell.internal_value
+        if isinstance(value, datetime.date):
+          value = value.strftime('%Y-%m-%d')
+        if not isinstance(value, str):
+          from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
+        if not value.strip():
+          continue
+        doc = '\n'.join((doc, value))
+        # if cell.font.u:
+        #   if notes.get(cell.internal_value) is not None:
+        #     from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
+
+    self.sheet_data['documentation'] = doc
 
   def parse(self):
     self.unmerge_cells()
