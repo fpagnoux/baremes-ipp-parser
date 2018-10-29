@@ -229,6 +229,23 @@ class SheetParser(object):
     if values:
       self.sheet_data['metadata'][field_id] = values
 
+  def parse_notes(self):
+    notes = {}
+    current_note_section = None
+    for row in list(self.sheet.rows)[self.last_data_row:]:
+      for cell in row:
+        if cell.internal_value is None or not cell.internal_value.strip():
+          continue
+        if cell.font.u:
+          if notes.get(cell.internal_value) is not None:
+            from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
+          notes[cell.internal_value] = current_note_section = []
+        else:
+          if current_note_section is None:
+            from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
+          current_note_section.append(cell.internal_value)
+    self.sheet_data['metadata'].update(notes)
+
   def parse(self):
     self.unmerge_cells()
     self.parse_headers()
@@ -241,5 +258,7 @@ class SheetParser(object):
     for field_id, field_columns in self.metadata_columns.items():
       for column_name in field_columns:
         self.parse_metadata_column(field_id, self.sheet[column_name])
+
+    self.parse_notes()
 
     return self.sheet_data
