@@ -61,6 +61,8 @@ class SheetParser(object):
     for cell_range in merged_ranges:
       self.sheet.unmerge_cells(cell_range.coord)
       main_cell = self.sheet.cell(cell_range.min_row, cell_range.min_col)
+      if main_cell.row > self.last_data_row:
+        continue
       for column in range(cell_range.min_col + 1, cell_range.max_col + 1):
         cell = self.sheet.cell(cell_range.min_row, column)
         cell.set_explicit_value(main_cell.internal_value)
@@ -260,9 +262,9 @@ class SheetParser(object):
     self.sheet_data['documentation'] = doc
 
   def parse(self):
-    self.unmerge_cells()
     self.parse_headers()
     self.parse_dates()
+    self.unmerge_cells()
     self.parse_references()
 
     for column_name in self.data_columns:

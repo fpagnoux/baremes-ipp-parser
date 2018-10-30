@@ -18,7 +18,6 @@ Cas particuliers (à intégrer dans la config):
 ------------------------------------
 
 - Formatter les anciens francs correctement dans les views
-- Récupérer les liens dans les fields de type metadata ?
 - Documenter tous les champs à problème
-- Afficher les métadonnées dans la vue
-- Bug dans http://localhost:3000/prestations-sociales
+- Garder les liens qui sont dans les spreadsheets?
+- Parser les CSV
