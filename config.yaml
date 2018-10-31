@@ -21,7 +21,6 @@ baremes-ipp-chomage-unemployment.xlsx:
     ignore_sheets:
         - Sommaire FR
         - Outline EN
-        - Alloc_Base  # Certaines valeurs n'ont pas de date
 baremes-ipp-retraites-pensions.xlsx:
     name: retraites
     summary_depth: 3
