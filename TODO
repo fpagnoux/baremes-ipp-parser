@@ -18,6 +18,5 @@ Cas particuliers (à intégrer dans la config):
 ------------------------------------
 
 - Formatter les anciens francs correctement dans les views
-- Documenter tous les champs à problème
 - Garder les liens qui sont dans les spreadsheets?
 - Parser les CSV
