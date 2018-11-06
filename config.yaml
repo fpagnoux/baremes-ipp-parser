@@ -1,26 +1,28 @@
 baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx:
     name: prelevements_sociaux
+    # Notes: for IRCANTEC and CNRACL, there are several reference columns corresponding to different data columns. They are still parsed, by not as the standard "reference", so they are not visible in the views.
     ignore_sheets:
         - Sommaire (FR)
         - Outline (EN)
         - Abréviations
-        - CNRACL
-        - IRCANTEC
-        - FILLON
-        - CSG-REMPLACEMENT
-        - ASSIETTE_PU
-        - AUBRYI
+        - ASSIETTE_PU  # Ne contient pas de données datées
+        - AUBRYI  # Les données ne sont pas par date, mais par temps écoulé depuis l'accord
         - CITS  # absent du sommaire
+    ignore_columns:
+        FILLON:
+            - C  # String values, like "GMR 2"
+            - F  # String values, like "Smic"
+            - J  # String values, like "Smic"
 baremes-ipp-taxation-capital.xlsx:
     name: taxation_capital
     ignore_sheets:
-        Sommaire (FR)
-        Outline (EN)
+        - Sommaire (FR)
+        - Outline (EN)
 baremes-ipp-chomage-unemployment.xlsx:
     name: chomage
     ignore_sheets:
-        Sommaire FR
-        Outline EN
+        - Sommaire FR
+        - Outline EN
 baremes-ipp-retraites-pensions.xlsx:
     name: retraites
     summary_depth: 3
@@ -28,14 +30,14 @@ baremes-ipp-retraites-pensions.xlsx:
         - Sommaire (FR)
         - Outline (EN)
         - AOD_RG  # valeurs de type "60 ans 9 mois"
-        - AAD_RG  # idem
+        - AAD_RG  # valeurs de type "60 ans 9 mois"
         - Coeff_mino_arrco  # Valeur en fonction de l'age de départ à la retraite, pas de la date
         - Coeff_mino_agirc  # Valeur en fonction de l'age de départ à la retraite, pas de la date
         - Coeff_temp  # Valeur en fonction de l'age de départ à la retraite, pas de la date
         - LA-FP-S  # valeurs de type "60 ans 9 mois"
-        - LA-FP-A  # idem
-        - AOD-FP-S  # idem
-        - AOD-FP-A  # idem
+        - LA-FP-A  # valeurs de type "60 ans 9 mois"
+        - AOD-FP-S  # valeurs de type "60 ans 9 mois"
+        - AOD-FP-A  # valeurs de type "60 ans 9 mois"
         - AAD-FP  # valeurs de type "Limite d'âge - 4 trimestres"
         - RAM  # 2 colonnes '1948' qui contiennent des valeurs différentes
 baremes-ipp-marche-du-travail-labour-market.xlsx:

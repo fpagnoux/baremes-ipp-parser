@@ -11,8 +11,6 @@ import datetime
 
 from .commons import slugify
 
-log = logging.getLogger('Parser')
-
 
 def contract(values):
   result = values.copy()
@@ -43,7 +41,7 @@ METADATA_COLUM = ['reference', 'date_parution_jo', 'notes']
 
 class SheetParser(object):
 
-  def __init__(self, sheet, columns_to_ignore = None):
+  def __init__(self, sheet, workbook_name = '', columns_to_ignore = None):
     self.sheet = sheet
     self.date_column = None
     self.reference_column = None
@@ -56,11 +54,15 @@ class SheetParser(object):
     self.sheet_data = {}
     self.columns_to_ignore = columns_to_ignore or []
 
+    self.log = logging.getLogger(f'{workbook_name}:{sheet.title}')
+
   def unmerge_cells(self):
     merged_ranges = self.sheet.merged_cells.ranges.copy()
     for cell_range in merged_ranges:
       self.sheet.unmerge_cells(cell_range.coord)
       main_cell = self.sheet.cell(cell_range.min_row, cell_range.min_col)
+      if main_cell.row > self.last_data_row:
+        continue
       for column in range(cell_range.min_col + 1, cell_range.max_col + 1):
         cell = self.sheet.cell(cell_range.min_row, column)
         cell.set_explicit_value(main_cell.internal_value)
@@ -84,29 +86,40 @@ class SheetParser(object):
     if self.date_column is None:
       raise SheetParsingError("Could not find a date column.")
 
+
+  def parse_date_cell(self, cell):
+      value = cell.internal_value
+      if value is None:
+        return
+      if isinstance(value, str) and not value.strip():
+        return
+      if isinstance(value, datetime.date):
+        return value.strftime('%Y-%m-%d')
+      if isinstance(value, int):
+        return "{}-01-01".format(value)
+
   def parse_dates(self):
+    date_column = self.sheet[self.date_column]
     dates = []
-    visited_a_date = False
 
-    for cell in self.sheet[self.date_column][2:]:
-
-      if cell.internal_value is None or not isinstance(cell.internal_value, (datetime.date, int)):
-        if not visited_a_date:  # We are still in the header
-          continue
-        else:
-          # Once you reach a blank cell in the date column, stop
-          self.last_data_row = cell.row - 1
-          break
-
-      if not visited_a_date:
-        visited_a_date = True
+    # Find the first data line
+    for cell in date_column[2:]:
+      if isinstance(cell.internal_value, (datetime.date, int)):
         self.first_data_row = cell.row
+        break
 
-      if isinstance(cell.internal_value, datetime.date):
-        date = cell.internal_value.strftime('%Y-%m-%d')
-      else:
-        date = "{}-01-01".format(cell.internal_value)
-      dates.append(date)
+    # Parse the values
+    for cell in date_column[self.first_data_row - 1:]:
+      value = self.parse_date_cell(cell)
+      if value is None:
+        break
+      dates.append(value)
+
+    self.last_data_row =  self.first_data_row + len(dates) - 1
+
+    for cell in date_column[self.last_data_row:]:
+      if self.parse_date_cell(cell):
+        self.log.warning(f'Cell {cell.coordinate} contains a date, but not precedent cell {date_column[self.last_data_row].coordinate}. There must be something wrong')
 
     self.dates = dates
     self.number_values = len(self.dates)
@@ -131,6 +144,7 @@ class SheetParser(object):
       description = str(cell.internal_value).strip()
       key = slugify(description, stopwords = True)
       parent_node = dpath.get(self.sheet_data, path) if path else self.sheet_data
+      parent_node[key] = {}
       if parent_node.get('metadata') is None:
         parent_node['metadata'] = {'order': []}
       if not parent_node['metadata']['order'] or parent_node['metadata']['order'][-1] != key:  # avoid duplication for merged cells
@@ -151,7 +165,7 @@ class SheetParser(object):
       try:
         return float(value)
       except ValueError:
-        log.warning("Unable to interpret cell '{}' in sheet '{}'. Content: '{}'".format(cell.coordinate, self.sheet.title, cell.internal_value))
+        self.log.warning("Unable to interpret cell '{}'. Content: '{}'".format(cell.coordinate, self.sheet.title, cell.internal_value))
         return value
     return value
 
@@ -171,7 +185,7 @@ class SheetParser(object):
     match = re.search(r'\[\$((?:.)*)\]', cell.number_format)  # Handle custom units
     if match:
       return match.group(1)
-    log.warning("Unknown unit encountered in cell {} in sheet {}".format(cell.coordinate, self.sheet.title))
+    self.log.warning("Unknown unit encountered in cell {cell.coordinate}")
 
   def parse_data_column(self, column):
 
@@ -229,10 +243,28 @@ class SheetParser(object):
     if values:
       self.sheet_data['metadata'][field_id] = values
 
+  def parse_notes(self):
+    doc = ""
+    for row in list(self.sheet.rows)[self.last_data_row:]:
+      for cell in row:
+        if cell.internal_value is None:
+          continue
+        value = cell.internal_value
+        if isinstance(value, datetime.date):
+          value = value.strftime('%Y-%m-%d')
+        if not isinstance(value, str):
+          self.log.warning(f'Found numeric values in footnotes in cell "{cell.coordinate}". That is strange.')
+          value = str(value)
+        if not value.strip():
+          continue
+        doc = doc + value + "\n"
+
+    self.sheet_data['documentation'] = doc
+
   def parse(self):
-    self.unmerge_cells()
     self.parse_headers()
     self.parse_dates()
+    self.unmerge_cells()
     self.parse_references()
 
     for column_name in self.data_columns:
@@ -241,5 +273,7 @@ class SheetParser(object):
     for field_id, field_columns in self.metadata_columns.items():
       for column_name in field_columns:
         self.parse_metadata_column(field_id, self.sheet[column_name])
+
+    self.parse_notes()
 
     return self.sheet_data

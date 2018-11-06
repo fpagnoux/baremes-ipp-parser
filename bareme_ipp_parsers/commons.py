@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 
-import yaml
+from ruamel.yaml import YAML
+
+yaml = YAML()
+
 from slugify import slugify as slugify_
+
 
 STOPWORDS = [
   'a',
@@ -21,10 +25,24 @@ STOPWORDS = [
   'un',
   ]
 
+def represent_none(self, data):
+    return self.represent_scalar(u'tag:yaml.org,2002:null', u'null')
+
+
+def represent_str(dumper, data):
+  if len(data.splitlines()) > 1:  # check for multiline string
+    return dumper.represent_scalar('tag:yaml.org,2002:str', data, style = '|')
+  return dumper.represent_scalar('tag:yaml.org,2002:str', data)
+
+yaml.default_flow_style = False
+yaml.representer.add_representer(type(None), represent_none)
+yaml.representer.add_representer(str, represent_str)
+
 
 def export_yaml(data, file_path):
   with open(file_path, 'w') as file:
-    yaml.safe_dump(data, file, default_flow_style = False, allow_unicode = True)
+    # from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
+    yaml.dump(data, file)
 
 
 def slugify(text, stopwords = False):
