@@ -6,7 +6,6 @@ baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx:
         - Outline (EN)
         - Abréviations
         - ASSIETTE_PU  # Ne contient pas de données datées
-        - AUBRYI  # Les données ne sont pas par date, mais par temps écoulé depuis l'accord
         - CITS  # absent du sommaire
     ignore_columns:
         FILLON:
