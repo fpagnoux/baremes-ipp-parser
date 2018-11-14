@@ -49,8 +49,6 @@ baremes-ipp-taxation-indirecte.xlsx:
         - Sommaire (FR)
         - Outline (EN)
         - TVA par produit # valeurs en fonction du produit, pas de la date
-        - Major régionale TICPE gazole  # absent du sommaire
-        - Major régionale TICPE super  # absent du sommaire
 baremes-ipp-impot-revenu-income-tax.xlsx:
     name: impot_revenu
     ignore_sheets:
