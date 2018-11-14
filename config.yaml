@@ -6,12 +6,6 @@ baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx:
         - Outline (EN)
         - Abréviations
         - ASSIETTE_PU  # Ne contient pas de données datées
-        - CITS  # absent du sommaire
-    ignore_columns:
-        FILLON:
-            - C  # String values, like "GMR 2"
-            - F  # String values, like "Smic"
-            - J  # String values, like "Smic"
 baremes-ipp-taxation-capital.xlsx:
     name: taxation_capital
     ignore_sheets:
