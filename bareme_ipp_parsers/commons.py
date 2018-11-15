@@ -41,7 +41,6 @@ yaml.representer.add_representer(str, represent_str)
 
 def export_yaml(data, file_path):
   with open(file_path, 'w') as file:
-    # from nose.tools import set_trace; set_trace(); import ipdb; ipdb.set_trace()
     yaml.dump(data, file)
 
 

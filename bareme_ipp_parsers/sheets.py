@@ -53,6 +53,7 @@ class SheetParser(object):
     self.last_data_row = None
     self.sheet_data = {}
     self.columns_to_ignore = columns_to_ignore or []
+    self.csv_map = {}
 
     self.log = logging.getLogger(f'{workbook_name}:{sheet.title}')
 
@@ -79,6 +80,8 @@ class SheetParser(object):
         self.metadata_columns[key].append(cell.column)
       elif key or any(cell.internal_value for cell in self.sheet[cell.column]):
         self.data_columns.append(cell.column)
+        if key and key != 'date_ir':
+          self.csv_map[cell.column] = key.strip()
       else:
         # Empty column encountered, we ignore the rest of the sheet
         break
@@ -195,9 +198,12 @@ class SheetParser(object):
       return
     parameter = dpath.util.get(self.sheet_data, path)
     metadata = {}
-
     values = {}
     units = {}
+
+    csv_id = self.csv_map.get(column[0].column)
+    if csv_id:
+      metadata['ipp_csv_id'] = csv_id
 
     for index, cell in enumerate(column[self.first_data_row - 1:self.last_data_row]):
       date = self.dates[index]

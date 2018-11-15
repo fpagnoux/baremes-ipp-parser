@@ -39,6 +39,7 @@ def main():
   for file_path in xlsx_files:
     file_name = os.path.basename(file_path)
     if file_name not in sheets:
+      log.warning(f"Ignoring file {file_name} as it's not mentionned in the config.")
       continue
     wb = openpyxl.load_workbook(file_path, data_only = True)
     parser = WorkbookParser(wb, sheets[file_name], args.output_dir)
