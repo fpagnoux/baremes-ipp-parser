@@ -147,7 +147,7 @@ class SheetParser(object):
       description = str(cell.internal_value).strip()
       key = slugify(description, stopwords = True)
       parent_node = dpath.get(self.sheet_data, path) if path else self.sheet_data
-      parent_node[key] = {}
+      parent_node[key] = parent_node.get(key) or {}
       if parent_node.get('metadata') is None:
         parent_node['metadata'] = {'order': []}
       if not parent_node['metadata']['order'] or parent_node['metadata']['order'][-1] != key:  # avoid duplication for merged cells
