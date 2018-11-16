@@ -6,6 +6,9 @@ baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx:
         - Outline (EN)
         - Abréviations
         - ASSIETTE_PU  # Ne contient pas de données datées
+    ignore_columns:
+        IRCANTEC: [K, L]  # Même noms que les colonnes I et J
+        CSG-REMPLACEMENT: I  # Même nom que la colonne G
 baremes-ipp-taxation-capital.xlsx:
     name: taxation_capital
     ignore_sheets:

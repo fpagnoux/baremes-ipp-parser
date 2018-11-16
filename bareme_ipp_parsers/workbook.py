@@ -60,4 +60,4 @@ class WorkbookParser(object):
         path = os.path.join(self.output_dir, fs_path, f"{key}.yaml")
         export_yaml(data, path)
       except SheetParsingError as e:
-        self.log.error(f'Error parsing sheet "{title}":\n  "{e.args[0]}".\nThis sheet will be ignored.')
+        self.log.error(f'Error parsing sheet "{title}" in "{self.name}":\n  "{e.args[0]}".\nThis sheet will be ignored.')
