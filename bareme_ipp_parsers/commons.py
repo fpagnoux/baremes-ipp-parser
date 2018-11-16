@@ -5,6 +5,7 @@ from ruamel.yaml import YAML
 yaml = YAML()
 
 from slugify import slugify as slugify_
+import re
 
 
 STOPWORDS = [
@@ -45,6 +46,8 @@ def export_yaml(data, file_path):
 
 
 def slugify(text, stopwords = False):
+  if re.match('-\d+$', text):
+    return text
   if stopwords:
     return slugify_(text, separator = '_', stopwords = STOPWORDS)
   return slugify_(text, separator = '_')
