@@ -6,9 +6,6 @@ baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx:
         - Outline (EN)
         - Abréviations
         - ASSIETTE_PU  # Ne contient pas de données datées
-    ignore_columns:
-        IRCANTEC: [K, L]  # Même noms que les colonnes I et J
-        CSG-REMPLACEMENT: I  # Même nom que la colonne G
 baremes-ipp-taxation-capital.xlsx:
     name: taxation_capital
     ignore_sheets:
@@ -25,17 +22,6 @@ baremes-ipp-retraites-pensions.xlsx:
     ignore_sheets:
         - Sommaire (FR)
         - Outline (EN)
-        - AOD_RG  # valeurs de type "60 ans 9 mois"
-        - AAD_RG  # valeurs de type "60 ans 9 mois"
-        - Coeff_mino_arrco  # Valeur en fonction de l'age de départ à la retraite, pas de la date
-        - Coeff_mino_agirc  # Valeur en fonction de l'age de départ à la retraite, pas de la date
-        - Coeff_temp  # Valeur en fonction de l'age de départ à la retraite, pas de la date
-        - LA-FP-S  # valeurs de type "60 ans 9 mois"
-        - LA-FP-A  # valeurs de type "60 ans 9 mois"
-        - AOD-FP-S  # valeurs de type "60 ans 9 mois"
-        - AOD-FP-A  # valeurs de type "60 ans 9 mois"
-        - AAD-FP  # valeurs de type "Limite d'âge - 4 trimestres"
-        - RAM  # 2 colonnes '1948' qui contiennent des valeurs différentes
 baremes-ipp-marche-du-travail-labour-market.xlsx:
     name: marche_travail
     ignore_sheets:

@@ -169,7 +169,7 @@ class SheetParser(object):
       try:
         return float(value)
       except ValueError:
-        self.log.warning("Unable to interpret cell '{}'. Content: '{}'".format(cell.coordinate, self.sheet.title, cell.internal_value))
+        self.log.warning(f"Unable to interpret cell '{cell.coordinate}'. Content: '{cell.internal_value}'")
         return value
     return value
 
@@ -189,7 +189,7 @@ class SheetParser(object):
     match = re.search(r'\[\$((?:.)*)\]', cell.number_format)  # Handle custom units
     if match:
       return match.group(1)
-    self.log.warning("Unknown unit encountered in cell {cell.coordinate}")
+    self.log.warning(f"Unknown unit encountered in cell {cell.coordinate}")
 
   def parse_data_column(self, column):
 
