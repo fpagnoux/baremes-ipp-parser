@@ -88,7 +88,8 @@ class SheetParser(object):
 
     if self.date_column is None:
       raise SheetParsingError("Could not find a date column.")
-
+    if not self.data_columns:
+      raise SheetParsingError("Could not find data.")
 
   def parse_date_cell(self, cell):
       value = cell.internal_value
