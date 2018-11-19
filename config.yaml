@@ -27,6 +27,7 @@ baremes-ipp-marche-du-travail-labour-market.xlsx:
     ignore_sheets:
         - Sommaire (FR)
         - Outline (EN)
+        - IB-IM  # Chaque date est présente de nombreuses fois dans la colonne de date. La donnée n'est probablement pas au format habituel.
 baremes-ipp-tarification-energie-logement.xlsx:
     name: tarifs_energie
     ignore_sheets:

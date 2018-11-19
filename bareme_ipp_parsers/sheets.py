@@ -125,6 +125,10 @@ class SheetParser(object):
       if self.parse_date_cell(cell):
         self.log.warning(f'Cell {cell.coordinate} contains a date, but not precedent cell {date_column[self.last_data_row].coordinate}. There must be something wrong')
 
+    if len(set(dates)) != len(dates):
+      doubles = {x for x in dates if dates.count(x) > 1}
+      self.log.warning(f"The following dates appear several times in the date column: {doubles}")
+
     self.dates = dates
     self.number_values = len(self.dates)
 
