@@ -29,14 +29,11 @@ pip install -r requirements.txt
 
 - La feuille contenant le sommaire du fichier doit contenir le mot clé "sommaire"
 
-- La première ligne (cachée à la visialisation) doit être un header qui contient:
+- La première ligne (cachée à la visialisation) est un header optionnel qui peut contenir:
+  - Soit l'identifiant CSV du paramètre de la colonne.
   - Soit un des mots clés suivant: `date`, `reference`, `notes`, `date_parution_jo`
-  - Soit le nom du paramètre de la colonne.
+  - Soit un identifiant d'un champs libre de métadonnée `metadata/nom_du_champs` 
 
 - Il doit exister une colonne `date`, dont les valeurs sont de type date.
   - À la première valeur nulle ou d'au autre type dans la colonne date, le parseur ignore la ligne et toutes celles qui suivent.
   - S'il n'y a pas de colonne nommée `date`, la feuille sera ignorée, avec warning.
-
-- Une colonne de paramètre qui n'a pas de header sera ignorée, sans warning.
-
-- Le nom d'un paramètre peut être un chemin. Par exemple, si une feuille contient deux colonnes dont les titres sont `modulation/taux_1` et  `modulation/taux_2`, ces deux colonnes seront interprétés comme deux paramètres `taux_1` et `taux_2` d'un noeud `modulation`.
