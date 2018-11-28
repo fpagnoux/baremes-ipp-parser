@@ -1,8 +1,3 @@
-prestations_sociales:
-  plaf_mv_seul_aspa:
-    prestations_sociales.solidarite_insertion.minimum_vieillesse_droits_non_contributifs.aspa.plafond_ressources.personnes_seules
-    prestations_sociales.solidarite_insertion.minimum_vieillesse_droits_non_contributifs.avts.plafonds_ressources_personnes_seules
-
 retraites:
   sal_ref_ircantec:
     retraites.secteur_public.salref_ircantec.salaire_reference_ircantec
