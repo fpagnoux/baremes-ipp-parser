@@ -1,67 +1,7 @@
-impot_revenu:
-  taux1_majo:
-    impot_revenu.calcul_revenus_imposables.abat.en_faveur_certains_contribuables_seuls_1.abattement
-    impot_revenu.contributions_exceptionnelles.majo_excep.majorations_exceptionnelles_impot.taux_1
-  taux2_majo:
-    impot_revenu.calcul_revenus_imposables.abat.en_faveur_personnes_agees_invalides_2.seuil_1_revenu_net_global
-    impot_revenu.contributions_exceptionnelles.majo_excep.majorations_exceptionnelles_impot.taux_2
-  taux3_majo:
-    impot_revenu.calcul_revenus_imposables.abat.en_faveur_personnes_agees_invalides_2.seuil_2_revenu_net_global
-    impot_revenu.contributions_exceptionnelles.majo_excep.majorations_exceptionnelles_impot.taux_3_superieur
-  seuil_rev_majo:
-    impot_revenu.calcul_revenus_imposables.abat.en_faveur_personnes_agees_invalides_2.abattement_1
-    impot_revenu.contributions_exceptionnelles.majo_excep.majorations_exceptionnelles_impot.seuil_revenu
-  seuil1_majo:
-    impot_revenu.calcul_revenus_imposables.abat.en_faveur_personnes_agees_invalides_2.abattement_2
-    impot_revenu.contributions_exceptionnelles.majo_excep.majorations_exceptionnelles_impot.seuil_1
-  plaf_sofica:
-    impot_revenu.calcul_revenus_imposables.charg_deduc.reduction_souscriptions_parts_sofica.plafond_reduction
-    impot_revenu.calcul_reductions_impots.sofica.reduction_souscriptions_parts_sofica.plafond
-  base_sofica:
-    impot_revenu.calcul_revenus_imposables.charg_deduc.reduction_souscriptions_parts_sofica.plafond_en_revenu_net_global
-    impot_revenu.calcul_reductions_impots.sofica.reduction_souscriptions_parts_sofica.plafond_en_revenu_net_global
-
-
 prestations_sociales:
-  colca_tx_plein:
-    prestations_sociales.prestations_familiales.petite_enfance.paje_cm.periode_reference_justifier_8_trimestres_cotisation_vieillesse_1.enfant
-    prestations_sociales.prestations_familiales.petite_enfance.paje_clca.complement_optionnel_libre_choix_activite.taux_plein_duree_arret_predeterminee
-  clcmg_03ans_rev1:
-    prestations_sociales.prestations_familiales.petite_enfance.plaf_cmg.premier_plafond_ne_adopte_avant_1er_avril_2014.enfant
-    prestations_sociales.prestations_familiales.petite_enfance.plaf_cmg.premier_plafond_ne_adopte_apres_1er_avril_2014.enfant
-    prestations_sociales.prestations_familiales.petite_enfance.paje_cmg.complement_libre_choix_mode_garde_en_bmaf_1.revenus_inferieurs_45_plafond_allocation
-  clcmg_03ans_rev2:
-    prestations_sociales.prestations_familiales.petite_enfance.plaf_cmg.premier_plafond_ne_adopte_avant_1er_avril_2014.deux_enfants
-    prestations_sociales.prestations_familiales.petite_enfance.plaf_cmg.premier_plafond_ne_adopte_apres_1er_avril_2014.deux_enfants
-    prestations_sociales.prestations_familiales.petite_enfance.paje_cmg.complement_libre_choix_mode_garde_en_bmaf_1.revenus_superieurs_45_plafond_allocation
-  clcmg_03ans_rev3:
-    prestations_sociales.prestations_familiales.petite_enfance.plaf_cmg.premier_plafond_ne_adopte_avant_1er_avril_2014.majoration_enfant_supplementaire
-    prestations_sociales.prestations_familiales.petite_enfance.plaf_cmg.premier_plafond_ne_adopte_apres_1er_avril_2014.majoration_enfant_supplementaire
-    prestations_sociales.prestations_familiales.petite_enfance.paje_cmg.complement_libre_choix_mode_garde_en_bmaf_1.revenus_superieurs_plafond_allocation
-  maj_avts_conj:
-    prestations_sociales.solidarite_insertion.minimum_vieillesse_droits_non_contributifs.majconj_plaf.plafond_ressources_personnelles_conjoint_beneficier_majoration_personne_charge
-    prestations_sociales.solidarite_insertion.minimum_vieillesse_droits_non_contributifs.majconj.montant_majoration_conjoint_charge
-  plaf_mv_seul:
+  plaf_mv_seul_aspa:
     prestations_sociales.solidarite_insertion.minimum_vieillesse_droits_non_contributifs.aspa.plafond_ressources.personnes_seules
     prestations_sociales.solidarite_insertion.minimum_vieillesse_droits_non_contributifs.avts.plafonds_ressources_personnes_seules
-    prestations_sociales.solidarite_insertion.minimum_vieillesse_droits_non_contributifs.as.plafond_ressources_personnes_seules
-  plaf_mv_men:
-    prestations_sociales.solidarite_insertion.minimum_vieillesse_droits_non_contributifs.aspa.plafond_ressources.couples
-    prestations_sociales.solidarite_insertion.minimum_vieillesse_droits_non_contributifs.avts.plafonds_ressources_menages
-    prestations_sociales.solidarite_insertion.minimum_vieillesse_droits_non_contributifs.as.plafond_ressources_menages
-  interv_ress:
-    prestations_sociales.allocations_logement.al_param_acc_univ.intervalles_ressources_consideres
-    prestations_sociales.allocations_logement.al_param_acc_univ.montant_forfaitaire_mf0
-
-
-prelevements_sociaux:
-  mmid_ac_0_5:
-    prelevements_sociaux.cotisations_taxes_independants_artisans_commercants.mmid_ac.assures_actifs.sous_5_pss
-    prelevements_sociaux.cotisations_taxes_independants_artisans_commercants.mmid_ac.assures_actifs.sous_5_pss_supplement_artisans_verse_titre_indemnites_journalieres_ij
-  retc_chird_85_5:
-    prelevements_sociaux.cotisations_taxes_professions_liberales.ret_comp_pl.chirurgiens_dentistes_sages_femmes_depuis_janvier_2009.entre_085_5_pss.retraite_complementaire
-    prelevements_sociaux.cotisations_taxes_professions_liberales.ret_comp_pl.chirurgiens_dentistes_sages_femmes_depuis_janvier_2009.sous_5_pss.regime_supplementaire_chirurgiens_dentistes_conventionnes
-
 
 retraites:
   sal_ref_ircantec:
@@ -180,7 +120,6 @@ retraites:
   min_cont:
     retraites.secteur_prive.regime_general_cnav.montant_mico.minimum_contributif.annuel.7615_94
     retraites.secteur_prive.regime_general_cnav.plafond_mico.minimum_contributif_plafond_mensuel.annuel
-
 
 tarifs_energie:
   tarif_fixe_base_3kva_ht:
