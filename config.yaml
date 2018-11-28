@@ -44,11 +44,6 @@ baremes-ipp-impot-revenu-income-tax.xlsx:
     ignore_sheets:
         - Sommaire (FR)
         - Outline (EN)
-        - Barème IGR  # Une ligne = une tranche, pas une date.
-    ignore_columns:
-        abat: ['I', 'J']  # Empty columns
-        charg_deduc: ['O']  # valeur "pas de limite" non parsable
-        taxe_prop: ['J']  # valeur est une string (Voir S&EF...)
 baremes-ipp-prestations-sociales-social-benefits.xlsx:
     name: prestations_sociales
     summary_depth: 3
