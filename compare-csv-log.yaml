@@ -1,0 +1,422 @@
+retraites:
+  keys_missing_from_new_file:
+    - nbsam_0140.1
+    - ageleg_0152.2
+    - min_cont.1
+    - ageleg_0751.1
+    - sal_ref_ircantec.2
+    - agelimfp_0155.1
+    - nbsam_0139.1
+    - nbsam_0136.1
+    - ageleg_0153.2
+    - sal_ref_ircantec.1
+    - sal_ref_igrante.1
+    - nbsam_0148.1
+    - ageleg_0155.2
+    - val_point_arcco_nom.1
+    - ageleg_0153.1
+    - nbsam_base.1
+    - agelimfp_0154.1
+    - nbsam_0135.1
+    - sal_ref_arrco_euros.1
+    - nbsam_0141.1
+    - ageleg_0154.1
+    - nbsam_0138.1
+    - agelimfp_0153.1
+    - ageleg_0751.2
+    - nbsam_0137.1
+    - agelimfp_base.1
+    - ageleg_base.2
+    - ageleg_0155.1
+    - ageleg_base.1
+    - agelimfp_0751.1
+    - nbsam_0145.1
+    - nbsam_0142.1
+    - nbsam_0143.1
+    - val_point_arrco.1
+    - nbsam_0146.1
+    - agelimfp_0152.1
+    - ageleg_0152.1
+    - nbsam_0144.1
+    - nbsam_0147.1
+    - ageleg_0154.2
+    - nbsam_0134.1
+  values_difference:
+    agelimfp_0152:
+      date: 2011-07
+      old_value: 65.0
+      new_value: 60.0
+    revalorg_pct:
+      date: 1958-04
+      old_value: 0.075
+      new_value: 0.07499999999999996
+    sal_ref_ipacte:
+      date: 1971-01
+      old_value: 0.395
+      new_value: nan
+    ageleg_base:
+      date: 1985-01
+      old_value: 65.0
+      new_value: 60.0
+    agelimfp_0154:
+      date: 2011-07
+      old_value: 66.0
+      new_value: 61.0
+    organic_base:
+      date: 1949-10
+      old_value: 0.0
+      new_value: 0.38
+    salref_cnro:
+      date: 1996-08
+      old_value: 3.6313355906
+      new_value: 3.8386662540379928
+    val_point_arrco:
+      date: 1957-01
+      old_value: 0.024391842758
+      new_value: nan
+    point_cancava_base_trim:
+      date: 2013-04
+      old_value: 2.24935
+      new_value: nan
+    point_cancava_base:
+      date: 2013-04
+      old_value: 8.9974
+      new_value: nan
+    sal_ref_ircantec:
+      date: 1971-01
+      old_value: 0.42100000000000004
+      new_value: nan
+    sal_ref_arrco_euros:
+      date: 1949-01
+      old_value: 0.45
+      new_value: nan
+    agelimfp_0155:
+      date: 2011-07
+      old_value: 66.0
+      new_value: 61.0
+    agelimfp_0751:
+      date: 2011-07
+      old_value: 65.0
+      new_value: 60.0
+    sal_ref_unirs_nom:
+      date: 1949-01
+      old_value: 0.0
+      new_value: 0.06
+    coeff_revalo_initial:
+      date: 1952-01
+      old_value: 1.1
+      new_value: nan
+    organic_rachat:
+      date: 1949-10
+      old_value: 0.0
+      new_value: 0.38
+    agelimfp_base:
+      date: 1937-01
+      old_value: 70.0
+      new_value: 67.0
+    revalospc_pct:
+      date: 1958-04
+      old_value: 0.075
+      new_value: 0.07499999999999996
+    val_point_arcco_nom:
+      date: 1957-01
+      old_value: 0.0
+      new_value: nan
+    agelimfp_0153:
+      date: 2011-07
+      old_value: 66.0
+      new_value: 61.0
+    salref_cnro_nom:
+      date: 1996-08
+      old_value: 3.63
+      new_value: 3.84
+    sal_ref_igrante:
+      date: 1925-01
+      old_value: 0.00305
+      new_value: nan
+taxation_indirecte:
+  error: new csv has 780 rows while old csv had 828.
+prestations_sociales:
+  keys_missing_from_new_file:
+    - aa_plaf
+  error: new csv has 960 rows while old csv had 984.
+prelevements_sociaux:
+  error: new csv has 1128 rows while old csv had 1224.
+marche_travail:
+  values_difference:
+    enf3:
+      date: 1988-02
+      old_value: 182.94
+      new_value: 109.76
+    smic_m:
+      date: 1986-07
+      old_value: 693.56
+      new_value: 685.06
+    enf2:
+      date: 1988-02
+      old_value: 128.06
+      new_value: 73.18
+    smic_h:
+      date: 1986-07
+      old_value: 4.1
+      new_value: 4.05
+    enf4:
+      date: 1988-02
+      old_value: 54.88
+      new_value: 36.59
+    im_plafond:
+      date: 1988-02
+      old_value: 623.0
+      new_value: 621.0
+    im_plancher:
+      date: 1988-02
+      old_value: 382.0
+      new_value: 380.0
+taxation_capital:
+  values_difference:
+    bons_9094:
+      date: 1990-06
+      old_value: 0.35
+      new_value: nan
+    tx_titres:
+      date: 1990-06
+      old_value: 0.15
+      new_value: 0.32
+    tx_pl_int:
+      date: 1990-06
+      old_value: 0.15
+      new_value: 0.25
+    tx_plac_9094:
+      date: 1990-06
+      old_value: 0.35
+      new_value: nan
+    tx_epargne_48:
+      date: 1990-06
+      old_value: 0.15
+      new_value: nan
+chomage:
+  values_difference:
+    sr_gr:
+      date: 1972-07
+      old_value: 0.06
+      new_value: nan
+    journ_4:
+      date: 1983-01
+      old_value: 0.5
+      new_value: nan
+    aer_fixe:
+      date: 2002-04
+      old_value: 28.83
+      new_value: nan
+    sr_61:
+      date: 1965-01
+      old_value: 0.075
+      new_value: nan
+    base_min_paris:
+      date: 1958-12
+      old_value: 0.58
+      new_value: nan
+    sr_alloc:
+      date: 1968-07
+      old_value: 0.07
+      new_value: nan
+    gr_min:
+      date: 1972-01
+      old_value: 3.21
+      new_value: nan
+    base_min_3_:
+      date: 1968-07
+      old_value: 1.08
+      new_value: nan
+    aide_pu_3_:
+      date: 1968-09
+      old_value: 1.01
+      new_value: 0.88
+    base_min_0_3:
+      date: 1968-07
+      old_value: 1.23
+      new_value: nan
+    base_min_p5000:
+      date: 1958-12
+      old_value: 0.56
+      new_value: nan
+    aer_plaf_seul:
+      date: 2002-04
+      old_value: 1383.84
+      new_value: nan
+    base_prct_6_:
+      date: 1968-07
+      old_value: 0.35
+      new_value: nan
+    journ_3:
+      date: 1983-01
+      old_value: 0.55
+      new_value: nan
+    aer_plaf_couple:
+      date: 2002-04
+      old_value: 1989.27
+      new_value: nan
+    aide_pu_0_3:
+      date: 1968-09
+      old_value: 1.11
+      new_value: 0.96
+    base_min_m5000:
+      date: 1958-12
+      old_value: 0.53
+      new_value: nan
+    ai_detenu:
+      date: 2006-11
+      old_value: nan
+      new_value: 10.04
+    base_prct_3_6:
+      date: 1968-07
+      old_value: 0.35
+      new_value: nan
+    aide_pu_maj:
+      date: 1968-09
+      old_value: 0.43
+      new_value: 0.38
+impot_revenu:
+  error: new csv has 924 rows while old csv had 912.
+tarifs_energie:
+  values_difference:
+    tarif_fixe_base_36kva_ht:
+      date: 2006-08
+      old_value: 724.2
+      new_value: 711.6
+    prix_unitaire_gdf_zone1_base_ht:
+      date: 2016-07
+      old_value: 6.66
+      new_value: 7.6
+    prix_unitaire_gdf_zone5_base_ht:
+      date: 2016-07
+      old_value: 6.66
+      new_value: 7.6
+    prix_unitaire_gdf_zone2_b2i_ht:
+      date: 2016-07
+      old_value: 3.43
+      new_value: 3.93
+    prix_unitaire_gdf_zone5_b1_ht:
+      date: 2016-07
+      old_value: 3.61
+      new_value: 4.11
+    prix_unitaire_gdf_zone6_b2i_ht:
+      date: 2016-07
+      old_value: 3.67
+      new_value: 4.17
+    prix_unitaire_gdf_zone4_b2i_ht:
+      date: 2016-07
+      old_value: 3.55
+      new_value: 4.05
+    tarif_fixe_base_30kva_ht:
+      date: 2006-08
+      old_value: 562.92
+      new_value: 553.2
+    tarif_fixe_base_15kva_ht:
+      date: 2006-08
+      old_value: 195.0
+      new_value: 191.76
+    tarif_fixe_base_3kva_ht:
+      date: 2006-08
+      old_value: 20.76
+      new_value: 20.4
+    prix_unitaire_gdf_zone2_b1_ht:
+      date: 2016-07
+      old_value: 3.43
+      new_value: 3.93
+    prix_unitaire_gdf_zone4_b1_ht:
+      date: 2016-07
+      old_value: 3.55
+      new_value: 4.05
+    prix_unitaire_gdf_zone3_b0_ht:
+      date: 2016-07
+      old_value: 5.26
+      new_value: 5.85
+    tarif_fixe_base_12kva_ht:
+      date: 2006-08
+      old_value: 149.64
+      new_value: 147.12
+    prix_unitaire_gdf_zone3_base_ht:
+      date: 2016-07
+      old_value: 6.66
+      new_value: 7.6
+    tarif_fixe_gdf_base_ht:
+      date: 2016-07
+      old_value: 68.52
+      new_value: 62.52
+    prix_unitaire_gdf_zone1_b1_ht:
+      date: 2016-07
+      old_value: 3.37
+      new_value: 3.87
+    prix_unitaire_gdf_zone2_b0_ht:
+      date: 2016-07
+      old_value: 5.26
+      new_value: 5.85
+    prix_unitaire_gdf_zone3_b2i_ht:
+      date: 2016-07
+      old_value: 3.49
+      new_value: 3.99
+    tarif_fixe_base_6kva_ht:
+      date: 2006-08
+      old_value: 52.8
+      new_value: 51.96
+    prix_unitaire_gdf_zone1_b2i_ht:
+      date: 2016-07
+      old_value: 3.37
+      new_value: 3.87
+    prix_unitaire_gdf_zone5_b0_ht:
+      date: 2016-07
+      old_value: 5.26
+      new_value: 5.85
+    tarif_fixe_base_18kva_ht:
+      date: 2006-08
+      old_value: 240.36
+      new_value: 236.4
+    prix_unitaire_gdf_zone3_b1_ht:
+      date: 2016-07
+      old_value: 3.49
+      new_value: 3.99
+    prix_unitaire_gdf_zone4_b0_ht:
+      date: 2016-07
+      old_value: 5.26
+      new_value: 5.85
+    prix_unitaire_gdf_zone4_base_ht:
+      date: 2016-07
+      old_value: 6.66
+      new_value: 7.6
+    prix_unitaire_gdf_zone2_base_ht:
+      date: 2016-07
+      old_value: 6.66
+      new_value: 7.6
+    prix_unitaire_gdf_zone5_b2i_ht:
+      date: 2016-07
+      old_value: 3.61
+      new_value: 4.11
+    prix_unitaire_gdf_zone6_b1_ht:
+      date: 2016-07
+      old_value: 3.67
+      new_value: 4.17
+    tarif_fixe_base_9kva_ht:
+      date: 2006-08
+      old_value: 104.28
+      new_value: 102.48
+    tarif_fixe_base_24kva_ht:
+      date: 2006-08
+      old_value: 401.64
+      new_value: 394.8
+    prix_unitaire_gdf_zone6_b0_ht:
+      date: 2016-07
+      old_value: 5.26
+      new_value: 5.85
+    prix_unitaire_gdf_zone6_base_ht:
+      date: 2016-07
+      old_value: 6.66
+      new_value: 7.6
+    prix_unitaire_gdf_zone1_b0_ht:
+      date: 2016-07
+      old_value: 5.26
+      new_value: 5.85
+    prix_unitaire_3kva_ht:
+      date: 2003-07
+      old_value: 0.0955
+      new_value: 0.0927
