@@ -3,6 +3,7 @@
 from ruamel.yaml import YAML
 
 yaml = YAML()
+yaml.width = 4096
 
 from slugify import slugify as slugify_
 import re
@@ -31,7 +32,7 @@ def represent_none(self, data):
 
 
 def represent_str(dumper, data):
-  if len(data.splitlines()) > 1:  # check for multiline string
+  if data.count('\n') >= 1:  # check for multiline string
     return dumper.represent_scalar('tag:yaml.org,2002:str', data, style = '|')
   return dumper.represent_scalar('tag:yaml.org,2002:str', data)
 

@@ -116,11 +116,3 @@ retraites:
     retraites.secteur_prive.regime_general_cnav.montant_mico.minimum_contributif.annuel.7615_94
     retraites.secteur_prive.regime_general_cnav.plafond_mico.minimum_contributif_plafond_mensuel.annuel
 
-tarifs_energie:
-  tarif_fixe_base_3kva_ttc:
-    tarifs_energie.tarifs_reglementes_edf.prix_unitaire_base_edf_ttc.prix_kwh_3_kva
-    tarifs_energie.tarifs_reglementes_edf.tarif_fixe_base_edf_ttc.tarif_fixe_3_kva
-  tarif_fixe_base_6kva_ttc:
-    tarifs_energie.tarifs_reglementes_edf.prix_unitaire_base_edf_ttc.prix_kwh_6_kva
-    tarifs_energie.tarifs_reglementes_edf.tarif_fixe_base_edf_ttc.tarif_fixe_6_kva
-

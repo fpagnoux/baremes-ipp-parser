@@ -149,7 +149,7 @@ class SheetParser(object):
     for cell in descriptions_cells:
       if cell.internal_value is None:
         continue
-      description = str(cell.internal_value).strip()
+      description = str(cell.internal_value).strip().replace('\n', ' ')
       key = slugify(description, stopwords = True)
       parent_node = dpath.get(self.sheet_data, path) if path else self.sheet_data
       parent_node[key] = parent_node.get(key) or {}
@@ -247,6 +247,8 @@ class SheetParser(object):
         value = value.strftime('%Y-%m-%d')
       if isinstance(value, str):
         value = value.strip()
+        if "\n" in value:
+          value = value.replace('\n', '; ').replace(';;', ';')
       if not value:
         continue
       date = self.dates[index]
@@ -269,8 +271,7 @@ class SheetParser(object):
         if not value.strip():
           continue
         doc = doc + value + "\n"
-
-    self.sheet_data['documentation'] = doc
+    self.sheet_data['documentation'] = doc.replace(' \n', '\n')
 
   def parse(self):
     self.parse_headers()
