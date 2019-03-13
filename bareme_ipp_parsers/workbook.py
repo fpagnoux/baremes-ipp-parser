@@ -36,26 +36,29 @@ class WorkbookParser(object):
 
   def parse(self):
     summary_sheet = next(sheet for sheet in self.workbook.sheetnames if 'sommaire' in sheet.lower())
-    summary_parser = SummaryParser(self.workbook[summary_sheet], self.name, self.config)
+    summary_sheet_en = next(sheet for sheet in self.workbook.sheetnames if 'outline' in sheet.lower())
+    summary_parser = SummaryParser(self.workbook[summary_sheet], self.workbook[summary_sheet_en], self.name, self.config)
     summary_parser.parse()
     create_directories(summary_parser.sections, self.output_dir)
+
 
     for title in self.workbook.sheetnames:
       if self.sheets_to_ignore and title in self.sheets_to_ignore:
         continue
 
-      self.log.info(f'Parsing sheet "{title}"')
-      parser = SheetParser(self.workbook[title], self.name, self.columns_to_ignore.get(title))
+      # self.log.info(f'Parsing sheet "{title}"')
+      # parser = SheetParser(self.workbook[title], self.name, self.columns_to_ignore.get(title))
       key = slugify(title)
       try:
-        parser.parse()
+        # parser.parse()
         data = {}
         sheets_metadata = summary_parser.sheets_data.get(key)
         if sheets_metadata is None:
           self.log.warning(f"Sheet '{title}' does not seem to be included in the summary'. Ignoring it.")
           continue
         data.update({'description': sheets_metadata['description']})
-        data.update(parser.sheet_data)
+        data.update({'metadata': sheets_metadata['metadata']})
+        # data.update(parser.sheet_data)
         fs_path = sheets_metadata['path'].replace('subparams/', '')
         path = os.path.join(self.output_dir, fs_path, f"{key}.yaml")
         export_yaml(data, path)

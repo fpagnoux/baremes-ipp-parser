@@ -1,49 +1,49 @@
-baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx:
-    name: prelevements_sociaux
-    # Notes: for IRCANTEC and CNRACL, there are several reference columns corresponding to different data columns. They are still parsed, by not as the standard "reference", so they are not visible in the views.
-    ignore_sheets:
-        - Sommaire (FR)
-        - Outline (EN)
-        - Abréviations
-        - ASSIETTE_PU  # Ne contient pas de données datées
-baremes-ipp-taxation-capital.xlsx:
-    name: taxation_capital
-    ignore_sheets:
-        - Sommaire (FR)
-        - Outline (EN)
-baremes-ipp-chomage-unemployment.xlsx:
-    name: chomage
-    ignore_sheets:
-        - Sommaire FR
-        - Outline EN
-baremes-ipp-retraites-pensions.xlsx:
-    name: retraites
-    summary_depth: 3
-    ignore_sheets:
-        - Sommaire (FR)
-        - Outline (EN)
-baremes-ipp-marche-du-travail-labour-market.xlsx:
-    name: marche_travail
-    ignore_sheets:
-        - Sommaire (FR)
-        - Outline (EN)
-        - IB-IM  # Chaque date est présente de nombreuses fois dans la colonne de date. La donnée n'est probablement pas au format habituel.
-baremes-ipp-tarification-energie-logement.xlsx:
-    name: tarifs_energie
-    ignore_sheets:
-        - Sommaire (FR)
-        - Outline (EN)
-baremes-ipp-taxation-indirecte.xlsx:
-    name: taxation_indirecte
-    ignore_sheets:
-        - Sommaire (FR)
-        - Outline (EN)
-        - TVA par produit # valeurs en fonction du produit, pas de la date
-baremes-ipp-impot-revenu-income-tax.xlsx:
-    name: impot_revenu
-    ignore_sheets:
-        - Sommaire (FR)
-        - Outline (EN)
+# baremes-ipp-prelevements-sociaux-social-security-contributions.xlsx:
+#     name: prelevements_sociaux
+#     # Notes: for IRCANTEC and CNRACL, there are several reference columns corresponding to different data columns. They are still parsed, by not as the standard "reference", so they are not visible in the views.
+#     ignore_sheets:
+#         - Sommaire (FR)
+#         - Outline (EN)
+#         - Abréviations
+#         - ASSIETTE_PU  # Ne contient pas de données datées
+# baremes-ipp-taxation-capital.xlsx:
+#     name: taxation_capital
+#     ignore_sheets:
+#         - Sommaire (FR)
+#         - Outline (EN)
+# baremes-ipp-chomage-unemployment.xlsx:
+#     name: chomage
+#     ignore_sheets:
+#         - Sommaire FR
+#         - Outline EN
+# baremes-ipp-retraites-pensions.xlsx:
+#     name: retraites
+#     summary_depth: 3
+#     ignore_sheets:
+#         - Sommaire (FR)
+#         - Outline (EN)
+# baremes-ipp-marche-du-travail-labour-market.xlsx:
+#     name: marche_travail
+#     ignore_sheets:
+#         - Sommaire (FR)
+#         - Outline (EN)
+#         - IB-IM  # Chaque date est présente de nombreuses fois dans la colonne de date. La donnée n'est probablement pas au format habituel.
+# baremes-ipp-tarification-energie-logement.xlsx:
+#     name: tarifs_energie
+#     ignore_sheets:
+#         - Sommaire (FR)
+        # - Outline (EN)
+# baremes-ipp-taxation-indirecte.xlsx:
+#     name: taxation_indirecte
+#     ignore_sheets:
+#         - Sommaire (FR)
+#         - Outline (EN)
+        # - TVA par produit # valeurs en fonction du produit, pas de la date
+# baremes-ipp-impot-revenu-income-tax.xlsx:
+#     name: impot_revenu
+#     ignore_sheets:
+#         - Sommaire (FR)
+#         - Outline (EN)
 baremes-ipp-prestations-sociales-social-benefits.xlsx:
     name: prestations_sociales
     summary_depth: 3
