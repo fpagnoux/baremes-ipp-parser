@@ -59,20 +59,17 @@ def get_url_texte(nature, texte_nb, article_nb):
         return f"https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle={idArticle}&cidTexte={cid}"
 
 def get_decret_decomp(reference):
-    decret_decomp = re.findall('^Décret (\d{1,4}-\d+) du (\d{1,2})/(\d{1,2})/(\d{2,4})(?:(?:(?: - )|(?:, ))art. (\d+))?$', reference)
+    decret_decomp = re.findall('^Décret (\d{1,4}-\d+)(?:(?:(?: - )|(?:, )| )art. (\d+))?$', reference)
     if not decret_decomp:
         return
-    decret_nb, day, month, year, art = decret_decomp[0]
-    day = day.strip('0')
-    month = month.strip('0')
 
-    return (decret_nb, day, month, year, art)
+    return decret_decomp[0]  # decret_nb, article_nb
 
 def get_loi_decomp(reference):
-    loi_decomp = re.findall('^Loi (\d{1,4}-\d+) du (\d{1,2})/(\d{1,2})/(\d{2,4})(?:(?:(?: - )|(?:, ))art. (\d+))?$', reference)
+    loi_decomp = re.findall('^Loi (\d{1,4}-\d+)(?:(?:(?: - )|(?:, ))art. (\d+))?$', reference)
     if not loi_decomp:
         return
-    return loi_decomp[0]  # loi_nb, day, month, year, article_nb
+    return loi_decomp[0]  # loi_nb, article_nb
 
 # def get_arrete_decomp(reference):
 
@@ -118,32 +115,62 @@ def lookup_eli(reference):
     except http.client.HTTPException as error:
         return lookup_eli(reference)
 
-def lookup_google(query):
+def lookup_google(reference):
+    decomp = re.findall('^Décret (\d{1,4}-\d+) du (\d{1,2}/\d{1,2}/\d{2,4})(?:(?:(?: - )|(?:, ))art. (\d+))?$', reference)
+    if not decomp:
+        return
+    decret_nb, date, _ = decomp[0]
+    date = explicit_date(date)
+    query = f'Décret n°{decret_nb} du {date} site:https://www.legifrance.gouv.fr'
+    time.sleep(2)
+    result = query_google(query)
+    if result:
+        return result.split('&')[0]
+
+def query_google(query):
     url = f"https://www.google.com/search?q={quote(query)}&num=1"                                                                                                                           
-    import ipdb; ipdb.set_trace()
     req = urllib.request.Request(
         url, 
         data=None, 
         headers={
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
         }
     )
     
-    f = urllib.request.urlopen(req)
+    try:
+        f = urllib.request.urlopen(req)
+    except urllib.error.HTTPError as error:
+        import ipdb; ipdb.set_trace()
+        return
+    print("Success requesting Google")
     content = f.read().decode('utf-8')
     result = re.findall('href=\"(https:\/\/www\.legifrance\.gouv\.fr(?:[^\"])*)', content)
+    if result:
+        return result[0]
 
 def clean_reference(reference):
     reference = reference.replace(' ', ' ') # Remove unsecable space
     if ('(') in reference:
         reference = re.sub("[\(\[].*?[\)\]]", "", reference)
-        reference = re.sub(' {2,}', ' ', reference).strip()
-    import ipdb; ipdb.set_trace()
+        reference = re.sub(' {2,}', ' ', reference)
+    reference = re.sub(' du \d{1,2}/\d{1,2}/\d{2,4}', '', reference)
+    reference = reference.replace(' , ', ', ')
+    reference = re.sub('[I|V|X]+', '', reference)
+    reference = re.sub('\d+°', '', reference)
+    reference = re.sub('§\d+', '', reference)
+    reference = reference.strip('. ,-')
     return reference
 
 def find_url(reference):
     # url = lookup_as_decret(reference)
-    reference = clean_reference(reference)
-    return lookup_as_decret(reference) or lookup_as_loi(reference)
+    # cleaned_reference = clean_reference(reference)
+    # url = lookup_as_decret(cleaned_reference)
+    # if url:
+    #     return url
+    # url = lookup_as_loi(cleaned_reference)
+    # if url:
+    #     return url
+    # url = lookup_google(reference)
+    return url
     # reference = explicit_reference(reference)
     # return lookup_google(reference)
