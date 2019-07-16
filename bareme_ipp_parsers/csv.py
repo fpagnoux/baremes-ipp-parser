@@ -79,6 +79,7 @@ def check_for_doublons(node):
   if not doublons:
     return
 
+  print("!!! Doublons détectés!!!")
   print(f'{node.name}:')
   for csv_key, param_names in doublons.items():
     print(f'  {csv_key}:')
